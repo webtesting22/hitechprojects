@@ -25,7 +25,7 @@ import img3 from "./images/workforce.png";
 import img4 from "./images/construction.png";
 import img5 from "./images/completed-task.png";
 import img6 from "./images/building.png";
-import hitechModalImage from "./hitechModalImage.JPG"
+import hitechModalImage from "./newHitech.JPG"
 import "./home.css";
 import { Carousel } from "react-responsive-carousel";
 import Header from "../header/header";
