@@ -84,7 +84,7 @@ const ApplicationForm = () => {
       };
   
       // Request upload policy from the backend
-      const response = await fetch(`http://localhost:4040/api/chats/uploadPolicy`, {
+      const response = await fetch(`https://napi.prepseed.com/chats/uploadPolicy`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -144,7 +144,7 @@ const ApplicationForm = () => {
   
       // Request upload policy from the backend
       const response = await fetch(
-        `http://localhost:4040/api/chats/uploadPolicy`,
+        `https://napi.prepseed.com/chats/uploadPolicy`,
         {
           method: "POST",
           headers: {
