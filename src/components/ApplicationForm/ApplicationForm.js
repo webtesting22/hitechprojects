@@ -660,11 +660,17 @@ const ApplicationForm = () => {
               rules={[{ required: true, message: 'Please select a position' }]}
             >
               <Select>
-                <Select.Option value="Project Managers">Project Managers</Select.Option>
-                <Select.Option value="Sr. Engineers">Sr. Engineers</Select.Option>
+              <Select.Option value="Project Managers">Project Managers</Select.Option>
+                <Select.Option value="Sr. Engineers">Sr. Engineers-Execution</Select.Option>
+                <Select.Option value="Billing Planning Engineers">Billing-Planning Engineers</Select.Option>
                 <Select.Option value="Assistant Engineers">Assistant Engineers</Select.Option>
-                <Select.Option value="Jr. Engineer">Jr. Engineer</Select.Option>
-                <Select.Option value="Supervisors">Supervisors</Select.Option>
+                <Select.Option value="Jr. Engineer">Jr. Engineer-Execution</Select.Option>
+                <Select.Option value="Quality Engineers">Quality Engineers</Select.Option>
+                <Select.Option value="Supervisors">Supervisors-Execution</Select.Option>
+                <Select.Option value="Surveyor">Surveyor</Select.Option>
+                <Select.Option value="Safety Officers">Safety Officers</Select.Option>
+                <Select.Option value="Administation Officers Assistants">Administation Officers/Assistants</Select.Option>
+                <Select.Option value="Store Officers">Store Officers/Assistants</Select.Option>
               </Select>
             </Form.Item>
           </div>
