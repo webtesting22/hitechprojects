@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Children, useState } from "react";
 import {
   Form,
   Select,
@@ -103,7 +103,6 @@ const ApplicationForm = () => {
       // Request upload policy from the backend
       const response = await fetch(`https://napi.prepseed.com/chats/uploadPolicy`, {
         method: "POST",
-        mode: 'no-cors',
         headers: {
           "Content-Type": "application/json",
           authorization: `Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MWJkNGM4YWQ3NzczMjc5YzVhZTM4MCIsInJvbGUiOiJtb2RlcmF0b3IiLCJleHAiOjE3MzAwMjc4MzksInBocyI6e30sImlhdCI6MTcyNDg0MzgzOH0.gNjc_Z5LD9vqtZ7V15CQhXsAdXrhbW9OEwOMEDz7MMg`,
@@ -165,7 +164,6 @@ const ApplicationForm = () => {
         `https://napi.prepseed.com/chats/uploadPolicy`,
         {
           method: "POST",
-          mode: 'no-cors',
           headers: {
             "Content-Type": "application/json",
             authorization: `Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MWJkNGM4YWQ3NzczMjc5YzVhZTM4MCIsInJvbGUiOiJtb2RlcmF0b3IiLCJleHAiOjE3MzAwMjc4MzksInBocyI6e30sImlhdCI6MTcyNDg0MzgzOH0.gNjc_Z5LD9vqtZ7V15CQhXsAdXrhbW9OEwOMEDz7MMg`,
@@ -210,37 +208,153 @@ const ApplicationForm = () => {
 
 
   const handleSubmit = async (data) => {
-    
     if (data) {
-      
       try {
+        console.log("Data to be sent:", JSON.stringify(data)); // Log data before sending
+  
         const response = await fetch(
           "https://napi.prepseed.com/hightech/addApplication",
           {
             method: "POST",
-            mode: 'no-cors',
             headers: {
               "Content-Type": "application/json",
             },
             body: JSON.stringify(data), // Convert formData to JSON
           }
         );
-
+  
         if (response.ok) {
-          const result = await response.json();
+          const result = await response.json(); // Parse JSON response
           console.log("API Response:", result);
-      form.resetFields();
+          // Assuming form is a reference to your form instance
+          if (typeof form !== 'undefined' && form.resetFields) {
+            form.resetFields(); // Reset the form fields
+          }
         } else {
+          // Handle non-2xx HTTP responses
           console.error("API request failed with status:", response.status);
+          const errorText = await response.text(); // Optionally get more details from the response
+          console.error("Error response:", errorText);
         }
       } catch (error) {
         console.error("Error sending data to API:", error);
       }
     }
-    console.log("Data to be sent:", data);
   };
 
   const treeCurrentLocationData = [
+    {
+      value: "Andhra Pradesh",
+      label: "Andhra Pradesh",
+      children: [
+        { value: "Hyderabad", label: "Hyderabad" },
+        { value: "Visakhapatnam", label: "Visakhapatnam" },
+        { value: "Vijayawada", label: "Vijayawada" },
+        { value: "Guntur", label: "Guntur" },
+        { value: "Tirupati", label: "Tirupati" },
+        { value: "Kakinada", label: "Kakinada" },
+        { value: "Nellore", label: "Nellore" },
+        { value: "Rajahmundry", label: "Rajahmundry" },
+        { value: "Chittoor", label: "Chittoor" },
+        { value: "Anantapur", label: "Anantapur" },
+      ],
+    },
+    {
+      value: "Arunachal Pradesh",
+      label: "Arunachal Pradesh",
+      children: [
+        { value: "Itanagar", label: "Itanagar" },
+        { value: "Tawang", label: "Tawang" },
+        { value: "Bomdila", label: "Bomdila" },
+        { value: "Ziro", label: "Ziro" },
+        { value: "Pasighat", label: "Pasighat" },
+        { value: "Naharlagun", label: "Naharlagun" },
+        { value: "Roing", label: "Roing" },
+        { value: "Tezu", label: "Tezu" },
+        { value: "Ruksin", label: "Ruksin" },
+        { value: "Seppa", label: "Seppa" },
+      ],
+    },
+    {
+      value: "Assam",
+      label: "Assam",
+      children: [
+        { value: "Guwahati", label: "Guwahati" },
+        { value: "Dispur", label: "Dispur" },
+        { value: "Silchar", label: "Silchar" },
+        { value: "Dibrugarh", label: "Dibrugarh" },
+        { value: "Jorhat", label: "Jorhat" },
+        { value: "Tezpur", label: "Tezpur" },
+        { value: "Nagaon", label: "Nagaon" },
+        { value: "Karimganj", label: "Karimganj" },
+        { value: "Haflong", label: "Haflong" },
+        { value: "Sivasagar", label: "Sivasagar" },
+      ],
+    },
+    {
+      value: "Bihar",
+      label: "Bihar",
+      children: [
+        { value: "Patna", label: "Patna" },
+        { value: "Gaya", label: "Gaya" },
+        { value: "Bhagalpur", label: "Bhagalpur" },
+        { value: "Munger", label: "Munger" },
+        { value: "Darbhanga", label: "Darbhanga" },
+        { value: "Muzaffarpur", label: "Muzaffarpur" },
+        { value: "Begusarai", label: "Begusarai" },
+        { value: "Purnia", label: "Purnia" },
+        { value: "Arrah", label: "Arrah" },
+        { value: "Kishanganj", label: "Kishanganj" },
+      ],
+    },
+    {
+      value: "Chhattisgarh",
+      label: "Chhattisgarh",
+      children: [
+        { value: "Raipur", label: "Raipur" },
+        { value: "Bilaspur", label: "Bilaspur" },
+        { value: "Korba", label: "Korba" },
+        { value: "Durg", label: "Durg" },
+        { value: "Jagdalpur", label: "Jagdalpur" },
+        { value: "Raigarh", label: "Raigarh" },
+        { value: "Ambikapur", label: "Ambikapur" },
+        { value: "Dhamtari", label: "Dhamtari" },
+        { value: "Janjgiri-Champa", label: "Janjgiri-Champa" },
+        { value: "Bhilai", label: "Bhilai" },
+      ],
+    },
+    {
+      value: "Goa",
+      label: "Goa",
+      children: [
+        { value: "Panaji", label: "Panaji" },
+        { value: "Vasco da Gama", label: "Vasco da Gama" },
+        { value: "Margao", label: "Margao" },
+        { value: "Mapusa", label: "Mapusa" },
+        { value: "Ponda", label: "Ponda" },
+        { value: "Cortalim", label: "Cortalim" },
+        { value: "Panjim", label: "Panjim" },
+        { value: "Quepem", label: "Quepem" },
+        { value: "Sanguem", label: "Sanguem" },
+        { value: "Cortalim", label: "Cortalim" },
+      ],
+    },
+    {
+      value: "Gujarat",
+      label: "Gujarat",
+      children: [
+        { value: "Ahmedabad", label: "Ahmedabad" },
+        { value: "Surat", label: "Surat" },
+        { value: "Vadodara", label: "Vadodara" },
+        { value: "Rajkot", label: "Rajkot" },
+        { value: "Gandhinagar", label: "Gandhinagar" },
+        { value: "Bhavnagar", label: "Bhavnagar" },
+        { value: "Jamnagar", label: "Jamnagar" },
+        { value: "Junagadh", label: "Junagadh" },
+        { value: "Anand", label: "Anand" },
+        { value: "Nadiad", label: "Nadiad" },
+      ],
+    },
     {
       value: "Haryana",
       label: "Haryana",
@@ -479,14 +593,33 @@ const ApplicationForm = () => {
     {
       value: "Manipur",
       label: "Manipur",
-      children: [{ value: "Imphal", label: "Imphal" }],
+      children: [
+        { value: "Imphal", label: "Imphal" },
+        { value: "Churachandpur", label: "Churachandpur" },
+        { value: "Thoubal", label: "Thoubal" },
+        { value: "Kakching", label: "Kakching" },
+        { value: "Moirang", label: "Moirang" },
+        { value: "Jiribam", label: "Jiribam" },
+        { value: "Kangpokpi", label: "Kangpokpi" },
+        { value: "Senapati", label: "Senapati" },
+        { value: "Tamenglong", label: "Tamenglong" },
+        { value: "Ukhrul", label: "Ukhrul" },
+      ],
     },
     {
       value: "Meghalaya",
       label: "Meghalaya",
       children: [
-        { value: "Cherrapunji", label: "Cherrapunji" },
         { value: "Shillong", label: "Shillong" },
+        { value: "Tura", label: "Tura" },
+        { value: "Jowai", label: "Jowai" },
+        { value: "Nongpoh", label: "Nongpoh" },
+        { value: "Bally", label: "Bally" },
+        { value: "Mairang", label: "Mairang" },
+        { value: "Nongstoin", label: "Nongstoin" },
+        { value: "Williamnagar", label: "Williamnagar" },
+        { value: "Rongram", label: "Rongram" },
+        { value: "Jaintia Hills", label: "Jaintia Hills" },
       ],
     },
     {
@@ -495,6 +628,14 @@ const ApplicationForm = () => {
       children: [
         { value: "Aizawl", label: "Aizawl" },
         { value: "Lunglei", label: "Lunglei" },
+        { value: "Serchhip", label: "Serchhip" },
+        { value: "Champhai", label: "Champhai" },
+        { value: "Kolasib", label: "Kolasib" },
+        { value: "Mamit", label: "Mamit" },
+        { value: "Lawngtlai", label: "Lawngtlai" },
+        { value: "Hnahthial", label: "Hnahthial" },
+        { value: "Siaha", label: "Siaha" },
+        { value: "Saiha", label: "Saiha" },
       ],
     },
     {
@@ -502,10 +643,15 @@ const ApplicationForm = () => {
       label: "Nagaland",
       children: [
         { value: "Kohima", label: "Kohima" },
+        { value: "Dimapur", label: "Dimapur" },
+        { value: "Wokha", label: "Wokha" },
+        { value: "Mokokchung", label: "Mokokchung" },
+        { value: "Tuensang", label: "Tuensang" },
         { value: "Mon", label: "Mon" },
         { value: "Phek", label: "Phek" },
-        { value: "Wokha", label: "Wokha" },
         { value: "Zunheboto", label: "Zunheboto" },
+        { value: "Longleng", label: "Longleng" },
+        { value: "Kiphire", label: "Kiphire" },
       ],
     },
     {
@@ -544,6 +690,124 @@ const ApplicationForm = () => {
         { value: "Sultanpur", label: "Sultanpur" },
         { value: "Tehri", label: "Tehri" },
         { value: "Varanasi", label: "Varanasi" },
+      ],
+    },
+    {
+      value: "Punjab",
+      label: "Punjab",
+      children: [
+        { value: "Chandigarh", label: "Chandigarh" },
+        { value: "Amritsar", label: "Amritsar" },
+        { value: "Ludhiana", label: "Ludhiana" },
+        { value: "Patiala", label: "Patiala" },
+        { value: "Jalandhar", label: "Jalandhar" },
+        { value: "Mohali", label: "Mohali" },
+        { value: "Bathinda", label: "Bathinda" },
+        { value: "Faridkot", label: "Faridkot" },
+        { value: "Firozpur", label: "Firozpur" },
+        { value: "Rupnagar", label: "Rupnagar" },
+        { value: "Moga", label: "Moga" },
+      ],
+    },
+    {
+      value: "Rajasthan",
+      label: "Rajasthan",
+      children: [
+        { value: "Jaipur", label: "Jaipur" },
+        { value: "Udaipur", label: "Udaipur" },
+        { value: "Jodhpur", label: "Jodhpur" },
+        { value: "Kota", label: "Kota" },
+        { value: "Ajmer", label: "Ajmer" },
+        { value: "Bikaner", label: "Bikaner" },
+        { value: "Alwar", label: "Alwar" },
+        { value: "Bhilwara", label: "Bhilwara" },
+        { value: "Sikar", label: "Sikar" },
+        { value: "Pali", label: "Pali" },
+        { value: "Tonk", label: "Tonk" },
+        { value: "Jhunjhunu", label: "Jhunjhunu" },
+      ],
+    },
+    {
+      value: "Sikkim",
+      label: "Sikkim",
+      children: [
+        { value: "Gangtok", label: "Gangtok" },
+        { value: "Namchi", label: "Namchi" },
+        { value: "Mangan", label: "Mangan" },
+        { value: "Rangpo", label: "Rangpo" },
+        { value: "Jorethang", label: "Jorethang" },
+        { value: "Yuksom", label: "Yuksom" },
+        { value: "Lachung", label: "Lachung" },
+        { value: "Lachen", label: "Lachen" },
+        { value: "Rongli", label: "Rongli" },
+      ],
+    },
+    {
+      value: "Tamil Nadu",
+      label: "Tamil Nadu",
+      children: [
+        { value: "Chennai", label: "Chennai" },
+        { value: "Coimbatore", label: "Coimbatore" },
+        { value: "Madurai", label: "Madurai" },
+        { value: "Tiruchirappalli", label: "Tiruchirappalli" },
+        { value: "Salem", label: "Salem" },
+        { value: "Tirunelveli", label: "Tirunelveli" },
+        { value: "Vellore", label: "Vellore" },
+        { value: "Tirupur", label: "Tirupur" },
+        { value: "Erode", label: "Erode" },
+        { value: "Kanchipuram", label: "Kanchipuram" },
+        { value: "Trichy", label: "Trichy" },
+        { value: "Nagercoil", label: "Nagercoil" },
+      ],
+    },
+    {
+      value: "Telangana",
+      label: "Telangana",
+      children: [
+        { value: "Hyderabad", label: "Hyderabad" },
+        { value: "Warangal", label: "Warangal" },
+        { value: "Khammam", label: "Khammam" },
+        { value: "Karimnagar", label: "Karimnagar" },
+        { value: "Nizamabad", label: "Nizamabad" },
+        { value: "Mahbubnagar", label: "Mahbubnagar" },
+        { value: "Adilabad", label: "Adilabad" },
+        { value: "Ramagundam", label: "Ramagundam" },
+        { value: "Medak", label: "Medak" },
+        { value: "Jagtial", label: "Jagtial" },
+      ],
+    },
+    {
+      value: "Tripura",
+      label: "Tripura",
+      children: [
+        { value: "Agartala", label: "Agartala" },
+        { value: "Udaipur", label: "Udaipur" },
+        { value: "Dharmanagar", label: "Dharmanagar" },
+        { value: "Kailashahar", label: "Kailashahar" },
+        { value: "Ambassa", label: "Ambassa" },
+        { value: "Belonia", label: "Belonia" },
+        { value: "Ranirbazar", label: "Ranirbazar" },
+        { value: "Khowai", label: "Khowai" },
+        { value: "Bishalgarh", label: "Bishalgarh" },
+        { value: "Sepahijala", label: "Sepahijala" },
+      ],
+    },
+    {
+      value: "Uttar Pradesh",
+      label: "Uttar Pradesh",
+      children: [
+        { value: "Lucknow", label: "Lucknow" },
+        { value: "Kanpur", label: "Kanpur" },
+        { value: "Ghaziabad", label: "Ghaziabad" },
+        { value: "Agra", label: "Agra" },
+        { value: "Varanasi", label: "Varanasi" },
+        { value: "Meerut", label: "Meerut" },
+        { value: "Allahabad", label: "Allahabad" },
+        { value: "Moradabad", label: "Moradabad" },
+        { value: "Bareilly", label: "Bareilly" },
+        { value: "Aligarh", label: "Aligarh" },
+        { value: "Jaunpur", label: "Jaunpur" },
+        { value: "Ayodhya", label: "Ayodhya" },
       ],
     },
     {
@@ -612,7 +876,39 @@ const ApplicationForm = () => {
       ],
     },
   ];
-
+  const generateNumbers = () => {
+    return Array.from({ length: 20 }, (_, index) => ({
+      value: (index + 1).toString(),
+      label: (index + 1).toString()
+    }));
+  };
+  const treeRelevantData = [
+    {
+      value: "Residential",
+      label: "Residential",
+      children: generateNumbers(),
+    },
+    {
+      value: "Commercial",
+      label: "Commercial",
+      children: generateNumbers(),
+    },
+    {
+      value: "Industrial",
+      label: "Industrial",
+      children: generateNumbers(),
+    },
+    {
+      value: "Institutional",
+      label: "Institutional",
+      children: generateNumbers(),
+    },
+    {
+      value: "Others",
+      label: "Others",
+      children: generateNumbers(),
+    }
+  ];
   const treeHomeData = [
     {
       value: "Gujarat",
@@ -711,12 +1007,12 @@ const ApplicationForm = () => {
     );
 
     console.log("Processed Form Data:", processedValues);
-    processedValues.photo=photoLink;
-    processedValues.resume=resumeLink;
+    processedValues.photo = photoLink;
+    processedValues.resume = resumeLink;
     // setFormData(processedValues);
     setFormValues(processedValues)
     handleSubmit(processedValues);
-    
+
 
     // Pass the processed data to the handleSubmit function
   };
@@ -835,7 +1131,7 @@ const ApplicationForm = () => {
               label="Alternate Contact Number"
               name="alternateContactNumber"
             >
-              <Input placeholder="Enter your Contact Number" onChange={(e) => { handleFormChange("alternateContactNumber", e.target.value) }}/>
+              <Input placeholder="Enter your Contact Number" onChange={(e) => { handleFormChange("alternateContactNumber", e.target.value) }} />
             </Form.Item>
 
           </div>
@@ -939,7 +1235,7 @@ const ApplicationForm = () => {
             <Form.Item
               label="Current Company Name"
               name="currentCompanyName"
-              // rules={[{ required: true, message: 'Please enter your current company name' }]}
+            // rules={[{ required: true, message: 'Please enter your current company name' }]}
             >
               <Input placeholder="Enter your Current Company Name" disabled={isDisable} onChange={(e) => { handleFormChange("currentCompanyName", e.target.value) }} />
             </Form.Item>
@@ -961,6 +1257,9 @@ const ApplicationForm = () => {
           </div>
 
           <div className="Adjust">
+          <Form.Item label="Relevant Experience" name="relevantExperience">
+              <Cascader options={treeRelevantData} placeholder="Select Current Location" onChange={(value) => handleFormChange("RelevantExperience", value)} />
+            </Form.Item>
             <Form.Item
               label="Current Location"
               name="currentLocation"
@@ -968,7 +1267,13 @@ const ApplicationForm = () => {
             >
               <Cascader options={treeCurrentLocationData} placeholder="Select Current Location" onChange={(value) => handleFormChange("currentLocation", value)} />
             </Form.Item>
-            <Form.Item
+           
+
+
+          </div>
+
+          <div className="Adjust">
+          <Form.Item
               label="Home"
               name="home"
               rules={[{ required: true, message: 'Please select your home location' }]}
@@ -984,11 +1289,6 @@ const ApplicationForm = () => {
               />
             </Form.Item>
 
-
-
-          </div>
-
-          <div className="Adjust">
             <Form.Item
               label="Notice Period (In Days)"
               name="noticePeriod"
@@ -996,7 +1296,14 @@ const ApplicationForm = () => {
             >
               <Input style={{ width: '100%' }} placeholder="Notice Period" onChange={(e) => { handleFormChange("noticePeriod", e.target.value) }} />
             </Form.Item>
-            <Form.Item
+            
+
+
+
+          </div>
+
+          <div className="Adjust">
+          <Form.Item
               label="Gender"
               name="gender"
             >
@@ -1007,59 +1314,57 @@ const ApplicationForm = () => {
                 <Select.Option value="Other">Other</Select.Option>
               </Select>
             </Form.Item>
-
-
-
-          </div>
-
-          <div className="Adjust">
             <Form.Item label="Skills" name="skill">
-              <Input placeholder="Skills" onChange={(e)=>{handleFormChange("skill",e.target.value)}}/>
+              <Input placeholder="Skills" onChange={(e) => { handleFormChange("skill", e.target.value) }} />
             </Form.Item>
-            <Form.Item label="Email ID" name="emailId">
-              <Input placeholder="Enter your Email ID" onChange={(e)=>{handleFormChange("emailId",e.target.value)}}/>
-            </Form.Item>
+           
 
 
           </div>
 
           <div className="Adjust">
+          <Form.Item label="Email ID" name="emailId">
+              <Input placeholder="Enter your Email ID" onChange={(e) => { handleFormChange("emailId", e.target.value) }} />
+            </Form.Item>
             <Form.Item label="Current Designation" name="currentDesignation">
-              <Input placeholder="Enter your Current Company Designation" onChange={(e)=>{handleFormChange("currentDesignation",e.target.value)}}/>
+              <Input placeholder="Enter your Current Company Designation" onChange={(e) => { handleFormChange("currentDesignation", e.target.value) }} />
             </Form.Item>
 
-            <Form.Item label="Current CTC (Per Annum)" name="currentCTC">
-              <Input onChange={(e) => handleFormChange("currentCTC", e.target.value)} style={{ width: '100%' }} min={1} max={100} placeholder="Current CTC (Per Annum)" />
-            </Form.Item>
+          
 
 
           </div>
 
           <div className="Adjust">
+          <Form.Item label="Current CTC (Per Annum)" name="currentCTC">
+              <Input onChange={(e) => handleFormChange("currentCTC", e.target.value)} style={{ width: '100%' }} placeholder="Current CTC (Per Annum)" />
+            </Form.Item>
             <Form.Item label="Expected CTC (Per Annum)" name="expectedCTC">
-              <Input onChange={(e) => handleFormChange("expectedCTC", e.target.value)} style={{ width: '100%' }} min={1} max={10} placeholder="Expected CTC (Per Annum)" />
+              <Input onChange={(e) => handleFormChange("expectedCTC", e.target.value)} style={{ width: '100%' }} placeholder="Expected CTC (Per Annum)" />
             </Form.Item>
 
-            <Form.Item label="Reference" name="reference">
-              <Cascader options={referenceData}  onChange={(value) => handleFormChange("reference", value)} placeholder="Select Option" disabled={isDisable} />
-            </Form.Item>
+           
 
 
 
           </div>
 
           <div className="Adjust">
+          <Form.Item label="Reference" name="reference">
+              <Cascader options={referenceData} onChange={(value) => handleFormChange("reference", value)} placeholder="Select Option" disabled={isDisable} />
+            </Form.Item>
             <Form.Item label="Reference of friend (if any)" name="referenceOfFriend">
-              <Input placeholder="Enter your friend name here" onChange={(e)=>{handleFormChange("referenceOfFriend",e.target.value)}}/>
+              <Input placeholder="Enter your friend name here" onChange={(e) => { handleFormChange("referenceOfFriend", e.target.value) }} />
             </Form.Item>
-            <Form.Item label="Reference of others (if any)" name="referenceOfOthers">
-              <Input onChange={(e)=>{handleFormChange("referenceOfOthers",e.target.value)}} placeholder="Enter reference here if you selected others option" />
-            </Form.Item>
+           
 
 
           </div>
-          <hr />
+          {/* <hr /> */}
           <div className="Adjust">
+          <Form.Item label="Reference of others (if any)" name="referenceOfOthers">
+              <Input onChange={(e) => { handleFormChange("referenceOfOthers", e.target.value) }} placeholder="Enter reference here if you selected others option" />
+            </Form.Item>
             <Form.Item label="Photo Upload" name="photo" rules={[{ required: true, message: 'Please enter your notice period' }]}>
               <Upload
                 showUploadList={true}
@@ -1073,7 +1378,12 @@ const ApplicationForm = () => {
               </Upload>
             </Form.Item>
 
-            <Form.Item label="Resume Upload" name="resume" rules={[{ required: true, message: 'Please enter your notice period' }]}>
+          
+
+          </div>
+
+          <div className="Adjust">
+          <Form.Item label="Resume Upload" name="resume" rules={[{ required: true, message: 'Please enter your notice period' }]}>
               <Upload onChange={handleResumeChange} showUploadList={true}
                 beforeUpload={() => false} maxCount={1}>
                 <Button icon={<UploadOutlined />}>
@@ -1081,22 +1391,8 @@ const ApplicationForm = () => {
                 </Button>
               </Upload>
             </Form.Item>
-
-          </div>
-
-          <div className="LastField">
-            <Form.Item label="Relevant Experience" name="RelevantExperience">
-              <Select placeholder="Select Relevant Experience" onChange={(value) => { handleFormChange("RelevantExperience", value) }}>
-                <Select.Option value="Residential">Residential</Select.Option>
-                <Select.Option value="Commercial">Commercial</Select.Option>
-                <Select.Option value="Industrial">Industrial</Select.Option>
-                <Select.Option value="Institutional">Institutional</Select.Option>
-                <Select.Option value="Others">Others</Select.Option>
-              </Select>
-
-            </Form.Item>
             <Form.Item label="Remarks (If any)" name="remarks">
-              <Input placeholder="Enter your Remarks" onChange={(e)=>{handleFormChange("remarks",e.target.value)}}/>
+              <Input placeholder="Enter your Remarks" onChange={(e) => { handleFormChange("remarks", e.target.value) }} />
             </Form.Item>
           </div>
 
