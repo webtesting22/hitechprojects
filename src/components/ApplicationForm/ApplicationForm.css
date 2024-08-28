@@ -45,3 +45,14 @@
         width: 100%;
     }
 }
+
+
+.ContactForm-Container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .ContactForm-Container .ant-form-item-row{
+    display: flex;
+    justify-content: end;
+  }

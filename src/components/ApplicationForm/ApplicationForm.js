@@ -11,9 +11,11 @@ import {
   message,
   Upload,
   notification,
+  Checkbox
 } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
 import "./ApplicationForm.css";
+import { PlusOutlined } from '@ant-design/icons';
 // import "./ApplicationForm.css"
 const ApplicationForm = () => {
   const [form] = Form.useForm();
@@ -21,6 +23,21 @@ const ApplicationForm = () => {
   const displayRender = (labels) => labels[labels.length - 1];
   const [photoLink, setPhotoLink] = useState("");
   const [resumeLink, setResumeLink] = useState("");
+  const [inputList, setInputList] = useState([{ id: 1, name: 'contactNumber1' }]);
+  const [isDisable, setIsDisable] = useState(false)
+  const [formValues, setFormValues] = useState({})
+  const handleAddInput = () => {
+    const newId = inputList.length + 1;
+    setInputList([...inputList, { id: newId, name: `contactNumber${newId}` }]);
+  };
+
+  const handleFormChange = (key, value) => {
+    setFormValues(prevValues => ({
+      ...prevValues,
+      [key]: value,
+    }));
+  };
+
   // const onChangePhoto = async (options) => {
   //     const { file, onSuccess, onError } = options;
 
@@ -193,8 +210,9 @@ const ApplicationForm = () => {
 
 
   const handleSubmit = async (data) => {
+    
     if (data) {
-      console.log("Data to be sent:", data);
+      
       try {
         const response = await fetch(
           "https://napi.prepseed.com/hightech/addApplication",
@@ -211,6 +229,7 @@ const ApplicationForm = () => {
         if (response.ok) {
           const result = await response.json();
           console.log("API Response:", result);
+      form.resetFields();
         } else {
           console.error("API request failed with status:", response.status);
         }
@@ -218,6 +237,7 @@ const ApplicationForm = () => {
         console.error("Error sending data to API:", error);
       }
     }
+    console.log("Data to be sent:", data);
   };
 
   const treeCurrentLocationData = [
@@ -660,7 +680,8 @@ const ApplicationForm = () => {
     },
   ];
 
-  const handleFinish = (values) => {
+  const handleFinish = () => {
+    // console.log("valeeeeeeee",values)
     // Function to format date in YYYY-MM-DD
     const formatDate = (dateString) => {
       const date = new Date(dateString);
@@ -670,7 +691,7 @@ const ApplicationForm = () => {
 
     // Convert all values to strings and format dob
     const processedValues = Object.fromEntries(
-      Object.entries(values).map(([key, value]) => {
+      Object.entries(formValues).map(([key, value]) => {
         if (key == "photo") {
           return [key, photoLink];
         } else if (key == "resume") {
@@ -682,17 +703,20 @@ const ApplicationForm = () => {
         if (Array.isArray(value)) {
           return [key, value.join(",")]; // Convert arrays to comma-separated strings
         }
-        if (typeof value === "object" && value !== null) {
-          return [key, JSON.stringify(value)]; // Convert objects to JSON strings
-        }
+        // if (typeof value === "object" && value !== null) {
+        //   return [key, JSON.stringify(value)]; // Convert objects to JSON strings
+        // }
         return [key, String(value)]; // Convert other values to strings
       })
     );
 
     console.log("Processed Form Data:", processedValues);
-    setFormData(processedValues);
+    processedValues.photo=photoLink;
+    processedValues.resume=resumeLink;
+    // setFormData(processedValues);
+    setFormValues(processedValues)
     handleSubmit(processedValues);
-    form.resetFields();
+    
 
     // Pass the processed data to the handleSubmit function
   };
@@ -714,12 +738,24 @@ const ApplicationForm = () => {
               name="departmentAppliedFor"
               rules={[{ required: true, message: 'Please select a department' }]}
             >
-              <Select>
-                <Select.Option value="department1">Department 1</Select.Option>
-                <Select.Option value="department2">Department 2</Select.Option>
-                <Select.Option value="department3">Department 3</Select.Option>
-                <Select.Option value="department4">Department 4</Select.Option>
-                <Select.Option value="department5">Department 5</Select.Option>
+              <Select placeholder="Select Your Department" onChange={(value) => { handleFormChange("departmentAppliedFor", value) }}>
+                <Select.Option value="Administration">Administration</Select.Option>
+                <Select.Option value="Project Execution">Project Execution</Select.Option>
+                <Select.Option value="Finance & Accounts">Finance & Accounts</Select.Option>
+                <Select.Option value="Formwork">Formwork</Select.Option>
+                <Select.Option value="Human Reasource">Human Reasource</Select.Option>
+                <Select.Option value="Information Technology">Information Technology</Select.Option>
+                <Select.Option value="Mechnical">Mechnical</Select.Option>
+                <Select.Option value="Billing">Billing</Select.Option>
+                <Select.Option value="Planning">Planning</Select.Option>
+                <Select.Option value="Purchase">Purchase</Select.Option>
+                <Select.Option value="Quality">Quality</Select.Option>
+                <Select.Option value="Safety">Safety</Select.Option>
+                <Select.Option value="Store">Store</Select.Option>
+                <Select.Option value="Tender">Tender</Select.Option>
+                <Select.Option value="Business Development">Business Development</Select.Option>
+                <Select.Option value="Electrical">Electrical</Select.Option>
+                <Select.Option value="Others">Others</Select.Option>
               </Select>
             </Form.Item>
 
@@ -728,18 +764,37 @@ const ApplicationForm = () => {
               name="positionAppliedFor"
               rules={[{ required: true, message: 'Please select a position' }]}
             >
-              <Select>
-                <Select.Option value="Project Managers">Project Managers</Select.Option>
-                <Select.Option value="Sr. Engineers">Sr. Engineers-Execution</Select.Option>
-                <Select.Option value="Billing Planning Engineers">Billing-Planning Engineers</Select.Option>
-                <Select.Option value="Assistant Engineers">Assistant Engineers</Select.Option>
-                <Select.Option value="Jr. Engineer">Jr. Engineer-Execution</Select.Option>
-                <Select.Option value="Quality Engineers">Quality Engineers</Select.Option>
-                <Select.Option value="Supervisors">Supervisors-Execution</Select.Option>
+              <Select placeholder="Select Your Position" onChange={(value) => { handleFormChange("positionAppliedFor", value) }}>
+                <Select.Option value="Assistant Manager">Assistant Manager</Select.Option>
+                <Select.Option value="Company Secretary">Company Secretary</Select.Option>
+                <Select.Option value="Cook">Cook</Select.Option>
+                <Select.Option value="Crane Operator">Crane Operator</Select.Option>
+                <Select.Option value="Deputy Manager">Deputy Manager</Select.Option>
+                <Select.Option value="Diploma Trainee Engineer">Diploma Trainee Engineer</Select.Option>
+                <Select.Option value="Draftsman">Draftsman</Select.Option>
+                <Select.Option value="Electrician">Electrician</Select.Option>
+                <Select.Option value="Engineer">Engineer</Select.Option>
+                <Select.Option value="Foreman">Foreman</Select.Option>
+                <Select.Option value="General Manager">General Manager</Select.Option>
+                <Select.Option value="JCB Operator">JCB Operator</Select.Option>
+                <Select.Option value="Jr. Engineer">Jr. Engineer</Select.Option>
+                <Select.Option value="Lab Technician">Lab Technician</Select.Option>
+                <Select.Option value="Manager">Manager</Select.Option>
+                <Select.Option value="Mechanic">Mechanic</Select.Option>
+                <Select.Option value="Multi Machinery Operator">Multi Machinery Operator</Select.Option>
+                <Select.Option value="Office Assistant">Office Assistant</Select.Option>
+                <Select.Option value="Office Boy">Office Boy</Select.Option>
+                <Select.Option value="Officer">Officer</Select.Option>
+                <Select.Option value="Project Manager">Project Manager</Select.Option>
+                <Select.Option value="Pump Operator">Pump Operator</Select.Option>
+                <Select.Option value="Receptionist">Receptionist</Select.Option>
+                <Select.Option value="Sr. Engineer">Sr. Engineer</Select.Option>
+                <Select.Option value="Steward">Steward</Select.Option>
+                <Select.Option value="Supervisor">Supervisor</Select.Option>
                 <Select.Option value="Surveyor">Surveyor</Select.Option>
-                <Select.Option value="Safety Officers">Safety Officers</Select.Option>
-                <Select.Option value="Administation Officers Assistants">Administation Officers/Assistants</Select.Option>
-                <Select.Option value="Store Officers">Store Officers/Assistants</Select.Option>
+                <Select.Option value="TM Operator">TM Operator</Select.Option>
+                <Select.Option value="Tractor Driver">Tractor Driver</Select.Option>
+                <Select.Option value="Welder">Welder</Select.Option>
               </Select>
             </Form.Item>
           </div>
@@ -750,7 +805,7 @@ const ApplicationForm = () => {
               name="name"
               rules={[{ required: true, message: 'Please enter your name' }]}
             >
-              <Input placeholder="Your Name Here" />
+              <Input placeholder="Your Name Here" onChange={(e) => { handleFormChange("name", e.target.value) }} />
             </Form.Item>
 
             <Form.Item
@@ -758,7 +813,13 @@ const ApplicationForm = () => {
               name="dob"
               rules={[{ required: true, message: 'Please select your date of birth' }]}
             >
-              <DatePicker />
+              <DatePicker
+                format="YYYY-MM-DD" // Set the format to YYYY-MM-DD
+                placeholder="YYYY-MM-DD" // Placeholder text to guide manual entry
+                allowClear // Allows the user to clear the input
+                inputReadOnly={false} // Enables manual typing in the input field
+                onChange={(date, dateString) => handleFormChange("dob", dateString)}
+              />
             </Form.Item>
           </div>
 
@@ -768,40 +829,135 @@ const ApplicationForm = () => {
               name="contactNumber"
               rules={[{ required: true, message: 'Please enter your contact number' }]}
             >
-              <Input placeholder="Enter your Contact Number" />
+              <Input placeholder="Enter your Contact Number" onChange={(e) => { handleFormChange("contactNumber", e.target.value) }} />
+            </Form.Item>
+            <Form.Item
+              label="Alternate Contact Number"
+              name="alternateContactNumber"
+            >
+              <Input placeholder="Enter your Contact Number" onChange={(e) => { handleFormChange("alternateContactNumber", e.target.value) }}/>
             </Form.Item>
 
+          </div>
+
+          <div className="Adjust">
             <Form.Item
               label="Qualification"
               name="qualification"
               rules={[{ required: true, message: 'Please select your qualification' }]}
             >
-              <Select>
-                <Select.Option value="qualification1">Qualification 1</Select.Option>
-                <Select.Option value="qualification2">Qualification 2</Select.Option>
-                <Select.Option value="qualification3">Qualification 3</Select.Option>
-                <Select.Option value="qualification4">Qualification 4</Select.Option>
-                <Select.Option value="qualification5">Qualification 5</Select.Option>
+              <Select mode="multiple" placeholder="Select your qualifications" onChange={(value) => { handleFormChange("qualification", value) }}>
+                <Select.Option value="ADIS">ADIS</Select.Option>
+                <Select.Option value="BCA">BCA</Select.Option>
+                <Select.Option value="Bachelor of Arts">Bachelor of Arts</Select.Option>
+                <Select.Option value="Bachelor of Business">Bachelor of Business Administration</Select.Option>
+                <Select.Option value="Bachelor of Commerce">Bachelor of Commerce</Select.Option>
+                <Select.Option value="Bachelor of Education">Bachelor of Education</Select.Option>
+                <Select.Option value="Bachelor of Engineering(CIVIL)">Bachelor of Engineering(CIVIL)</Select.Option>
+                <Select.Option value="Bachelor of Engineering(ELECTRICAL)">Bachelor of Engineering(ELECTRICAL)</Select.Option>
+                <Select.Option value="Bachelor of Engineering(IT)">Bachelor of Engineering(IT)</Select.Option>
+                <Select.Option value="Bachelor of Engineering(MECHANICAL)">Bachelor of Engineering(MECHANICAL)</Select.Option>
+                <Select.Option value="Bachelor of Interior Design">Bachelor of Interior Design</Select.Option>
+                <Select.Option value="Bachelor of Science">Bachelor of Science</Select.Option>
+                <Select.Option value="Bachelor of Technology(MECHANICAL)">Bachelor of Technology(MECHANICAL)</Select.Option>
+                <Select.Option value="Bechelor of Science in Fire">Bechelor of Science in Fire & Safety</Select.Option>
+                <Select.Option value="Bechelor of Technology in Fire">Bechelor of Technology in Fire & Safety</Select.Option>
+                <Select.Option value="CA Intermediate">CA Intermediate</Select.Option>
+                <Select.Option value="Certificate course in managing safety">Certificate course in managing safety</Select.Option>
+                <Select.Option value="Chartered Accountant">Chartered Accountant</Select.Option>
+                <Select.Option value="CIDC">CIDC</Select.Option>
+                <Select.Option value="Civil Construction Supervisor">Civil Construction Supervisor</Select.Option>
+                <Select.Option value="Company Secretary">Company Secretary</Select.Option>
+                <Select.Option value="Diploma in Business Administration- Specialization">Diploma in Business Administration- Specialization</Select.Option>
+                <Select.Option value="Diploma in Business Management">Diploma in Business Management</Select.Option>
+                <Select.Option value="Diploma in civil engineer">Diploma in civil engineer</Select.Option>
+                <Select.Option value="Diploma in Computer Application">Diploma in Computer Application</Select.Option>
+                <Select.Option value="Diploma in electrical Engineer">Diploma in electrical Engineer</Select.Option>
+                <Select.Option value="Diploma in Electronics & Communication">Diploma in Electronics & Communication</Select.Option>
+                <Select.Option value="Diploma in Fire & safety">Diploma in Fire & safety</Select.Option>
+                <Select.Option value="Diploma in HSE">Diploma in HSE</Select.Option>
+                <Select.Option value="Diploma In Lab Assistant">Diploma In Lab Assistant</Select.Option>
+                <Select.Option value="Diploma in Mechanical Engineer">Diploma in Mechanical Engineer</Select.Option>
+                <Select.Option value="Diploma in Quality">Diploma in Quality</Select.Option>
+                <Select.Option value="Diploma In Software Application">Diploma In Software Application</Select.Option>
+                <Select.Option value="Diploma in Store Management">Diploma in Store Management</Select.Option>
+                <Select.Option value="Diploma Information Technology">Diploma Information Technology</Select.Option>
+                <Select.Option value="Health, Safety & Environment">Health, Safety & Environment</Select.Option>
+                <Select.Option value="Higher Secondary Certificate">Higher Secondary Certificate</Select.Option>
+                <Select.Option value="Industrial Training Institute(Draughtsman)-Civil">Industrial Training Institute(Draughtsman)-Civil</Select.Option>
+                <Select.Option value="Industrial Training Institute(Electrician)">Industrial Training Institute(Electrician)</Select.Option>
+                <Select.Option value="Industrial Training Institute(Fireman)">Industrial Training Institute(Fireman)</Select.Option>
+                <Select.Option value="Industrial Training Institute(Fitter)">Industrial Training Institute(Fitter)</Select.Option>
+                <Select.Option value="Industrial Training Institute(Mechanical)">Industrial Training Institute(Mechanical)</Select.Option>
+                <Select.Option value="Industrial Training Institute(Surveyor)">Industrial Training Institute(Surveyor)</Select.Option>
+                <Select.Option value="Industrial Training Institute(Wireman)">Industrial Training Institute(Wireman)</Select.Option>
+                <Select.Option value="Industrial Training Institute(Wlder)">Industrial Training Institute(Wlder)</Select.Option>
+                <Select.Option value="Institute of cost & works accounts in india">Institute of cost & works accounts in india</Select.Option>
+                <Select.Option value="ITI">ITI</Select.Option>
+                <Select.Option value="ITI Surveyor">ITI Surveyor</Select.Option>
+                <Select.Option value="M E Construction and Management">M E Construction and Management</Select.Option>
+                <Select.Option value="M Tech (Infrastructure Engineering and Management)">M Tech (Infrastructure Engineering and Management)</Select.Option>
+                <Select.Option value="Master in Science">Master in Science</Select.Option>
+                <Select.Option value="Master of Arts">Master of Arts</Select.Option>
+                <Select.Option value="Master of Business Administration">Master of Business Administration</Select.Option>
+                <Select.Option value="Master of Commerce">Master of Commerce</Select.Option>
+                <Select.Option value="Master of Computer Application">Master of Computer Application</Select.Option>
+                <Select.Option value="Master of Education">Master of Education</Select.Option>
+                <Select.Option value="Master of Engineering(CIVIL)">Master of Engineering(CIVIL)</Select.Option>
+                <Select.Option value="Master of Engineering(MECHANICAL)">Master of Engineering(MECHANICAL)</Select.Option>
+                <Select.Option value="Master Of Social Work">Master Of Social Work</Select.Option>
+                <Select.Option value="Master of Technology(CIVIL)">Master of Technology(CIVIL)</Select.Option>
+                <Select.Option value="Master of Technology(MECHANICAL)">Master of Technology(MECHANICAL)</Select.Option>
+                <Select.Option value="Masters in Construction Management">Masters in Construction Management</Select.Option>
+                <Select.Option value="MSC- Digital Frensics & Information Security">MSC- Digital Frensics & Information Security</Select.Option>
+                <Select.Option value="PGP- NICMAR">PGP- NICMAR</Select.Option>
+                <Select.Option value="Post Graduate Diploma In Business Admininstration- Entrepreneurship">Post Graduate Diploma In Business Admininstration- Entrepreneurship</Select.Option>
+                <Select.Option value="Post Graduate Diploma In Computer Application">Post Graduate Diploma In Computer Application</Select.Option>
+                <Select.Option value="Post Graduate Diploma in Fire & Safety">Post Graduate Diploma in Fire & Safety</Select.Option>
+                <Select.Option value="Post Graduate Diploma in Management - Human Resource">Post Graduate Diploma in Management - Human Resource</Select.Option>
+                <Select.Option value="Post Graduate Diploma in Management ( Infrastructure Management)">Post Graduate Diploma in Management ( Infrastructure Management)</Select.Option>
+                <Select.Option value="Under Graduate">Under Graduate</Select.Option>
+                <Select.Option value="Others">Others</Select.Option>
               </Select>
             </Form.Item>
+            <Form.Item label={<span style={{ fontWeight: 'bold' }}>Fresher</span>} name="fresher">
+              <Checkbox
+                checked={isDisable} // Use checked for controlled component
+                onChange={(e) => {
+                  const newValue = e.target.checked;
+                  setIsDisable(!isDisable); // Toggle state
+                  handleFormChange("fresher", newValue); // Update form values
+                }}
+              />
+            </Form.Item>
+
+
+
           </div>
 
           <div className="Adjust">
             <Form.Item
               label="Current Company Name"
               name="currentCompanyName"
-              rules={[{ required: true, message: 'Please enter your current company name' }]}
+              // rules={[{ required: true, message: 'Please enter your current company name' }]}
             >
-              <Input placeholder="Enter your Current Company Name" />
+              <Input placeholder="Enter your Current Company Name" disabled={isDisable} onChange={(e) => { handleFormChange("currentCompanyName", e.target.value) }} />
             </Form.Item>
-
             <Form.Item
               label="Total Experience (In Years)"
               name="totalExperience"
-              rules={[{ required: true, message: 'Please enter your total experience' }]}
+              rules={[{ required: true, message: 'Please select your total experience' }]}
             >
-              <InputNumber min={1} max={10} />
+              <Select placeholder="Select Your Experience" onChange={(value) => { handleFormChange("totalExperience", value) }}>
+                {Array.from({ length: 43 }, (_, i) => (
+                  <Select.Option key={i} value={i}>
+                    {i}
+                  </Select.Option>
+                ))}
+              </Select>
             </Form.Item>
+
+
           </div>
 
           <div className="Adjust">
@@ -810,9 +966,8 @@ const ApplicationForm = () => {
               name="currentLocation"
               rules={[{ required: true, message: 'Please select your current location' }]}
             >
-              <Cascader options={treeCurrentLocationData} />
+              <Cascader options={treeCurrentLocationData} placeholder="Select Current Location" onChange={(value) => handleFormChange("currentLocation", value)} />
             </Form.Item>
-
             <Form.Item
               label="Home"
               name="home"
@@ -824,8 +979,13 @@ const ApplicationForm = () => {
                 dropdownStyle={{ maxHeight: 400, overflow: 'auto' }}
                 treeDefaultExpandAll
                 treeData={treeHomeData}
+                placeholder="Select Option"
+                onChange={(value) => handleFormChange("home", value)}
               />
             </Form.Item>
+
+
+
           </div>
 
           <div className="Adjust">
@@ -834,61 +994,71 @@ const ApplicationForm = () => {
               name="noticePeriod"
               rules={[{ required: true, message: 'Please enter your notice period' }]}
             >
-              <InputNumber style={{ width: '100%' }} min={1} max={30} />
+              <Input style={{ width: '100%' }} placeholder="Notice Period" onChange={(e) => { handleFormChange("noticePeriod", e.target.value) }} />
             </Form.Item>
-
             <Form.Item
               label="Gender"
               name="gender"
             >
-              <Select placeholder="Select your gender">
+              <Select placeholder="Select your gender"
+                onChange={(value) => { handleFormChange("gender", value) }}>
                 <Select.Option value="Male">Male</Select.Option>
                 <Select.Option value="Female">Female</Select.Option>
                 <Select.Option value="Other">Other</Select.Option>
               </Select>
             </Form.Item>
+
+
+
           </div>
 
           <div className="Adjust">
             <Form.Item label="Skills" name="skill">
-              <Input placeholder="Skills" />
+              <Input placeholder="Skills" onChange={(e)=>{handleFormChange("skill",e.target.value)}}/>
+            </Form.Item>
+            <Form.Item label="Email ID" name="emailId">
+              <Input placeholder="Enter your Email ID" onChange={(e)=>{handleFormChange("emailId",e.target.value)}}/>
             </Form.Item>
 
-            <Form.Item label="Email ID" name="emailId">
-              <Input placeholder="Enter your Email ID" />
-            </Form.Item>
+
           </div>
 
           <div className="Adjust">
             <Form.Item label="Current Designation" name="currentDesignation">
-              <Input placeholder="Enter your Current Company Designation" />
+              <Input placeholder="Enter your Current Company Designation" onChange={(e)=>{handleFormChange("currentDesignation",e.target.value)}}/>
             </Form.Item>
 
             <Form.Item label="Current CTC (Per Annum)" name="currentCTC">
-              <InputNumber style={{ width: '100%' }} min={1} max={100} />
+              <Input onChange={(e) => handleFormChange("currentCTC", e.target.value)} style={{ width: '100%' }} min={1} max={100} placeholder="Current CTC (Per Annum)" />
             </Form.Item>
+
+
           </div>
 
           <div className="Adjust">
             <Form.Item label="Expected CTC (Per Annum)" name="expectedCTC">
-              <InputNumber style={{ width: '100%' }} min={1} max={10} />
+              <Input onChange={(e) => handleFormChange("expectedCTC", e.target.value)} style={{ width: '100%' }} min={1} max={10} placeholder="Expected CTC (Per Annum)" />
             </Form.Item>
 
             <Form.Item label="Reference" name="reference">
-              <Cascader options={referenceData} />
+              <Cascader options={referenceData}  onChange={(value) => handleFormChange("reference", value)} placeholder="Select Option" disabled={isDisable} />
             </Form.Item>
+
+
+
           </div>
 
           <div className="Adjust">
             <Form.Item label="Reference of friend (if any)" name="referenceOfFriend">
-              <Input placeholder="Enter your friend name here" />
+              <Input placeholder="Enter your friend name here" onChange={(e)=>{handleFormChange("referenceOfFriend",e.target.value)}}/>
             </Form.Item>
-
             <Form.Item label="Reference of others (if any)" name="referenceOfOthers">
-              <Input placeholder="Enter reference here if you selected others option" />
+              <Input onChange={(e)=>{handleFormChange("referenceOfOthers",e.target.value)}} placeholder="Enter reference here if you selected others option" />
             </Form.Item>
-          </div>
 
+
+          </div>
+          <hr />
           <div className="Adjust">
             <Form.Item label="Photo Upload" name="photo" rules={[{ required: true, message: 'Please enter your notice period' }]}>
               <Upload
@@ -911,16 +1081,27 @@ const ApplicationForm = () => {
                 </Button>
               </Upload>
             </Form.Item>
+
           </div>
 
           <div className="LastField">
+            <Form.Item label="Relevant Experience" name="RelevantExperience">
+              <Select placeholder="Select Relevant Experience" onChange={(value) => { handleFormChange("RelevantExperience", value) }}>
+                <Select.Option value="Residential">Residential</Select.Option>
+                <Select.Option value="Commercial">Commercial</Select.Option>
+                <Select.Option value="Industrial">Industrial</Select.Option>
+                <Select.Option value="Institutional">Institutional</Select.Option>
+                <Select.Option value="Others">Others</Select.Option>
+              </Select>
+
+            </Form.Item>
             <Form.Item label="Remarks (If any)" name="remarks">
-              <Input placeholder="Enter your Remarks" />
+              <Input placeholder="Enter your Remarks" onChange={(e)=>{handleFormChange("remarks",e.target.value)}}/>
             </Form.Item>
           </div>
 
           <Form.Item >
-            <Button htmlType="submit" style={{ backgroundColor: "#0d2e61", color: "white" }} >
+            <Button htmlType="submit" style={{ backgroundColor: "#0d2e61", color: "white" }} onClick={handleFinish}>
               Submit
             </Button>
           </Form.Item>
