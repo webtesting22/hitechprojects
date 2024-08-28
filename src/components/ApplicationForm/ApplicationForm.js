@@ -71,59 +71,125 @@ const ApplicationForm = () => {
   // };
 
   const handleUploadChange = async (info) => {
-    console.log("info", info);
-    const fileType = info.fileList.type.split("/")[1];
-    const requestBody = {
-      fileName: info.fileList.name,
-      mime: fileType,
-      acl: "public-read",
-    };
-    const response = await fetch(
-      `http://localhost:4040/api/inventorymanagement/uploadPolicyhitech`,
-      {
+    try {
+      // Access the first file from the file list
+      const file = info.file;
+      const fileType = file.type;
+  
+      // Prepare request body for the upload policy request
+      const requestBody = {
+        fileName: encodeURIComponent(file.name), // Replace spaces with %20
+        mime: fileType,
+        ACL: "public-read",
+      };
+  
+      // Request upload policy from the backend
+      const response = await fetch(`http://localhost:4040/api/chats/uploadPolicy`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           authorization: `Token ${window.localStorage.getItem("token")}`,
         },
         body: JSON.stringify(requestBody),
+      });
+  
+      const data = await response.json();
+  
+      // Check if the policy data is valid
+      if (!data.data || !data.data.fields || !data.data.url) {
+        throw new Error("Invalid policy document received from the server.");
       }
-    );
-    const data = await response.json();
-    if (data) {
-      const finalUrl = data.data.url + "/" + data.filePath;
-      setPhotoLink(finalUrl);
-    } else {
-      notification.error({ message: "Error while uploading photo" });
+  
+      // Create form data to upload the file
+      const formData = new FormData();
+      for (const [key, value] of Object.entries(data.data.fields)) {
+        formData.append(key, value);
+      }
+      formData.append("file", file);
+  
+      // Upload the file to the S3 bucket (or wherever the URL points to)
+      const uploadResponse = await fetch(data.data.url, {
+        method: "POST",
+        body: formData,
+      });
+  
+      if (uploadResponse.ok) {
+        const finalUrl = `${data.data.url}/${encodeURIComponent(data.filePath)}`;
+        console.log("This is the finalUrl", finalUrl);
+        setPhotoLink(finalUrl);
+      } else {
+        console.error("File upload failed");
+      }
+    } catch (error) {
+      console.error("An error occurred during file upload:", error);
     }
   };
+  
+  
+  
   const handleResumeChange = async (info) => {
-    console.log("info", info);
-    const fileType = info.fileList.type.split("/")[1];
-    const requestBody = {
-      fileName: info.fileList.name,
-      mime: fileType,
-      acl: "public-read",
-    };
-    const response = await fetch(
-      `http://localhost:4040/api/inventorymanagement/uploadPolicyhitech`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          authorization: `Token ${window.localStorage.getItem("token")}`,
-        },
-        body: JSON.stringify(requestBody),
+    try {
+      console.log("info", info);
+  
+      // Access the first file from the file list
+      const file = info.file;
+      const fileType = file.type;
+  
+      // Prepare request body for the upload policy request
+      const requestBody = {
+        fileName: encodeURIComponent(file.name), // Replace spaces with %20
+        mime: fileType,
+        acl: "public-read",
+      };
+  
+      // Request upload policy from the backend
+      const response = await fetch(
+        `http://localhost:4040/api/chats/uploadPolicy`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            authorization: `Token ${window.localStorage.getItem("token")}`,
+          },
+          body: JSON.stringify(requestBody),
+        }
+      );
+  
+      const data = await response.json();
+  
+      // Check if the policy data is valid
+      if (data && data.data && data.data.fields && data.data.url) {
+        // Create form data to upload the file
+        const formData = new FormData();
+        for (const [key, value] of Object.entries(data.data.fields)) {
+          formData.append(key, value);
+        }
+        formData.append("file", file);
+  
+        // Upload the file to the S3 bucket (or wherever the URL points to)
+        const uploadResponse = await fetch(data.data.url, {
+          method: "POST",
+          body: formData,
+        });
+  
+        if (uploadResponse.ok) {
+          const finalUrl = `${data.data.url}/${encodeURIComponent(data.filePath)}`;
+          setResumeLink(finalUrl);
+          console.log("This is the final URL for the resume:", finalUrl);
+        } else {
+          notification.error({ message: "Error while uploading Resume" });
+        }
+      } else {
+        notification.error({ message: "Error while uploading Resume" });
       }
-    );
-    const data = await response.json();
-    if (data) {
-      const finalUrl = data.data.url + "/" + data.filePath;
-      setResumeLink(finalUrl);
-    } else {
-      notification.error({ message: "Error while uploading Resume" });
+    } catch (error) {
+      console.error("An error occurred during file upload:", error);
+      notification.error({ message: "An error occurred during file upload" });
     }
   };
+  
+  
+  
   const handleSubmit = async (data) => {
     if (data) {
       console.log("Data to be sent:", data);
@@ -826,6 +892,7 @@ const ApplicationForm = () => {
                 showUploadList={true}
                 beforeUpload={() => false}  // Prevent automatic upload
                 onChange={handleUploadChange}
+                maxCount={1}
               >
                 <Button icon={<UploadOutlined />}>
                   Click to Upload (PNG/JPG Only)
@@ -834,7 +901,8 @@ const ApplicationForm = () => {
             </Form.Item>
 
             <Form.Item label="Resume Upload" name="resume"   rules={[{ required: true, message: 'Please enter your notice period' }]}>
-              <Upload onChange={handleResumeChange}>
+              <Upload onChange={handleResumeChange}  showUploadList={true}
+                beforeUpload={() => false} maxCount={1}>
                 <Button icon={<UploadOutlined />}>
                   Click to Upload
                 </Button>
