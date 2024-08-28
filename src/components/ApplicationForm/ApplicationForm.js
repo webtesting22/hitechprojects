@@ -75,44 +75,45 @@ const ApplicationForm = () => {
       // Access the first file from the file list
       const file = info.file;
       const fileType = file.type;
-  
+
       // Prepare request body for the upload policy request
       const requestBody = {
         fileName: encodeURIComponent(file.name), // Replace spaces with %20
         mime: fileType,
         ACL: "public-read",
       };
-  
+
       // Request upload policy from the backend
       const response = await fetch(`https://napi.prepseed.com/chats/uploadPolicy`, {
         method: "POST",
+        mode: 'no-cors',
         headers: {
           "Content-Type": "application/json",
           authorization: `Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MWJkNGM4YWQ3NzczMjc5YzVhZTM4MCIsInJvbGUiOiJtb2RlcmF0b3IiLCJleHAiOjE3MzAwMjc4MzksInBocyI6e30sImlhdCI6MTcyNDg0MzgzOH0.gNjc_Z5LD9vqtZ7V15CQhXsAdXrhbW9OEwOMEDz7MMg`,
         },
         body: JSON.stringify(requestBody),
       });
-  
+
       const data = await response.json();
-  
+
       // Check if the policy data is valid
       if (!data.data || !data.data.fields || !data.data.url) {
         throw new Error("Invalid policy document received from the server.");
       }
-  
+
       // Create form data to upload the file
       const formData = new FormData();
       for (const [key, value] of Object.entries(data.data.fields)) {
         formData.append(key, value);
       }
       formData.append("file", file);
-  
+
       // Upload the file to the S3 bucket (or wherever the URL points to)
       const uploadResponse = await fetch(data.data.url, {
         method: "POST",
         body: formData,
       });
-  
+
       if (uploadResponse.ok) {
         const finalUrl = `${data.data.url}/${encodeURIComponent(data.filePath)}`;
         console.log("This is the finalUrl", finalUrl);
@@ -124,29 +125,30 @@ const ApplicationForm = () => {
       console.error("An error occurred during file upload:", error);
     }
   };
-  
-  
-  
+
+
+
   const handleResumeChange = async (info) => {
     try {
       console.log("info", info);
-  
+
       // Access the first file from the file list
       const file = info.file;
       const fileType = file.type;
-  
+
       // Prepare request body for the upload policy request
       const requestBody = {
         fileName: encodeURIComponent(file.name), // Replace spaces with %20
         mime: fileType,
         acl: "public-read",
       };
-  
+
       // Request upload policy from the backend
       const response = await fetch(
         `https://napi.prepseed.com/chats/uploadPolicy`,
         {
           method: "POST",
+          mode: 'no-cors',
           headers: {
             "Content-Type": "application/json",
             authorization: `Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MWJkNGM4YWQ3NzczMjc5YzVhZTM4MCIsInJvbGUiOiJtb2RlcmF0b3IiLCJleHAiOjE3MzAwMjc4MzksInBocyI6e30sImlhdCI6MTcyNDg0MzgzOH0.gNjc_Z5LD9vqtZ7V15CQhXsAdXrhbW9OEwOMEDz7MMg`,
@@ -154,9 +156,9 @@ const ApplicationForm = () => {
           body: JSON.stringify(requestBody),
         }
       );
-  
+
       const data = await response.json();
-  
+
       // Check if the policy data is valid
       if (data && data.data && data.data.fields && data.data.url) {
         // Create form data to upload the file
@@ -165,13 +167,13 @@ const ApplicationForm = () => {
           formData.append(key, value);
         }
         formData.append("file", file);
-  
+
         // Upload the file to the S3 bucket (or wherever the URL points to)
         const uploadResponse = await fetch(data.data.url, {
           method: "POST",
           body: formData,
         });
-  
+
         if (uploadResponse.ok) {
           const finalUrl = `${data.data.url}/${encodeURIComponent(data.filePath)}`;
           setResumeLink(finalUrl);
@@ -187,9 +189,9 @@ const ApplicationForm = () => {
       notification.error({ message: "An error occurred during file upload" });
     }
   };
-  
-  
-  
+
+
+
   const handleSubmit = async (data) => {
     if (data) {
       console.log("Data to be sent:", data);
@@ -198,6 +200,7 @@ const ApplicationForm = () => {
           "https://napi.prepseed.com/hightech/addApplication",
           {
             method: "POST",
+            mode: 'no-cors',
             headers: {
               "Content-Type": "application/json",
             },
@@ -698,7 +701,7 @@ const ApplicationForm = () => {
     <>
       <div id="ApplicationForm">
         <Form
-         form={form}
+          form={form}
           labelCol={{ span: 10 }}
           wrapperCol={{ span: 14 }}
           layout="horizontal"
@@ -726,7 +729,7 @@ const ApplicationForm = () => {
               rules={[{ required: true, message: 'Please select a position' }]}
             >
               <Select>
-              <Select.Option value="Project Managers">Project Managers</Select.Option>
+                <Select.Option value="Project Managers">Project Managers</Select.Option>
                 <Select.Option value="Sr. Engineers">Sr. Engineers-Execution</Select.Option>
                 <Select.Option value="Billing Planning Engineers">Billing-Planning Engineers</Select.Option>
                 <Select.Option value="Assistant Engineers">Assistant Engineers</Select.Option>
@@ -887,7 +890,7 @@ const ApplicationForm = () => {
           </div>
 
           <div className="Adjust">
-            <Form.Item label="Photo Upload" name="photo"   rules={[{ required: true, message: 'Please enter your notice period' }]}>
+            <Form.Item label="Photo Upload" name="photo" rules={[{ required: true, message: 'Please enter your notice period' }]}>
               <Upload
                 showUploadList={true}
                 beforeUpload={() => false}  // Prevent automatic upload
@@ -900,8 +903,8 @@ const ApplicationForm = () => {
               </Upload>
             </Form.Item>
 
-            <Form.Item label="Resume Upload" name="resume"   rules={[{ required: true, message: 'Please enter your notice period' }]}>
-              <Upload onChange={handleResumeChange}  showUploadList={true}
+            <Form.Item label="Resume Upload" name="resume" rules={[{ required: true, message: 'Please enter your notice period' }]}>
+              <Upload onChange={handleResumeChange} showUploadList={true}
                 beforeUpload={() => false} maxCount={1}>
                 <Button icon={<UploadOutlined />}>
                   Click to Upload
@@ -917,7 +920,7 @@ const ApplicationForm = () => {
           </div>
 
           <Form.Item >
-            <Button  htmlType="submit" style={{backgroundColor:"#0d2e61",color:"white"}}>
+            <Button htmlType="submit" style={{ backgroundColor: "#0d2e61", color: "white" }} >
               Submit
             </Button>
           </Form.Item>
