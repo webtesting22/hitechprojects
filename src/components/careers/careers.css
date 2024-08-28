@@ -1,0 +1,8 @@
+.form_wrapper {
+    padding: 2.5rem;
+}
+@media (max-width:769px){
+    .form_wrapper {
+        padding: 0.5rem;
+    }
+}

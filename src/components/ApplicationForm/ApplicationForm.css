@@ -1,0 +1,47 @@
+#ApplicationForm .ant-form-item-label {
+    display: flex;
+    align-items: center;
+}
+#ApplicationForm .ant-form-item{
+    margin-bottom: 0px;
+    width: 100%;
+    padding: 0px 20px;
+}
+.Adjust .ant-input-number{
+    width: 100%;
+}
+.Adjust .ant-picker{
+    width: 100%;
+}
+.Adjust .ant-form-item-control-input{
+    min-height: 49px;
+}
+.LastField{
+    width: 50%;
+}
+.Adjust{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+@media (max-width:769px){
+    #ApplicationForm .ant-form-item-label {
+        display: flex;
+        align-items: center;
+        padding-bottom: 0px;
+    }
+    #ApplicationForm .ant-form-item{
+        margin-bottom: 0px;
+        width: 100%;
+        padding: 0px 0px;
+    }
+    .Adjust{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .LastField{
+        width: 100%;
+    }
+}
