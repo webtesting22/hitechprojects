@@ -85,7 +85,7 @@ const headeritemthree = [
     headlink: url.machinery,
   },
   {
-    headname: "Form work",
+    headname: "Formwork",
     headlink: url.formwork,
   },
   {
@@ -208,6 +208,7 @@ const Header = () => {
           onAfterOpen={afterOpenModal}
           onRequestClose={closeModal}
           style={window.innerWidth >= 992 ? customStyles : mobilecustomStyles}
+          
           contentLabel="Example Modal"
         >
           {/* <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>

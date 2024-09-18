@@ -41,7 +41,7 @@ const awardscard = [
   {
     src: "Sources/images/awards/7.jpg",
     title: "Safety Award",
-    des: "The Achievement of One Lakh safe man-hours without lost time injuiry (LTI)",
+    des: "The Achievement of One Lakh safe man-hours without lost time injury (LTI)",
   },
   {
     src: "Sources/images/awards/8.jpg",
@@ -61,7 +61,7 @@ const awardscard = [
   {
     src: "Sources/images/awards/11.JPG",
     title: "Safety Award",
-    des: "The winning of ICI-UltraTech Outstanding Stucture Awards 2020 (Regional) in the category Indistrial Buildings",
+    des: "The winning of ICI-UltraTech Outstanding Stucture Awards 2020 (Regional) in the category Industrial Buildings",
   },
   {
     src: "Sources/images/awards/12.jpg",

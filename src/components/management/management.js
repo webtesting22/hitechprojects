@@ -43,7 +43,7 @@ const coremanagment = [
     coredes: "DGM",
     coreedu: "(B.E Civil)",
     corepara:
-      "With over 25 years of extensive experience in the civil construction sector, he has successfully executed a diverse portfolio of residential, commercial, and industrial projects. His tenure includes collaborations with reputable companies such as JMC, K Raheja Corp., and Arvind Group. As a key member of Hitech family, he has showcased technical proficiency, an ability to meet deadlines, and a commitment to quality. His well-established network has been a boon for the company, aiding in resource enhancement and rapid project mobilization.",
+      "With over 25 years of extensive experience in the civil construction sector, he has successfully executed a diverse portfolio of residential, commercial and industrial projects. His tenure includes collaborations with reputable companies such as JMC, K Raheja Corp. and Arvind Group. As a key member of Hitech family, he has showcased technical proficiency, an ability to meet deadlines and a commitment to quality. His well-established network has been a boon for the company, aiding in resource enhancement and rapid project mobilization.",
   },
   {
     src: "Sources/images/management/team/5.png",
@@ -181,9 +181,9 @@ const Management = () => {
                 >
                   <p className="has-text-left">
                     Sharing a common ethos of Service, Detail, Experience,
-                    Integrity, and Quality with our clients, the Hitech team has
+                    Integrity and Quality with our clients, the Hitech team has
                     been lauded for their collaborative spirit and individual
-                    excellence in construction, thought leadership, and career
+                    excellence in construction, thought leadership and career
                     advancement. Their role is pivotal to Hitech's current
                     position and ongoing success.
                   </p>
@@ -339,7 +339,7 @@ const Management = () => {
             </p>
             <p className="is-size-4 has-text-centered mb-5 has-text-weight-semibold">
               Hitech has always believed in building an inclusive and diverse
-              culture where colleagues feel valued, challenged, motivated, and
+              culture where colleagues feel valued, challenged, motivated and
               treated fairly by nurturing :-
             </p>
           </div>

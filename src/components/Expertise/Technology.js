@@ -201,7 +201,7 @@ const Technology = () => {
                     <span className="has-text-weight-semibold">
                       Instant notification based Approval&nbsp;
                     </span>
-                    functionality so work never stops.
+                    functionality, so work never stops.
                   </p>
                 </Space>
                 <Space direction="horizontal" className="mt-5 blue_color">
@@ -290,7 +290,7 @@ const Technology = () => {
                     </div>
                     <p className="ml-2">
                       <span className="has-text-weight-semibold">
-                        Monitoring Preventive Maintenaince &nbsp;
+                        Monitoring Preventive Maintenance&nbsp;
                       </span>
                       by tracking their run-time and managing health status.
                     </p>

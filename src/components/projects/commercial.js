@@ -74,7 +74,7 @@ const commerciallist = [
 ];
 const commercialcompleted = [
   {
-    src: "Sources/images/prouctlist/commercial/ongoing/1-1.jpg",
+    src: "Sources/images/prouctlist/commercial/ongoing/TheProfit.jpeg",
     title: "THE PROFIT",
     content: "...",
     client: "The Building Company",

@@ -132,7 +132,7 @@ const servicecard = [
   {
     icon: <GiTeePipe className="is-size-1" />,
     title: "MEP WORK",
-    des: "We execute electrical work, fire fighting work, plumbing work, etc, by engaging specialised and competent agencies.",
+    des: "We execute electrical work, fire fighting work, plumbing work, etc. by engaging specialised and competent agencies.",
   },
   {
     icon: <BsHouse className="is-size-1" />,

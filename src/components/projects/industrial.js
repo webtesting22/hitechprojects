@@ -3,25 +3,25 @@ import React, { useState } from "react";
 import Header from "../header/header";
 
 const industriallist = [
-  {
-    src: "",
-    title: "Harsha Enginners Manufactuing Plan",
-    segment: "Industrial",
-    client: "HARSHA ENGINEERS ADVANTEK LIMITED",
-    location: "Bhayala, Ahmedabad",
-    architect: "Shah & Talati",
-    consultant: "Shah & Talati",
-    projectSize: "- Sq. ft.",
-    projectDes: "-",
-    projectYear: "2022-Current",
-    scope: "Civil, Plumbing & Finishing , Aluminium & Infra Works for the Manufacturing Plant & Associated Works ",
-  },
+  // {
+  //   src: "",
+  //   title: "Harsha Engineers Manufactuing Plan",
+  //   segment: "Industrial",
+  //   client: "HARSHA ENGINEERS ADVANTEK LIMITED",
+  //   location: "Bhayala, Ahmedabad",
+  //   architect: "Shah & Talati",
+  //   consultant: "Shah & Talati",
+  //   projectSize: "- Sq. ft.",
+  //   projectDes: "-",
+  //   projectYear: "2022-Current",
+  //   scope: "Civil, Plumbing & Finishing , Aluminium & Infra Works for the Manufacturing Plant & Associated Works ",
+  // },
   {
     src: "Sources/images/prouctlist/industrial/ongoing/KHS.jpeg",
-    title: "KHS Machinery Expansion works",
+    title: "KHS MACHINERY EXPANSION WORKS",
     segment: "Industrial",
     client: "KHS MACHINERY PVT. LTD.",
-    location: "near Hirapur cross road, vatva-mahemdavad highway ",
+    location: "Near Hirapur cross road, vatva-mahemdavad highway ",
     architect: "S3M Design",
     consultant: "Anandjiwala Technical consultancy (ATC)",
     projectSize: "- Sq. ft.",
@@ -30,8 +30,8 @@ const industriallist = [
     scope: "Civil, Plumbing & Finishing , Aluminium & Infra Works for expansion project of Plant Building",
   },
   {
-    src: "",
-    title: "Construction of 66kV SS at Katargam",
+    src: "Sources/images/prouctlist/industrial/ongoing/Asset1.png",
+    title: "CONSTRUCTION OF 66kV SS AT Katargam",
     segment: "Industrial",
     client: "Torrent Power Ltd",
     location: "Katargam, Surat",
@@ -471,7 +471,7 @@ const Industrial = () => {
 
                           <div className="propertylist_content p-4">
                             <div className="pt-2">
-                              <p className="is-size-4 has-text-centered blue_color has-text-weight-semibold">
+                              <p className="is-size-4 has-text-centered blue_color has-text-weight-semibold text-uppercase">
                                 {item.title}
                               </p>
                             </div>

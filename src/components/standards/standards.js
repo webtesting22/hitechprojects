@@ -89,7 +89,7 @@ const Standards = () => {
                     continual improvement, a philosophy that keeps us at the
                     forefront of the industry. Our reputation for quality is
                     further bolstered by our comprehensive strategy that
-                    encompasses advanced processes, tools, and training aimed at
+                    encompasses advanced processes, tools and training aimed at
                     enhancing quality issue identification and resolution. We
                     also prioritize human factors that drive the achievement of
                     'right the first time' quality, ensuring that our services
@@ -97,7 +97,7 @@ const Standards = () => {
                   </p>
                   <div className="mt-4">
                     <li>
-                      Provision of processes, tools, training, and expertise to
+                      Provision of processes, tools, training and expertise to
                       improve the identification and resolution of quality
                       issues.
                     </li>
@@ -474,10 +474,10 @@ const Standards = () => {
               <Col xxl={12} lg={12} md={24} sm={24} xs={24} className="my-auto">
                 <div>
                   <p className="has-text-left">
-                    Safety is a cornerstone value at Hitech, and we are
+                    Safety is a cornerstone value at Hitech and we are
                     committed to offering a secure working environment for our
                     employees as well as our contractors and subcontractors. By
-                    encouraging responsible behavior, good judgment, and due
+                    encouraging responsible behavior, good judgment and due
                     diligence, we have significantly reduced the rate of
                     workplace incidents. From the very beginning, we have
                     focused on creating a culture that aims for zero injuries.
@@ -747,7 +747,7 @@ const Standards = () => {
                 Training And Development
               </p>
               <p className="has-text-centered">
-                Focused on enhancing competence in technical, managerial, and
+                Focused on enhancing competence in technical, managerial and
                 behavioral facets, Hitech regularly organizes training programs
                 aimed at all levels of the organization. Our objective is to
                 narrow the divide between existing proficiencies and the desired

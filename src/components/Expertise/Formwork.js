@@ -111,7 +111,7 @@ const Formwork = () => {
               implementation requirements of our projects. Based on the formwork
               scheme, the deployment schedule is firmed up to meet the
               construction sequence at site. It ensures proper utilisation of
-              formwork,achieving cycle time, productivity targets, handling,
+              formwork, achieving cycle time, productivity targets, handling,
               cleaning and upkeep of formwork materials.
               <br />
               <br /> For each concrete structure and component, Hitech deploys
@@ -120,7 +120,7 @@ const Formwork = () => {
               <br />
               Hitech makes sure the kind of materials and formworks used for
               every project are based after considering on-site efficiency of
-              production, health , safety and environmental issues, driving
+              production, health, safety and environmental issues, driving
               towards ever-increasing efficiency.
             </p>
           </div>

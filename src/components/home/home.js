@@ -93,7 +93,7 @@ const imagegallery = [
   {
     src: "Sources/images/gallery/3.png",
     title: "workspace",
-    des: "“We keep moving forward, opening new doors, and doing new things, because we’re curious and curiosity keeps leading us down new paths.”",
+    des: "“We keep moving forward, opening new doors and doing new things because we’re curious and curiosity keeps leading us down new paths.”",
   },
   {
     src: "Sources/images/gallery/4.png",
@@ -124,7 +124,7 @@ const imagegallery = [
   {
     src: "Sources/images/gallery/9.png",
     title: "Training room",
-    des: "Success in business requires: Training, Discipline, Hard Work",
+    des: "Success in business requires: Training, Discipline, Hard Work.",
   },
 ];
 const statslist = [
@@ -357,7 +357,7 @@ const Home = () => {
                     like ISO 9001:2015 and ISO 45001, we set the bar high for
                     quality and safety. Our portfolio is diverse, covering
                     industrial constructions, residential developments,
-                    commercial properties, and institutional buildings. <br />
+                    commercial properties and institutional buildings. <br />
                     <br />
                     We are honored to be classified as a 'AA' special category -
                     I (Buildings) contractor by the Government of Gujarat. Our
