@@ -78,7 +78,7 @@ const Careers = () => {
                   </div>
                 </div>
               </Col> */}
-              <Col
+             {/* <Col
                 xxl={8}
                 lg={8}
                 md={12}
@@ -138,7 +138,7 @@ const Careers = () => {
                   </div>
                 </div>
               </Col>
-
+            */}
             </Row>
           </div>
           <div className="section_padding"></div>

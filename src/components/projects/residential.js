@@ -2,20 +2,20 @@ import { Col, Image, Row } from "antd";
 import React, { useEffect, useState } from "react";
 import Header from "../header/header";
 const industriallist = [
-  {
-    src: "",
-    title: "Dharohar",
-    content: "...",
-    segment: "Residential",
-    client: "MAHICA PROCON PRIVATE LIMITED",
-    location: "Vaishnovdevi Circle, Ahmedabad",
-    projectSize: "16,92,477 Sq. ft.",
-    projectDes: "-",
-    projectYear: "2024-Current",
-    architect: "Hiren Patel & Associates",
-    consultant: "Setu Infrastructure",
-    scope: "RCC Frame works, Block work, Plaster work for Residential Building 3B+G+22 Floors (5 Towers).",
-  },
+  // {
+  //   src: "",
+  //   title: "Dharohar",
+  //   content: "...",
+  //   segment: "Residential",
+  //   client: "MAHICA PROCON PRIVATE LIMITED",
+  //   location: "Vaishnovdevi Circle, Ahmedabad",
+  //   projectSize: "16,92,477 Sq. ft.",
+  //   projectDes: "-",
+  //   projectYear: "2024-Current",
+  //   architect: "Hiren Patel & Associates",
+  //   consultant: "Setu Infrastructure",
+  //   scope: "RCC Frame works, Block work, Plaster work for Residential Building 3B+G+22 Floors (5 Towers).",
+  // },
   {
     src: "Sources/images/prouctlist/residential/ongoing/supercity.jpeg",
     title: "Supercity Luxuria 3",

@@ -3,22 +3,22 @@ import React, { useState } from "react";
 import Header from "../header/header";
 
 const institutionalprojectslist = [
-  {
-    src: "",
-    title: "Anubhav School",
-    content:
-      "Anand Niketan is a School having 50,000 Sqft built up area in Sughad, Ahmedabad with various facilities including Special Room, Sports Arenas & Activity Rooms.",
-    segment: "Education",
-    client: "Pilak Shah",
-    location: "Sanand, Ahmedabad",
-    projectSize: "75,704 Sq. ft.",
-    projectDes: "8 Floors, 43 Meters",
-    projectYear: "2024 - Current",
-    architect: "Kakani Associates",
-    consultant: "Japan Shah Consulting Engineers",
-    scope:
-      "Civil Works Excavation, Backfiling, pile Foundation work, masonary, plaster, flooring, painting for School Building",
-  },
+  // {
+  //   src: "",
+  //   title: "Anubhav School",
+  //   content:
+  //     "Anand Niketan is a School having 50,000 Sqft built up area in Sughad, Ahmedabad with various facilities including Special Room, Sports Arenas & Activity Rooms.",
+  //   segment: "Education",
+  //   client: "Pilak Shah",
+  //   location: "Sanand, Ahmedabad",
+  //   projectSize: "75,704 Sq. ft.",
+  //   projectDes: "8 Floors, 43 Meters",
+  //   projectYear: "2024 - Current",
+  //   architect: "Kakani Associates",
+  //   consultant: "Japan Shah Consulting Engineers",
+  //   scope:
+  //     "Civil Works Excavation, Backfiling, pile Foundation work, masonary, plaster, flooring, painting for School Building",
+  // },
   
 ];
 const institutionalprojectscompleted = [
