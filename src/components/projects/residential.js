@@ -18,7 +18,7 @@ const industriallist = [
   // },
   {
     src: "Sources/images/prouctlist/residential/ongoing/supercity.jpeg",
-    title: "Supercity Luxuria 3",
+    title: "SUPERCITY LUXURIA 3",
     content: "...",
     segment: "Residential",
     client: "Shrinivas Organisors Pvt ltd.",
@@ -28,11 +28,11 @@ const industriallist = [
     projectYear: "2024-Current",
     architect: "9th Street Architech",
     consultant: "NK shah Consultant",
-    scope: "RCC Frame works, Block work, Plaster works for Residential  Building 3 basement + G.F + 20 Floors (2 Towers)",
+    scope: "RCC Frame works, Block work, Plaster works for Residential Building 3 basement + G.F + 20 Floors (2 Towers).",
   },
   {
     src: "Sources/images/prouctlist/residential/ongoing/Ikaria.png",
-    title: "Ikaria - Easy Living",
+    title: "IKARIA - EASY LIVING",
     content: "...",
     segment: "Residential",
     client: "Alinea Properties LLP",
@@ -42,7 +42,7 @@ const industriallist = [
     projectYear: "2022-Current",
     architect: "Studio ARA",
     consultant: "N K Shah Consulting LLP",
-    scope: "Civil Structure (Core & Shell) and Finishing works",
+    scope: "Civil Structure (Core & Shell) and Finishing works.",
   },
   // {
   //   src: "Sources/images/prouctlist/residential/ongoing/Gharana.png",
@@ -98,7 +98,7 @@ const industriallist = [
     projectYear: "2023-Current",
     architect: "AAA Architects",
     consultant: "HNBS Associates",
-    scope: "RCC Frame works, Block work, Plaster work",
+    scope: "RCC Frame works, Block work, Plaster work.",
   },
   {
     src: "Sources/images/prouctlist/residential/ongoing/2-2.jpg",
@@ -112,7 +112,7 @@ const industriallist = [
     projectYear: "2023-Current",
     architect: "Studio Mansi Shah",
     consultant: "HNBS Associates",
-    scope: "Construction of 02 Basement + G.F + 2 Podium + HP + 20 floors of Residential Building ",
+    scope: "Construction of 02 Basement + G.F + 2 Podium + HP + 20 floors of Residential Building.",
   },
   // {
   //   // src: "Sources/images/prouctlist/residential/ongoing/1.png",
@@ -184,7 +184,7 @@ const industriallist = [
     architect: "ADS Architect",
     consultant: "Ducon Consultants",
     scope:
-      "Structural Work, Diaphragm Wall, RCC Framework, Masonry, Plaster",
+      "Structural Work, Diaphragm Wall, RCC Framework, Masonry, Plaster.",
   },
   {
     src: "Sources/images/prouctlist/residential/ongoing/3.png",
@@ -199,7 +199,7 @@ const industriallist = [
     projectYear: "2022-Current",
     architect: "H M Architects",
     consultant: "Setu Infrastructure",
-    scope: "RCC Framework, Masonry, Plaster",
+    scope: "RCC Framework, Masonry, Plaster.",
   },
   
   {
@@ -215,7 +215,7 @@ const industriallist = [
     architect: "H M Architects",
     consultant: "Setu Infrastructure",
     scope:
-      "Structural Work, Diaphragm Wall, RCC Framework, Masonry, Plaster",
+      "Structural Work, Diaphragm Wall, RCC Framework, Masonry, Plaster.",
   },
 ];
 const industrialcompleted = [
@@ -232,7 +232,7 @@ const industrialcompleted = [
     architect: "H M Architects",
     consultant: "Setu Infrastructure",
     scope:
-      "Structural Work, Diaphragm Wall, RCC Framework, Masonry, Plaster",
+      "Structural Work, Diaphragm Wall, RCC Framework, Masonry, Plaster.",
   },
   {
     src: "Sources/images/prouctlist/residential/completed/12.jpeg",
@@ -248,7 +248,7 @@ const industrialcompleted = [
     architect: "PVDRS, Ahmedabad",
     consultant: "PVDRS, Ahmedabad",
     scope:
-      "Structural Work, RCC Framework, Masonry, Plaster, MEP, Finishing Work",
+      "Structural Work, RCC Framework, Masonry, Plaster, MEP, Finishing Work.",
   },
   {
     src: "Sources/images/prouctlist/residential/ongoing/7.png",
@@ -263,7 +263,7 @@ const industrialcompleted = [
     projectYear: "2022",
     architect: "Scarlett Design",
     consultant: "Ducon Consultant Pvt Ltd",
-    scope: "Structural Work, RCC Framework, MEP, Finishing Work",
+    scope: "Structural Work, RCC Framework, MEP, Finishing Work.",
   },
   {
     src: "Sources/images/prouctlist/residential/ongoing/6.png",
@@ -277,7 +277,7 @@ const industrialcompleted = [
     projectYear: "2022",
     architect: "9th Street Architects",
     consultant: "Bhoomi Consultants",
-    scope: "Earthwork, Structural Work, RCC Framework, Masonry, Plaster",
+    scope: "Earthwork, Structural Work, RCC Framework, Masonry, Plaster.",
   },
   {
     src: "Sources/images/prouctlist/residential/completed/1.png",
@@ -291,7 +291,7 @@ const industrialcompleted = [
     projectYear: "2022",
     architect: "Jagrut And Partners LLP",
     consultant: "Alpha consultancy services",
-    scope: "Structural Work, RCC Framework, MEP, Finishing Work",
+    scope: "Structural Work, RCC Framework, MEP, Finishing Work.",
   },
   {
     src: "Sources/images/prouctlist/residential/completed/2.png",
@@ -305,7 +305,7 @@ const industrialcompleted = [
     projectYear: "2020",
     architect: "Placekinesis Associates",
     consultant: "Setu Infrastructure",
-    scope: "RCC Framework, Masonry ,Plaster, MEP, Finishing Work",
+    scope: "RCC Framework, Masonry ,Plaster, MEP, Finishing Work.",
   },
   {
     src: "Sources/images/prouctlist/residential/completed/3.png",
@@ -319,7 +319,7 @@ const industrialcompleted = [
     projectYear: "2019",
     architect: "Hiren Patel Architects",
     consultant: "Setu Infrastructure",
-    scope: "RCC Framework, Masonry, Plaster",
+    scope: "RCC Framework, Masonry, Plaster.",
   },
   {
     src: "Sources/images/prouctlist/residential/completed/4.png",
@@ -333,7 +333,7 @@ const industrialcompleted = [
     projectYear: "2018",
     architect: "Design Module",
     consultant: "N.K. Shah Consulting Engineers LLP",
-    scope: "RCC Framework, Masonry , Plaster, Finishing Work",
+    scope: "RCC Framework, Masonry , Plaster, Finishing Work.",
   },
   {
     src: "Sources/images/prouctlist/residential/completed/5.png",
@@ -506,7 +506,7 @@ const Residential = () => {
 
                           <div className="propertylist_content p-4">
                             <div className="pt-2">
-                              <p className="is-size-4 has-text-centered blue_color has-text-weight-semibold text-uppercase">
+                              <p className="is-size-4 has-text-centered blue_color has-text-weight-semibold">
                                 {item.title}
                               </p>
                             </div>

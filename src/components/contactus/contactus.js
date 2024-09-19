@@ -166,7 +166,7 @@ const Contact = () => {
                     rules={[
                       {
                         required: true,
-                        message: "Please Enter valid name",
+                        message: "Please Enter Valid Name!",
                         pattern: /^[A-Za-z\s\b]+$/,
                       },
                     ]}
@@ -178,7 +178,7 @@ const Contact = () => {
                     rules={[
                       {
                         required: true,
-                        message: "Please Enter valid Mobile",
+                        message: "Please Enter Valid Mobile!",
                         pattern: /^[0-9]{10}$/,
                       },
                     ]}
@@ -190,7 +190,7 @@ const Contact = () => {
                     rules={[
                       {
                         required: true,
-                        message: "Please Enter valid email",
+                        message: "Please Enter Valid Email Address!",
                         pattern: /^[A-Za-z0-9._-]+@[A-Za-z]+.[A-Za-z]+$/,
                       },
                     ]}
@@ -198,7 +198,7 @@ const Contact = () => {
                     <Input placeholder="Your Email" className="form_item" />
                   </Form.Item>
                   <Form.Item>
-                    <TextArea rows={1} placeholder="TextArea" />
+                    <TextArea rows={1} placeholder="Your Message Here" />
                   </Form.Item>
                   <Form.Item>
                     <Button

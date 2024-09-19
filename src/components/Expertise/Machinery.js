@@ -94,7 +94,7 @@ const Machinery = () => {
             </div>
           </div>
         </div>
-        <div className="section_padding"></div>
+        {/* <div className="section_padding"></div> */}
       </section>
       <section className="section-4">
         <div className="container">

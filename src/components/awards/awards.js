@@ -46,17 +46,17 @@ const awardscard = [
   {
     src: "Sources/images/awards/8.jpg",
     title: "Safety Award",
-    des: "Achivement Award for construction health safety & Environment",
+    des: "Achievement Award for construction health safety & Environment",
   },
   {
     src: "Sources/images/awards/9.jpg",
     title: "Safety Award",
-    des: "The Achivement of 1 million safe man-hours for their propjects ONE49 site",
+    des: "The Achievement of 1 million safe man-hours for their projects ONE49 site",
   },
   {
     src: "Sources/images/awards/10.jpg",
     title: "Safety Award",
-    des: "The Achivement of Half million safe man-hours for their propjects ONE49 site",
+    des: "The Achievement of Half million safe man-hours for their projects ONE49 site",
   },
   {
     src: "Sources/images/awards/11.JPG",

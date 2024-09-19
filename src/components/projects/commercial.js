@@ -28,7 +28,7 @@ const commerciallist = [
     projectYear: "2022-Current",
     architect: "99 Studio",
     consultant: "Shreeji Consultant",
-    scope: "Civil Construction with Finishing Work of commercial building of B+G+2 storey (2 Blocks).",
+    scope: "Civil Construction with Finishing Work of commercial building of B + G + 2 storey (2 Blocks).",
   },
   {
     src: "Sources/images/prouctlist/commercial/ongoing/1-3.png",
@@ -64,7 +64,7 @@ const commerciallist = [
     client: "Sharnam Metrolinks LLP",
     location: "Khokhara, Ahmedabad",
     projectSize:
-      "4,91,000 Sq. ft. 7 Buildings (B+G+4 Floors) 2 Buildings (B+G+5 Floors)",
+      "4,91,000 Sq. ft. 7 Buildings (B + G + 4 Floors) 2 Buildings (B + G + 5 Floors)",
     projectDes: "5 Floors, 22.5 Meters",
     projectYear: "2022-Current",
     architect: "99 Studio",

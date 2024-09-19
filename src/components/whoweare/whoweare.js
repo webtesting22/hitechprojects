@@ -29,19 +29,19 @@ const managementcard = [
 const aboutlist = [
   {
     title: "Qualified Leadership",
-    des: "Hitech’s top management includes highly qualified Civil Engineers who knows not only the business of construction but also the craft of building. This helps them understand the finer nuances of construction and turn clients’ visions into realities ",
+    des: "Hitech’s top management includes highly qualified Civil Engineers who knows not only the business of construction but also the craft of building. This helps them understand the finer nuances of construction and turn clients’ visions into realities.",
   },
   {
     title: "Adopting the best",
-    des: "Hitech has been quick to adopt best practices in the industry in systems and processes. It has excellent project planningand monitoring systems and well established quality and safety protocols",
+    des: "Hitech has been quick to adopt best practices in the industry in systems and processes. It has excellent project planningand monitoring systems and well established quality and safety protocols.",
   },
   {
     title: "Qualified and Experienced Execution Team",
-    des: "Qualified leaders make qualified teams. Hitech has invested in its people and created trained professionals from the smallest to highest levels of the organisation so that good decisions are made at each level ",
+    des: "Qualified leaders make qualified teams. Hitech has invested in its people and created trained professionals from the smallest to highest levels of the organisation so that good decisions are made at each level.",
   },
   {
     title: "Project Specific Approach",
-    des: "Even as it grows, Hitech retains some of the best advantages of being flexible. With a project-specific working approach, it is able to adapt to the needs of the clients and respond to emergent needs of the project",
+    des: "Even as it grows, Hitech retains some of the best advantages of being flexible. With a project-specific working approach, it is able to adapt to the needs of the clients and respond to emergent needs of the project.",
   },
   {
     title: "Constant Technological Upgradation",
@@ -552,7 +552,7 @@ const Whoweare = () => {
                                 Moved to 350 sqft office premises
                                 <br /> Bagged 1st green field industrial project
                                 of Export Oriented Manufacturing facility for
-                                Harsha Engineers
+                                Harsha Engineers.
                               </p>
                             </div>
                           </div>

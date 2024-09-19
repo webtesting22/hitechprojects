@@ -17,7 +17,7 @@ const customStyles = {
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
     width: "40%",
-    zIndex: "1000",
+    zIndex: "10000000",
     border: "1px solid #0d2e61",
   },
 };
@@ -30,7 +30,7 @@ const mobilecustomStyles = {
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
     width: "85%",
-    zIndex: "1000",
+    zIndex: "1000000",
   },
 };
 const headeritemone = [
@@ -188,10 +188,9 @@ const Header = () => {
     setIsOpen(true);
   }
 
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    subtitle.style.color = "#f00";
-  }
+  // function afterOpenModal() {
+  //   subtitle.style.color = "#f00";
+  // }
 
   function closeModal() {
     setIsOpen(false);
@@ -205,7 +204,7 @@ const Header = () => {
         </button>
         <Modal
           isOpen={modalIsOpen}
-          onAfterOpen={afterOpenModal}
+          // onAfterOpen={afterOpenModal}
           onRequestClose={closeModal}
           style={window.innerWidth >= 992 ? customStyles : mobilecustomStyles}
           

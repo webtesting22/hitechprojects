@@ -194,7 +194,7 @@ const Footer = () => {
               <div className="first_col">
                 <div className="footer_line">
                   <h3 className="is-size-5 has-text-weight-semibold pb-4 mt-3 has-text-white footer_heading">
-                    QUICK LINKS
+                    Quick Links
                   </h3>
                 </div>
                 <div>

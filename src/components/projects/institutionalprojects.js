@@ -115,8 +115,8 @@ const institutionalprojectscompleted = [
 ];
 
 const Institutionalprojects = () => {
-  const [isOngoing, setIsOngoing] = useState(true);
-  const [isCompleted, setIsCompleted] = useState(false);
+  const [isOngoing, setIsOngoing] = useState(false);
+  const [isCompleted, setIsCompleted] = useState(true);
 
   return (
     <>

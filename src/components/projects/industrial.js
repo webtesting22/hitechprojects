@@ -27,11 +27,11 @@ const industriallist = [
     projectSize: "- Sq. ft.",
     projectDes: "-",
     projectYear: "2022-Current",
-    scope: "Civil, Plumbing & Finishing , Aluminium & Infra Works for expansion project of Plant Building",
+    scope: "Civil, Plumbing & Finishing , Aluminium & Infra Works for expansion project of Plant Building.",
   },
   {
     src: "Sources/images/prouctlist/industrial/ongoing/Asset1.png",
-    title: "CONSTRUCTION OF 66kV SS AT Katargam",
+    title: "CONSTRUCTION OF 66kV SS AT KATARGAM",
     segment: "Industrial",
     client: "Torrent Power Ltd",
     location: "Katargam, Surat",
@@ -40,7 +40,7 @@ const industriallist = [
     projectSize: "69,481  Sq. ft.",
     projectDes: "30 Meters",
     projectYear: "2022-Current",
-    scope: "Civil, Plumbing and Finishing works for Torrent Substation",
+    scope: "Civil, Plumbing and Finishing works for Torrent Substation.",
   },
   
   // {
@@ -60,7 +60,7 @@ const industriallist = [
 const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/industrial/ongoing/1-2.jpeg",
-    title: "Torrent B station at Katargam, Surat",
+    title: "TORRENT B STATION AT KATARGAM, SURAT",
     segment: "Industrial",
     client: "Torrent Power Ltd",
     location: "Katargam, Surat",
@@ -69,7 +69,7 @@ const industrialcompleted = [
     projectSize: "1,11,000  Sq. ft.",
     projectDes: "30 Meters",
     projectYear: "2022",
-    scope: "Civil, Plumbing and Finishing works for Torrent B station",
+    scope: "Civil, Plumbing and Finishing works for Torrent B station.",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/17.jpg",
@@ -466,7 +466,7 @@ const Industrial = () => {
                             className="propertylist_image"
                             style={{ minHeight: "300px" }}
                           >
-                            <img src={item.src} alt="404 - Not Given" />
+                            <Image src={item.src} alt="404 - Not Given" />
                           </div>
 
                           <div className="propertylist_content p-4">
