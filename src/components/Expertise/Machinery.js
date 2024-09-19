@@ -40,7 +40,7 @@ const Machinery = () => {
                   xs={24}
                   className="my-auto"
                 >
-                  <p className="has-text-left mr-4">
+                  <p className="has-text-left m-3">
                     We have established a robust plant and machinery cell that
                     is responsible for repair and management system. The cell
                     also looks after resource planning, selection of right

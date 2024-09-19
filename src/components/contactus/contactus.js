@@ -171,7 +171,7 @@ const Contact = () => {
                       },
                     ]}
                   >
-                    <Input placeholder="Your Name" onc className="form_item" />
+                    <Input placeholder="Your Name(Required)" onc className="form_item" />
                   </Form.Item>
                   <Form.Item
                     name="mobile"
@@ -183,7 +183,7 @@ const Contact = () => {
                       },
                     ]}
                   >
-                    <Input placeholder="Your Mobile" className="form_item" />
+                    <Input placeholder="Your Mobile(Required)" className="form_item" />
                   </Form.Item>
                   <Form.Item
                     name="email"
@@ -195,10 +195,10 @@ const Contact = () => {
                       },
                     ]}
                   >
-                    <Input placeholder="Your Email" className="form_item" />
+                    <Input placeholder="Your Email(Required)" className="form_item" />
                   </Form.Item>
                   <Form.Item>
-                    <TextArea rows={1} placeholder="Your Message Here" />
+                    <TextArea rows={1} placeholder="Your Message" />
                   </Form.Item>
                   <Form.Item>
                     <Button

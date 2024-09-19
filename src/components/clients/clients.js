@@ -123,7 +123,7 @@ const testimonial = [
 
 const Clients = () => {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,

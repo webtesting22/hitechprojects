@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Header from "../header/header";
 
 const commerciallist = [
- 
+
   // {
   //   src: "",
   //   title:"Sharanam Metrolink",
@@ -21,14 +21,14 @@ const commerciallist = [
     src: "Sources/images/prouctlist/commercial/ongoing/1-1.jpeg",
     title: "SHARANAM SQUARE",
     content: "...",
-    client: "SHARANAM SQUARE LLP",
+    client: "Sharanam Square LLP",
     location: "Khokhara, Ahmedabad",
     projectSize: "2,75,000 Sq. ft.",
     projectDes: "2 Floors, 12 Meters",
     projectYear: "2022-Current",
     architect: "99 Studio",
     consultant: "Shreeji Consultant",
-    scope: "Civil Construction with Finishing Work of commercial building of B + G + 2 storey (2 Blocks).",
+    scope: "Civil Construction with Finishing Work of commercial building of B + G + 2 storey (2 Blocks)",
   },
   {
     src: "Sources/images/prouctlist/commercial/ongoing/1-3.png",
@@ -41,9 +41,9 @@ const commerciallist = [
     projectYear: "2022-Current",
     architect: "Neha Consultants",
     consultant: "J W Consultants LLP",
-    scope: "Civil works, Masonry & Plaster, and Waterproofing.",
+    scope: "Civil works, Masonry & Plaster, and Waterproofing",
   },
- 
+
   {
     src: "Sources/images/prouctlist/commercial/ongoing/1-4.png",
     title: "FLEXONE",
@@ -55,7 +55,7 @@ const commerciallist = [
     projectYear: "2022-Current",
     architect: "Studio ARA",
     consultant: "N K Shah Consulting LLP",
-    scope: " RCC Framework, Finishing Work.",
+    scope: " RCC Framework, Finishing Work",
   },
   {
     src: "Sources/images/prouctlist/commercial/ongoing/1-5.JPEG",
@@ -69,7 +69,7 @@ const commerciallist = [
     projectYear: "2022-Current",
     architect: "99 Studio",
     consultant: "S3M Design Consultants LLP",
-    scope: "Structual Work, RCC Framework, Masonry ,Plaster , Painting.",
+    scope: "Structual Work, RCC Framework, Masonry ,Plaster , Painting",
   },
 ];
 const commercialcompleted = [
@@ -84,7 +84,7 @@ const commercialcompleted = [
     projectYear: "2022",
     architect: "Tathastu",
     consultant: "SNV Engineers",
-    scope: " RCC Framework, Masonry,Plaster.",
+    scope: " RCC Framework, Masonry,Plaster",
   },
   // {
   //   src: "Sources/images/prouctlist/commercial/ongoing/2.png",
@@ -160,7 +160,7 @@ const commercialcompleted = [
     projectYear: "2022",
     architect: "Bentel Associates",
     consultant: "TPC Technical Projects Consultants",
-    scope: "RCC Framework , Masonry, Plaster, Fabrication.",
+    scope: "RCC Framework , Masonry, Plaster, Fabrication",
   },
   {
     src: "Sources/images/prouctlist/commercial/completed/2.png",
@@ -175,7 +175,7 @@ const commercialcompleted = [
     projectYear: "2021",
     architect: "99 Studio",
     consultant: "P-Cube Consultant",
-    scope: "RCC Framework, Masonry ,Plaster.",
+    scope: "RCC Framework, Masonry ,Plaster",
   },
   {
     src: "Sources/images/prouctlist/commercial/completed/13.jpg",
@@ -190,7 +190,7 @@ const commercialcompleted = [
     projectYear: "2021",
     architect: "HM Architect",
     consultant: "SETU Infrastructure",
-    scope: "RCC Framework , Masonry , Plaster , MEP,Finishing Work.",
+    scope: "RCC Framework , Masonry , Plaster , MEP,Finishing Work",
   },
   {
     src: "Sources/images/prouctlist/commercial/completed/14.jpg",
@@ -205,7 +205,7 @@ const commercialcompleted = [
     projectYear: "2021",
     architect: "99 Studio",
     consultant: "Millimeter Designs",
-    scope: "RCC Framework, Masonry ,Plaster,Finishing Work.",
+    scope: "RCC Framework, Masonry ,Plaster,Finishing Work",
   },
   {
     src: "Sources/images/prouctlist/commercial/completed/5.png",
@@ -213,14 +213,14 @@ const commercialcompleted = [
     content:
       "A world class business centre designed to harness opportunities with its five Towers comprising of 2B+G+4 measuring upto a total of 4,25,000 sq ft.",
     segment: "Commercial",
-    client: "SHARANAM SMART SPACE LLP",
+    client: "Sharanam Smart Space LLP",
     location: "Amraiwadi, Ahmedabad",
     projectSize: "4,25,000 Sq. ft.",
     projectDes: "4 Floors, 20 Meters",
     projectYear: "2019",
     architect: "99 studio",
     consultant: "Millimeter designs",
-    scope: "RCC Framework,Structural Work , Finishing Work.",
+    scope: "RCC Framework,Structural Work , Finishing Work",
   },
   {
     src: "Sources/images/prouctlist/commercial/completed/6.jpg",
@@ -235,7 +235,7 @@ const commercialcompleted = [
     projectYear: "2019",
     architect: "ADS Architects Pvt Ltd",
     consultant: "N.K. Shah Consulting Engineers LLP",
-    scope: "RCC Framework, Masonry ,Plaster.",
+    scope: "RCC Framework, Masonry ,Plaster",
   },
   {
     src: "Sources/images/prouctlist/commercial/completed/7.png",
@@ -250,7 +250,7 @@ const commercialcompleted = [
     projectYear: "2019",
     architect: "INI Design Studio",
     consultant: "Ducon Consultant Pvt Ltd",
-    scope: "RCC Framework, Masonry ,Plaster.",
+    scope: "RCC Framework, Masonry ,Plaster",
   },
   {
     src: "Sources/images/prouctlist/commercial/completed/8.png",
@@ -265,7 +265,7 @@ const commercialcompleted = [
     projectYear: "2018",
     architect: "ADS Architect Pvt Ltd",
     consultant: "Ducon Consultant Pvt Ltd",
-    scope: "RCC Framework, Masonry ,Plaster.",
+    scope: "RCC Framework, Masonry ,Plaster",
   },
   {
     src: "Sources/images/prouctlist/commercial/completed/9.png",
@@ -280,7 +280,7 @@ const commercialcompleted = [
     projectYear: "2018",
     architect: "ADS Architect Pvt Ltd",
     consultant: "N.K. Shah Consulting Engineers LLP",
-    scope: "RCC Framework, Masonry ,Plaster.",
+    scope: "RCC Framework, Masonry ,Plaster",
   },
   {
     src: "Sources/images/prouctlist/commercial/completed/10.png",
@@ -294,7 +294,7 @@ const commercialcompleted = [
     projectYear: "2017",
     architect: "Design Studio",
     consultant: "N.K. Shah Consulting Engineers LLP",
-    scope: "RCC Framework, Masonry ,Plaster.",
+    scope: "RCC Framework, Masonry ,Plaster",
   },
   {
     src: "Sources/images/prouctlist/commercial/completed/11.png",
@@ -309,7 +309,7 @@ const commercialcompleted = [
     projectYear: "2017",
     architect: "ADS Architects Pvt Ltd",
     consultant: "N.K. Shah Consulting Engineers LLP",
-    scope: "RCC Framework, Masonry ,Plaster,Finishing Work.",
+    scope: "RCC Framework, Masonry ,Plaster,Finishing Work",
   },
   // {
   //   src: "Sources/images/prouctlist/commercial/completed/11.png",
@@ -339,7 +339,7 @@ const commercialcompleted = [
     projectYear: "2014",
     architect: "ADS Architects Pvt Ltd",
     consultant: "N.K. Shah Consulting Engineers LLP",
-    scope: "RCC Framework, Masonry ,Plaster.",
+    scope: "RCC Framework, Masonry ,Plaster",
   },
   // {
   //   src: "Sources/images/prouctlist/commercial/completed/12.png",
@@ -443,7 +443,9 @@ const Commercial = () => {
                           style={{ minHeight: "650px" }}
                         >
                           <div className="propertylist_image">
-                            <Image src={item.src} alt="404 - Not Given" />
+                            <Image src={item.src} alt="404 - Not Given" 
+                            />
+
                           </div>
 
                           <div className="propertylist_content p-4">

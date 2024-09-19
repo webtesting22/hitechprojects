@@ -27,7 +27,7 @@ const Csr = () => {
           <div className="section_padding"></div>
           <div className="container">
             <div>
-              <p className="is-size-5 mt-3">
+              <p className="is-size-5 mt-3" style={{marginLeft:"3%"}}>
                 Hitech takes its role as a socially responsible corporate
                 citizen seriously, with a strong commitment to contributing to
                 the well-being of the community. We allocate resources

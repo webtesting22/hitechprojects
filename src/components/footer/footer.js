@@ -190,7 +190,7 @@ const Footer = () => {
         {/* <div className="section_padding"></div> */}
         <div className="container">
           <Row style={{ display: "flex", justifyContent: "center" }}>
-            <Col xxl={8} lg={8} md={12} sm={24} xs={24}>
+            <Col xxl={8} lg={12} md={12} sm={24} xs={24}>
               <div className="first_col">
                 <div className="footer_line">
                   <h3 className="is-size-5 has-text-weight-semibold pb-4 mt-3 has-text-white footer_heading">
@@ -278,7 +278,7 @@ const Footer = () => {
             </Col>
             <Col
               xxl={8}
-              lg={8}
+              lg={12}
               md={12}
               sm={24}
               xs={24}
@@ -413,7 +413,7 @@ const Footer = () => {
         </div>
         <div className="container">
           <Row style={{ display: "flex", justifyContent: "center" }}>
-            <Col xxl={8} lg={8} md={12} sm={24} xs={24}>
+            <Col xxl={8} lg={12} md={12} sm={24} xs={24}>
               <div className="third_col">
                 <div className="footer_line">
                   <p className="is-size-5 has-text-weight-semibold pb-4 mt-3 has-text-white footer_heading">
@@ -428,7 +428,7 @@ const Footer = () => {
             </Col>
             <Col
               xxl={8}
-              lg={8}
+              lg={12}
               md={12}
               sm={24}
               xs={24}

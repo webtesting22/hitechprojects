@@ -20,14 +20,14 @@ const industriallist = [
     src: "Sources/images/prouctlist/industrial/ongoing/KHS.jpeg",
     title: "KHS MACHINERY EXPANSION WORKS",
     segment: "Industrial",
-    client: "KHS MACHINERY PVT. LTD.",
+    client: "KHS Machinery PVT. LTD.",
     location: "Near Hirapur cross road, vatva-mahemdavad highway ",
     architect: "S3M Design",
     consultant: "Anandjiwala Technical consultancy (ATC)",
     projectSize: "- Sq. ft.",
     projectDes: "-",
     projectYear: "2022-Current",
-    scope: "Civil, Plumbing & Finishing , Aluminium & Infra Works for expansion project of Plant Building.",
+    scope: "Civil, Plumbing & Finishing , Aluminium & Infra Works for expansion project of Plant Building",
   },
   {
     src: "Sources/images/prouctlist/industrial/ongoing/Asset1.png",
@@ -40,7 +40,7 @@ const industriallist = [
     projectSize: "69,481  Sq. ft.",
     projectDes: "30 Meters",
     projectYear: "2022-Current",
-    scope: "Civil, Plumbing and Finishing works for Torrent Substation.",
+    scope: "Civil, Plumbing and Finishing works for Torrent Substation",
   },
   
   // {
@@ -69,7 +69,7 @@ const industrialcompleted = [
     projectSize: "1,11,000  Sq. ft.",
     projectDes: "30 Meters",
     projectYear: "2022",
-    scope: "Civil, Plumbing and Finishing works for Torrent B station.",
+    scope: "Civil, Plumbing and Finishing works for Torrent B station",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/17.jpg",
@@ -83,7 +83,7 @@ const industrialcompleted = [
     projectYear: "2022",
     architect: "Munjal Bhatt",
     consultant: "S3M Design Consultants LLP",
-    scope: "RCC Framework, Plumbing, Finishing Work.",
+    scope: "RCC Framework, Plumbing, Finishing Work",
   },
   {
     src: "Sources/images/prouctlist/commercial/ongoing/4.png",
@@ -98,7 +98,7 @@ const industrialcompleted = [
     projectYear: "2022",
     architect: "Munjal Bhatt",
     consultant: "Ducon Consultant Pvt Ltd",
-    scope: "RCC Framework, Plumbing, Finishing Work.",
+    scope: "RCC Framework, Plumbing, Finishing Work",
   },
   {
     src: "Sources/images/prouctlist/commercial/ongoing/5.png",
@@ -112,7 +112,7 @@ const industrialcompleted = [
     projectYear: "2022",
     architect: "Munjal Bhatt",
     consultant: " Ducon Consultant Pvt Ltd",
-    scope: "RCC Framework, Plumbing, Finishing Work.",
+    scope: "RCC Framework, Plumbing, Finishing Work",
   },
  
   {
@@ -128,7 +128,7 @@ const industrialcompleted = [
     projectYear: "2022",
     architect: "Munjal Bhatt Architects",
     consultant: "TCS",
-    scope: "Structural Work , RCC Framework , Electrical Work.",
+    scope: "Structural Work, RCC Framework, Electrical Work",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/2.png",
@@ -144,7 +144,7 @@ const industrialcompleted = [
     architect: "N.K.Shah",
     consultant: "N.K.Shah",
     scope:
-      "Structural Work , RCC Framework , Finishing Work , Infrastructural Work.",
+      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/3.png",
@@ -159,7 +159,7 @@ const industrialcompleted = [
     projectYear: "2019",
     architect: "VMS Engineering And Design Services Pvt. Ltd.",
     consultant: "VMS Engineering And Design Services Pvt. Ltd.",
-    scope: "Structural Work RCC Framework, Finishing Work.",
+    scope: "Structural Work RCC Framework, Finishing Work",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/4.png",
@@ -175,7 +175,7 @@ const industrialcompleted = [
     architect: "M/s VBT Consortium",
     consultant: "Base Engineering Services",
     scope:
-      "Structural Work , RCC Framework , Finishing Work , Infrastructural Work.",
+      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/5.png",
@@ -191,7 +191,7 @@ const industrialcompleted = [
     architect: "S3M Design Consultants LLP",
     consultant: "S3M Design Consultants LLP",
     scope:
-      "Structural Work , RCC Framework , Finishing Work , Infrastructural Work.",
+      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/6.png",
@@ -207,7 +207,7 @@ const industrialcompleted = [
     architect: "Kajima India Pvt Ltd.",
     consultant: "Kajima India Pvt Ltd.",
     scope:
-      "Structural Work , RCC Framework , Finishing Work , Infrastructural Work.",
+      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/7.png",
@@ -223,7 +223,7 @@ const industrialcompleted = [
     architect: "VMS Engineering Consultant",
     consultant: "VMS Engineering Consultant",
     scope:
-      "Structural Work , RCC Framework , Finishing Work , Infrastructural Work.",
+      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
   },
   // {
   //   src: "Sources/images/prouctlist/industrial/completed/7.png",
@@ -253,7 +253,7 @@ const industrialcompleted = [
     architect: "Taknik Consultants, Ahmedabad",
     consultant: "Taknik Consultants",
     scope:
-      "Structural Work , RCC Framework , Finishing Work , Infrastructural Work.",
+      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/9.png",
@@ -269,7 +269,7 @@ const industrialcompleted = [
     architect: "Taknik Consultants, Ahmedabad",
     consultant: "Taknik Consultants",
     scope:
-      "Structural Work , RCC Framework , Finishing Work , Infrastructural Work.",
+      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/10.png",
@@ -285,7 +285,7 @@ const industrialcompleted = [
     architect: "L. J. Purani Architect, Ahmedabad",
     consultant: " L. J. Purani Architect",
     scope:
-      "Structural Work , RCC Framework , Finishing Work , Infrastructural Work.",
+      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/11.png",
@@ -301,7 +301,7 @@ const industrialcompleted = [
     architect: " M. R. Fegde And Associate, Nasik",
     consultant: "Chhaya Consulting Engineers",
     scope:
-      "Structural Work , RCC Framework , Finishing Work , Infrastructural Work.",
+      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
   },
 
   {
@@ -318,7 +318,7 @@ const industrialcompleted = [
     architect: "Tata Motors",
     consultant: "Tata Motors",
     scope:
-      "Structural Work , RCC Framework , Finishing Work , Infrastructural Work.",
+      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/14.png",
@@ -334,7 +334,7 @@ const industrialcompleted = [
     architect: "N.K. Shah Consulting Engineers LLP",
     consultant: "N.K. Shah Consulting Engineers LLP",
     scope:
-      "Structural Work , RCC Framework , Finishing Work , Infrastructural Work.",
+      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/15.png",
@@ -350,7 +350,7 @@ const industrialcompleted = [
     architect: "SMPS, Ahmedababad",
     consultant: "SMPS, Ahmedababad",
     scope:
-      "Structural Work , RCC Framework , Finishing Work , Infrastructural Work.",
+      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/16.png",
@@ -366,7 +366,7 @@ const industrialcompleted = [
     architect: "CivTech Consultants",
     consultant: "CivTech Consultants",
     scope:
-      "Structural Work , RCC Framework , Finishing Work , Infrastructural Work.",
+      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
   },
   //  {
   //   src: "Sources/images/prouctlist/commercial/ongoing/2.png",

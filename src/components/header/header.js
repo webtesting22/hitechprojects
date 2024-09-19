@@ -235,36 +235,36 @@ const Header = () => {
               rules={[
                 {
                   required: true,
-                  message: "Please Enter valid name",
+                  message: "Please Enter Valid Name!",
                   pattern: /^[A-Za-z\s\b]+$/,
                 },
               ]}
             >
-              <Input placeholder="Full Name" onc className="form_item" />
+              <Input placeholder="Full Name(Required)" onc className="form_item" />
             </Form.Item>
             <Form.Item
               name="mobile"
               rules={[
                 {
                   required: true,
-                  message: "Please Enter valid Mobile",
+                  message: "Please Enter Valid Mobile Number!",
                   pattern: /^[0-9]{10}$/,
                 },
               ]}
             >
-              <Input placeholder="Mobile" className="form_item" />
+              <Input placeholder="Mobile(Required)" className="form_item" />
             </Form.Item>
             <Form.Item
               name="email"
               rules={[
                 {
                   required: true,
-                  message: "Please Enter valid email",
+                  message: "Please Enter Valid Email!",
                   pattern: /^[A-Za-z0-9._-]+@[A-Za-z]+.[A-Za-z]+$/,
                 },
               ]}
             >
-              <Input placeholder="Email" className="form_item" />
+              <Input placeholder="Email(Required)" className="form_item" />
             </Form.Item>
             <Form.Item>
               <TextArea rows={1} placeholder="Message..." />
