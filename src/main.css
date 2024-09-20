@@ -841,7 +841,8 @@ a.navbar-item.is-active,
 
 .propertylist_image {
   position: relative;
-  background: #000;
+  
+  /* background: #000; */
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -1858,7 +1859,7 @@ hr.footerhr {
 .propertylist_image img {
   width: 100%;
   aspect-ratio: 3/2;
-  object-fit: contain;
+  /* object-fit: contain; */
 }
 
 @media (min-width: 350px) and (max-width: 700px) {

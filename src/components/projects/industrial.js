@@ -3,19 +3,19 @@ import React, { useState } from "react";
 import Header from "../header/header";
 
 const industriallist = [
-  // {
-  //   src: "",
-  //   title: "Harsha Engineers Manufactuing Plan",
-  //   segment: "Industrial",
-  //   client: "HARSHA ENGINEERS ADVANTEK LIMITED",
-  //   location: "Bhayala, Ahmedabad",
-  //   architect: "Shah & Talati",
-  //   consultant: "Shah & Talati",
-  //   projectSize: "- Sq. ft.",
-  //   projectDes: "-",
-  //   projectYear: "2022-Current",
-  //   scope: "Civil, Plumbing & Finishing , Aluminium & Infra Works for the Manufacturing Plant & Associated Works ",
-  // },
+  {
+    src: "",
+    title: "HARSHA ENGINEERS MANUFACTURING PLAN",
+    segment: "Industrial",
+    client: "Harsha Engineers Advantek Limited",
+    location: "Bhayala, Ahmedabad",
+    architect: "Shah & Talati",
+    consultant: "Shah & Talati",
+    projectSize: "- Sq. ft.",
+    projectDes: "-",
+    projectYear: "2022-Current",
+    scope: "Civil, Plumbing & Finishing , Aluminium & Infra Works for the Manufacturing Plant & Associated Works ",
+  },
   {
     src: "Sources/images/prouctlist/industrial/ongoing/KHS.jpeg",
     title: "KHS MACHINERY EXPANSION WORKS",
@@ -60,7 +60,7 @@ const industriallist = [
 const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/industrial/ongoing/1-2.jpeg",
-    title: "TORRENT B STATION AT KATARGAM, SURAT",
+    title: "TORRENT B STATION ",
     segment: "Industrial",
     client: "Torrent Power Ltd",
     location: "Katargam, Surat",
@@ -91,7 +91,7 @@ const industrialcompleted = [
     content:
       "Torrent power, one of the largest integrated private sector power utilities in the country, is coming up with its HT PSC building and meter Lab building at Naranpura, Ahmedabad.",
     client: "Torrent Power Ltd",
-    location: "NARANPURA",
+    location: "Naranpura,Ahmedabad",
     projectSize: "1,70,000 Sq. ft.",
     projectDes: "45 Meters",
 
@@ -106,7 +106,7 @@ const industrialcompleted = [
     content:
       "Torrent power, one of the largest integrated private sector power utilities in the country, is coming up with its PSC building And Plug point building at Odhav.",
     client: "Torrent Power Ltd",
-    location: "Odhav, Gujarat",
+    location: "Odhav, Ahmedabad",
     projectSize: "1,10,000 Sq. ft.",
     projectDes: "25.44 Meters",
     projectYear: "2022",
@@ -153,7 +153,7 @@ const industrialcompleted = [
       "Harsha Engineering opened its new plant of 50,000 Sqft designed by VMS Engineering.",
     segment: "Industrial",
     client: "Harsha Engineers Ltd.",
-    location: "Chandgodar, Ahmedabad",
+    location: "Changodar, Ahmedabad",
     projectSize: " 50,000 Sq. ft.",
     projectDes: "12 Meters",
     projectYear: "2019",
@@ -168,7 +168,7 @@ const industrialcompleted = [
       "HIGHTEMP, a leading manufacturer of furnaces opens its plant of 1,00,000 Sq ft in Sanand, Gujarat designed by VBT Consortium.",
     segment: "Furnace Plant",
     client: " High Temp Furnaces Ltd",
-    location: "Sanand, Gujarat",
+    location: "Sanand, Ahmedabad",
     projectSize: "1,00,000 Sq. ft.",
     projectDes: "-",
     projectYear: "2018",
@@ -216,7 +216,7 @@ const industrialcompleted = [
       "Plant designed for the Press Shop And Weld Shop, equipped with presses up to 1200 ton capacity and a total built up area of 7,800 m2.",
     segment: "Automotive",
     client: "JBM Auto System Pvt. Ltd.",
-    location: "Sanand, Gujarat",
+    location: "Sanand, Ahmedabad",
     projectSize: "2,00,000 Sq. ft.",
     projectDes: "-",
     projectYear: "2015",
@@ -313,7 +313,7 @@ const industrialcompleted = [
     client: "TATA Motors",
     projectSize: "2,50,000 Sq. ft.",
     projectDes: "-",
-    location: "Sanand, Gujarat",
+    location: "Sanand, Ahmedabad",
     projectYear: "2008",
     architect: "Tata Motors",
     consultant: "Tata Motors",
@@ -343,7 +343,7 @@ const industrialcompleted = [
       "Harsha Engineers, a global solution provider of Bearing Cages opened its new plant of 22,000 Sqft in 2008 designed by SMPS Consultants.",
     segment: " Mechanical Plant",
     client: "Harsha Engineers Pvt. Ltd",
-    location: "Sanand, Gujarat",
+    location: "Sanand, Ahmedabad",
     projectSize: "22,000 Sq. ft.",
     projectDes: "-",
     projectYear: "2008",
@@ -399,7 +399,25 @@ const industrialcompleted = [
 const Industrial = () => {
   const [isOngoing, setIsOngoing] = useState(true);
   const [isCompleted, setIsCompleted] = useState(false);
+  const [expandedOngoing, setExpandedOngoing] = useState(null);
+  // State for completed projects
+  const [expandedCompleted, setExpandedCompleted] = useState(null);
+  const toggleOngoing = (key) => {
+    if (expandedOngoing === key) {
+      setExpandedOngoing(null);
+    } else {
+      setExpandedOngoing(key);
+    }
+  };
 
+  // Toggle function for completed projects
+  const toggleCompleted = (key) => {
+    if (expandedCompleted === key) {
+      setExpandedCompleted(null);
+    } else {
+      setExpandedCompleted(key);
+    }
+  };
   return (
     <>
       <img
@@ -460,11 +478,12 @@ const Industrial = () => {
                       <Col xxl={8} lg={8} md={12} sm={24} xs={24}>
                         <div
                           className="property_list"
-                          style={{ minHeight: "650px" }}
+                          style={{ minHeight: "200px" }}
                         >
                           <div
                             className="propertylist_image"
-                            style={{ minHeight: "300px" }}
+                            // style={{ minHeight: "300px" }}
+                            
                           >
                             <Image src={item.src} alt="404 - Not Given" />
                           </div>
@@ -510,46 +529,49 @@ const Industrial = () => {
                                 {item.projectSize}
                               </p>
                             </div>
-                            <div className="pt-3">
-                              <p className="is-size-6">
-                                <span className="has-text-weight-semibold">
-                                  Project Description:&nbsp;
-                                </span>
-                                {item.projectDes}
-                              </p>
-                            </div>
-                            <div className="pt-3">
-                              <p className="is-size-6">
-                                <span className="has-text-weight-semibold">
-                                  Project Year:&nbsp;
-                                </span>
-                                {item.projectYear}
-                              </p>
-                            </div>
-                            <div className="pt-3">
-                              <p className="is-size-6">
-                                <span className="has-text-weight-semibold">
-                                  Architect:&nbsp;
-                                </span>
-                                {item.architect}
-                              </p>
-                            </div>
-                            <div className="pt-3">
-                              <p className="is-size-6">
-                                <span className="has-text-weight-semibold">
-                                  Str. Consultant:&nbsp;
-                                </span>
-                                {item.consultant}
-                              </p>
-                            </div>
-                            <div className="pt-3">
-                              <p className="is-size-6">
-                                <span className="has-text-weight-semibold">
-                                  Scope:&nbsp;
-                                </span>
-                                {item.scope}
-                              </p>
-                            </div>
+                            {expandedOngoing !== key && (
+                              <div className="pt-3">
+                                <button onClick={() => toggleOngoing(key)}>Read More</button>
+                              </div>
+                            )}
+                            {expandedOngoing === key && (
+                              <div className="project-details-hidden">
+                                <div className="pt-3">
+                                  <p className="is-size-6">
+                                    <span className="has-text-weight-semibold">Project Description:&nbsp;</span>
+                                    {item.projectDes}
+                                  </p>
+                                </div>
+                                <div className="pt-3">
+                                  <p className="is-size-6">
+                                    <span className="has-text-weight-semibold">Project Year:&nbsp;</span>
+                                    {item.projectYear}
+                                  </p>
+                                </div>
+                                <div className="pt-3">
+                                  <p className="is-size-6">
+                                    <span className="has-text-weight-semibold">Architect:&nbsp;</span>
+                                    {item.architect}
+                                  </p>
+                                </div>
+                                <div className="pt-3">
+                                  <p className="is-size-6">
+                                    <span className="has-text-weight-semibold">Str. Consultant:&nbsp;</span>
+                                    {item.consultant}
+                                  </p>
+                                </div>
+                                <div className="pt-3">
+                                  <p className="is-size-6">
+                                    <span className="has-text-weight-semibold">Scope:&nbsp;</span>
+                                    {item.scope}
+                                  </p>
+                                </div>
+                                {/* Button to hide the details */}
+                                <div className="pt-3">
+                                  <button onClick={() => toggleOngoing(key)}>Show Less</button>
+                                </div>
+                              </div>
+                            )}
                           </div>
                         </div>
                       </Col>
@@ -565,7 +587,7 @@ const Industrial = () => {
                       <Col xxl={8} lg={8} md={12} sm={24} xs={24}>
                         <div
                           className="property_list"
-                          style={{ minHeight: "650px" }}
+                          style={{ minHeight: "200px" }}
                         >
                           <div className="propertylist_image">
                             <Image src={item.src} alt="404 - Not Given" />
@@ -612,46 +634,49 @@ const Industrial = () => {
                                 {item.projectSize}
                               </p>
                             </div>
-                            <div className="pt-3">
-                              <p className="is-size-6">
-                                <span className="has-text-weight-semibold">
-                                  Project Description:&nbsp;
-                                </span>
-                                {item.projectDes}
-                              </p>
-                            </div>
-                            <div className="pt-3">
-                              <p className="is-size-6">
-                                <span className="has-text-weight-semibold">
-                                  Project Year:&nbsp;
-                                </span>
-                                {item.projectYear}
-                              </p>
-                            </div>
-                            <div className="pt-3">
-                              <p className="is-size-6">
-                                <span className="has-text-weight-semibold">
-                                  Architect:&nbsp;
-                                </span>
-                                {item.architect}
-                              </p>
-                            </div>
-                            <div className="pt-3">
-                              <p className="is-size-6">
-                                <span className="has-text-weight-semibold">
-                                  Str. Consultant:&nbsp;
-                                </span>
-                                {item.consultant}
-                              </p>
-                            </div>
-                            <div className="pt-3">
-                              <p className="is-size-6">
-                                <span className="has-text-weight-semibold">
-                                  Scope:&nbsp;
-                                </span>
-                                {item.scope}
-                              </p>
-                            </div>
+                            {expandedCompleted !== key && (
+                              <div className="pt-3">
+                                <button onClick={() => toggleCompleted(key)}>Read More</button>
+                              </div>
+                            )}
+                            {expandedCompleted === key && (
+                              <div className="project-details-hidden">
+                                <div className="pt-3">
+                                  <p className="is-size-6">
+                                    <span className="has-text-weight-semibold">Project Description:&nbsp;</span>
+                                    {item.projectDes}
+                                  </p>
+                                </div>
+                                <div className="pt-3">
+                                  <p className="is-size-6">
+                                    <span className="has-text-weight-semibold">Project Year:&nbsp;</span>
+                                    {item.projectYear}
+                                  </p>
+                                </div>
+                                <div className="pt-3">
+                                  <p className="is-size-6">
+                                    <span className="has-text-weight-semibold">Architect:&nbsp;</span>
+                                    {item.architect}
+                                  </p>
+                                </div>
+                                <div className="pt-3">
+                                  <p className="is-size-6">
+                                    <span className="has-text-weight-semibold">Str. Consultant:&nbsp;</span>
+                                    {item.consultant}
+                                  </p>
+                                </div>
+                                <div className="pt-3">
+                                  <p className="is-size-6">
+                                    <span className="has-text-weight-semibold">Scope:&nbsp;</span>
+                                    {item.scope}
+                                  </p>
+                                </div>
+                                {/* Button to hide the details */}
+                                <div className="pt-3">
+                                  <button onClick={() => toggleCompleted(key)}>Show Less</button>
+                                </div>
+                              </div>
+                            )}
                           </div>
                         </div>
                       </Col>

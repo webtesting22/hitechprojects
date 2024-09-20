@@ -85,7 +85,7 @@ const institutionalprojectscompleted = [
   },
   {
     src: "Sources/images/prouctlist/Institutional_projects/completed/2.png",
-    title: "ANAND NIKETAN SCHOOL",
+    title: "ANAND NIKETAN JOEY'S CAMPUS",
     content:
       "Anand Niketan is a School having 50,000 Sqft built up area in Sughad, Ahmedabad with various facilities including Special Room, Sports Arenas & Activity Rooms.",
     segment: "Education",
@@ -117,7 +117,25 @@ const institutionalprojectscompleted = [
 const Institutionalprojects = () => {
   const [isOngoing, setIsOngoing] = useState(false);
   const [isCompleted, setIsCompleted] = useState(true);
+  const [expandedOngoing, setExpandedOngoing] = useState(null);
+  // State for completed projects
+  const [expandedCompleted, setExpandedCompleted] = useState(null);
+  const toggleOngoing = (key) => {
+    if (expandedOngoing === key) {
+      setExpandedOngoing(null);
+    } else {
+      setExpandedOngoing(key);
+    }
+  };
 
+  // Toggle function for completed projects
+  const toggleCompleted = (key) => {
+    if (expandedCompleted === key) {
+      setExpandedCompleted(null);
+    } else {
+      setExpandedCompleted(key);
+    }
+  };
   return (
     <>
       <img
@@ -361,7 +379,7 @@ const Institutionalprojects = () => {
                       <Col xxl={8} lg={8} md={12} sm={24} xs={24}>
                         <div
                           className="property_list"
-                          style={{ minHeight: "650px" }}
+                          style={{ minHeight: "200px" }}
                         >
                           <div className="propertylist_image">
                             <Image src={item.src} alt="404 - Not Given" />
@@ -408,46 +426,49 @@ const Institutionalprojects = () => {
                                 {item.projectSize}
                               </p>
                             </div>
-                            <div className="pt-3">
-                              <p className="is-size-6">
-                                <span className="has-text-weight-semibold">
-                                  Project Description:&nbsp;
-                                </span>
-                                {item.projectDes}
-                              </p>
-                            </div>
-                            <div className="pt-3">
-                              <p className="is-size-6">
-                                <span className="has-text-weight-semibold">
-                                  Project Year:&nbsp;
-                                </span>
-                                {item.projectYear}
-                              </p>
-                            </div>
-                            <div className="pt-3">
-                              <p className="is-size-6">
-                                <span className="has-text-weight-semibold">
-                                  Architect:&nbsp;
-                                </span>
-                                {item.architect}
-                              </p>
-                            </div>
-                            <div className="pt-3">
-                              <p className="is-size-6">
-                                <span className="has-text-weight-semibold">
-                                  Str. Consultant:&nbsp;
-                                </span>
-                                {item.consultant}
-                              </p>
-                            </div>
-                            <div className="pt-3">
-                              <p className="is-size-6">
-                                <span className="has-text-weight-semibold">
-                                  Scope:&nbsp;
-                                </span>
-                                {item.scope}
-                              </p>
-                            </div>
+                            {expandedCompleted !== key && (
+                              <div className="pt-3">
+                                <button onClick={() => toggleCompleted(key)}>Read More</button>
+                              </div>
+                            )}
+                            {expandedCompleted === key && (
+                              <div className="project-details-hidden">
+                                <div className="pt-3">
+                                  <p className="is-size-6">
+                                    <span className="has-text-weight-semibold">Project Description:&nbsp;</span>
+                                    {item.projectDes}
+                                  </p>
+                                </div>
+                                <div className="pt-3">
+                                  <p className="is-size-6">
+                                    <span className="has-text-weight-semibold">Project Year:&nbsp;</span>
+                                    {item.projectYear}
+                                  </p>
+                                </div>
+                                <div className="pt-3">
+                                  <p className="is-size-6">
+                                    <span className="has-text-weight-semibold">Architect:&nbsp;</span>
+                                    {item.architect}
+                                  </p>
+                                </div>
+                                <div className="pt-3">
+                                  <p className="is-size-6">
+                                    <span className="has-text-weight-semibold">Str. Consultant:&nbsp;</span>
+                                    {item.consultant}
+                                  </p>
+                                </div>
+                                <div className="pt-3">
+                                  <p className="is-size-6">
+                                    <span className="has-text-weight-semibold">Scope:&nbsp;</span>
+                                    {item.scope}
+                                  </p>
+                                </div>
+                                {/* Button to hide the details */}
+                                <div className="pt-3">
+                                  <button onClick={() => toggleCompleted(key)}>Show Less</button>
+                                </div>
+                              </div>
+                            )}
                           </div>
                         </div>
                       </Col>
