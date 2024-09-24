@@ -1,4 +1,4 @@
-import { Col, Image, Row } from "antd";
+import { Modal, Col, Image, Row } from "antd";
 import React, { useEffect, useState } from "react";
 import Header from "../header/header";
 const industriallist = [
@@ -449,7 +449,26 @@ const Residential = () => {
       setExpandedOngoing(key);
     }
   };
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalDetails, setModalDetails] = useState(null);
+  const showModal = (details) => {
+    setModalDetails(details);
+    setIsModalOpen(true);
+    console.log("open")
 
+};
+
+const handleOk = () => {
+    setIsModalOpen(false);
+    setModalDetails(null);
+
+};
+
+const handleCancel = () => {
+    setIsModalOpen(false);
+    setModalDetails(null);
+
+};
   // Toggle function for completed projects
   const toggleCompleted = (key) => {
     if (expandedCompleted === key) {
@@ -625,7 +644,13 @@ const Residential = () => {
                           style={{ minHeight: "200px" }}
                         >
                           <div className="propertylist_image">
-                            <Image src={item.src} alt="404 - Not Given" />
+                            <img src={item.src} alt="404 - Not Given" onClick={showModal} />
+                            {modalDetails &&(<Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} mask={false} style={{ boxShadow: "none" }} width={800}>
+                              <p>Some contents...</p>
+                              <p>Some contents...</p>
+                              <p>Some contents...</p>
+                            </Modal>)}
+                            
                           </div>
 
                           <div className="propertylist_content p-4">
