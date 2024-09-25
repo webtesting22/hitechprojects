@@ -1,4 +1,4 @@
-import { Col, Image, Row } from "antd";
+import { Col, Image, Row,Modal } from "antd";
 import React, { useState } from "react";
 import Header from "../header/header";
 
@@ -418,6 +418,26 @@ const Industrial = () => {
       setExpandedCompleted(key);
     }
   };
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalDetails, setModalDetails] = useState(null);
+  const showModal = (item) => {
+    setModalDetails(item);
+    setIsModalOpen(true);
+    console.log("open")
+
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+    setModalDetails(null);
+
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+    setModalDetails(null);
+
+  };
   return (
     <>
       <img
@@ -590,7 +610,7 @@ const Industrial = () => {
                           style={{ minHeight: "200px" }}
                         >
                           <div className="propertylist_image">
-                            <Image src={item.src} alt="404 - Not Given" />
+                            <img src={item.src} alt="404 - Not Given"  onClick={() => showModal(item)}/>
                           </div>
 
                           <div className="propertylist_content p-4">
@@ -683,6 +703,19 @@ const Industrial = () => {
                     );
                   })}
               </Row>
+              {modalDetails && (
+                <Modal title={modalDetails.title} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={800}>
+                  <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+                    {modalDetails.imageGallery.map((imgSrc, idx) => (
+                      <img
+                        key={idx}
+                        src={imgSrc}
+                        alt={`Gallery Image ${idx + 1}`}
+                        style={{ width: "200px", cursor: "pointer" }}
+                      />
+                    ))}
+                  </div>
+                </Modal>)}
             </div>
           </div>
         </section>

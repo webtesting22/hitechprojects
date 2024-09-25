@@ -1,4 +1,5 @@
 import { Col, Image, Row } from "antd";
+import { Col, Image, Row,Modal } from "antd";
 import React, { useState } from "react";
 import Header from "../header/header";
 
@@ -136,6 +137,7 @@ const Institutionalprojects = () => {
       setExpandedCompleted(key);
     }
   };
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       <img
@@ -382,7 +384,6 @@ const Institutionalprojects = () => {
                           style={{ minHeight: "200px" }}
                         >
                           <div className="propertylist_image">
-                            <Image src={item.src} alt="404 - Not Given" />
                           </div>
 
                           <div className="propertylist_content p-4">
@@ -475,6 +476,7 @@ const Institutionalprojects = () => {
                     );
                   })}
               </Row>
+              {modalDetails && (
             </div>
           </div>
         </section>

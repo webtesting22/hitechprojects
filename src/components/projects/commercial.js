@@ -1,4 +1,3 @@
-import { Col, Image, Row } from "antd";
 import React, { useState } from "react";
 import Header from "../header/header";
 
@@ -385,7 +384,9 @@ const Commercial = () => {
       setExpandedOngoing(key);
     }
   };
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
+  };
   // Toggle function for completed projects
   const toggleCompleted = (key) => {
     if (expandedCompleted === key) {
@@ -570,7 +571,6 @@ const Commercial = () => {
                           style={{ minHeight: "200px" }}
                         >
                           <div className="propertylist_image">
-                            <Image src={item.src} alt="404 - Not Given" />
                           </div>
 
                           <div className="propertylist_content p-4">
@@ -663,6 +663,7 @@ const Commercial = () => {
                     );
                   })}
               </Row>
+              {modalDetails && (
             </div>
           </div>
         </section>
