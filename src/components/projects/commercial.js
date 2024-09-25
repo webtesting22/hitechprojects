@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "../header/header";
-
+import {Row,Col,Modal,Image} from "antd";
 const commerciallist = [
 
   // {
@@ -386,7 +386,7 @@ const Commercial = () => {
   };
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  };
+
   // Toggle function for completed projects
   const toggleCompleted = (key) => {
     if (expandedCompleted === key) {
@@ -462,8 +462,8 @@ const Commercial = () => {
                           style={{ minHeight: "200px" }}
                         >
                           <div className="propertylist_image">
-                            <Image src={item.src} alt="404 - Not Given" 
-                            preview={{getContainer:null,}}
+                            <Image src={item.src} alt="404 - Not Given"
+                              preview={{ getContainer: null, }}
                             />
 
                           </div>
@@ -501,7 +501,7 @@ const Commercial = () => {
                                 </span>
                                 {item.location}
                               </p>
-                            </div> 
+                            </div>
                             <div className="pt-3">
                               <p className="is-size-6">
                                 <span className="has-text-weight-semibold">
@@ -656,20 +656,21 @@ const Commercial = () => {
                                   <button onClick={() => toggleCompleted(key)}>Show Less</button>
                                 </div>
                               </div>
-                            )}  
+                            )}
                           </div>
                         </div>
                       </Col>
                     );
                   })}
               </Row>
-              {modalDetails && (
+
             </div>
           </div>
         </section>
       </div>
     </>
-  );
-};
 
-export default Commercial;
+  );
+
+}
+  export default Commercial;

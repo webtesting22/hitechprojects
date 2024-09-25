@@ -1,4 +1,4 @@
-import { Col, Image, Row } from "antd";
+
 import { Col, Image, Row,Modal } from "antd";
 import React, { useState } from "react";
 import Header from "../header/header";
@@ -476,7 +476,7 @@ const Institutionalprojects = () => {
                     );
                   })}
               </Row>
-              {modalDetails && (
+              
             </div>
           </div>
         </section>
