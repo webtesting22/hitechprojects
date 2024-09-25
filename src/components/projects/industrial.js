@@ -61,6 +61,18 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/industrial/ongoing/1-2.jpeg",
     title: "TORRENT B STATION ",
+    imageGallery:[
+      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Torrent Katargam - Main.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture2.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture3.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture4.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture5.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture6.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture7.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture8.png",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture9.jpg",
+
+    ],
     segment: "Industrial",
     client: "Torrent Power Ltd",
     location: "Katargam, Surat",
@@ -74,6 +86,10 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/industrial/completed/17.jpg",
     title: "TORRENT POWER 'E' STATION",
+    imageGallery:[
+      "/Sources/images/prouctlist/industrial/completed/Torrent Varachha/Torrent Varacha - Main.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Varachha/Torrent Varacha - 1.jpg"
+    ],
     content:
       "Torrent power, one of the largest integrated private sector power utilities in the country, is coming up with its Power supply center, TSD Workshop, Plug point and other applied work at 'E' station premises, Varachha Surat.",
     client: "Torrent Power Ltd",
@@ -88,6 +104,11 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/ongoing/4.png",
     title: "TORRENT POWER LTD. ",
+    imageGallery:[
+      "/Sources/images/prouctlist/industrial/completed/Torrent Naranpura/Picture1.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Naranpura/Picture2.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Naranpura/Picture3.jpg"
+    ],
     content:
       "Torrent power, one of the largest integrated private sector power utilities in the country, is coming up with its HT PSC building and meter Lab building at Naranpura, Ahmedabad.",
     client: "Torrent Power Ltd",
@@ -103,6 +124,30 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/ongoing/5.png",
     title: "TORRENT POWER LTD.",
+    imageGallery:[
+      "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Main Photos/Torrent Odhav - Main.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Main Photos/Torrent Odhav - 2.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Main Photos/Torrent Odhav - 1.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Nisarg 05.04.2022/IMG-20220405-WA0008.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Nisarg 05.04.2022/IMG-20220405-WA0009.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Nisarg 05.04.2022/IMG-20220405-WA0010.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Nisarg 05.04.2022/IMG-20220405-WA0011.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Nisarg 05.04.2022/IMG-20220405-WA0013.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Nisarg 05.04.2022/IMG-20220405-WA0016.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Nisarg 05.04.2022/IMG-20220405-WA0017.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Nisarg 05.04.2022/IMG-20220405-WA0018.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Nisarg 05.04.2022/IMG-20220405-WA0022.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Nisarg 05.04.2022/IMG-20220405-WA0023.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Nisarg 05.04.2022/IMG-20220405-WA0024.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Nisarg 05.04.2022/IMG-20220405-WA0025.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Nisarg 05.04.2022/IMG-20220405-WA0030.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Nisarg 05.04.2022/IMG-20220405-WA0032.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Nisarg 05.04.2022/IMG-20220405-WA0035.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Nisarg 05.04.2022/IMG-20220405-WA0040.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Nisarg 05.04.2022/IMG-20220405-WA0043.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Nisarg 05.04.2022/IMG-20220405-WA0044.jpg",
+
+    ],
     content:
       "Torrent power, one of the largest integrated private sector power utilities in the country, is coming up with its PSC building And Plug point building at Odhav.",
     client: "Torrent Power Ltd",
@@ -118,6 +163,16 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/industrial/completed/1.png",
     title: "TORRENT SUBSTATION",
+    imageGallery:[
+      "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/Main Photos/Torrent Dholera - Main.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/Main Photos/Torrent Dholera - 1.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/IMG_0319.JPG",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/IMG_0322.JPG",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/IMG_0330.JPG",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/IMG20220113163710.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/IMG20220119171701.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/IMG20220129154549.jpg"
+    ],
     content:
       "Torrent power, one of the largest integrated private sector power utilities in the country, is coming up with its 400KV and 200KV GIS building at Dholera.",
     client: "Torrent Power Ltd",
@@ -133,6 +188,19 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/industrial/completed/2.png",
     title: "FINECURE PHARMACEUTICALS LTD",
+    imageGallery:[
+      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140520.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140604.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140710.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140718.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140739.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140745.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140851.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140932.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_103108.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_103116.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_103127.jpg"
+    ],
     content:
       "Finecure Pharmaceuticals Limited is leading manufacturers and marketers of Pharmaceutical formulations and Nutraceuticals and its coming up with its Pharma building at Arvind Mega Park, Ahmedabad.",
     segment: "Industrial",

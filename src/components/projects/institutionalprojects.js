@@ -26,6 +26,7 @@ const institutionalprojectscompleted = [
   {
     src: "Sources/images/prouctlist/Institutional_projects/ongoing/1-1.jpg",
     title: "ANAND NIKETAN SCHOOL",
+    
     content:
       "Anand Niketan is a School having 50,000 Sqft built up area in Sughad, Ahmedabad with various facilities including Special Room, Sports Arenas & Activity Rooms.",
     segment: "Education",
@@ -42,6 +43,16 @@ const institutionalprojectscompleted = [
   {
     src: "Sources/images/prouctlist/Institutional_projects/ongoing/2.png",
     title: "MUSEUM KOBA",
+    imageGallery:[
+      "/Sources/images/prouctlist/Institutional_projects/completed/Museum/Main Photos/Jain Museum - Main.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Museum/Main Photos/Jain Museum - 1.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Museum/IMG_20220310_105045.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Museum/IMG_20220310_105252.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Museum/IMG_20220310_105319.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Museum/IMG_20220310_105459.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Museum/IMG-20220310-WA0012.jpg"
+
+    ],
     content:
       "The Museum- Samrat Samprati Sangrahalaya of Shri Mahavir Jain Aradhana Kendra,Koba preserves and nourishes the rare heritage of Jain Art and architecture",
     segment: "Corporate",
@@ -58,6 +69,15 @@ const institutionalprojectscompleted = [
   {
     src: "Sources/images/prouctlist/Institutional_projects/ongoing/1.png",
     title: "JITO HOSTEL",
+    imageGallery:[
+      "/Sources/images/prouctlist/Institutional_projects/completed/JITO Hostel/IMG-20220309-WA0003.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/JITO Hostel/IMG-20220309-WA0004.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/JITO Hostel/IMG-20220309-WA0008.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/JITO Hostel/IMG-20220309-WA0005.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/JITO Hostel/IMG-20220309-WA0011.jpg", 
+      "/Sources/images/prouctlist/Institutional_projects/completed/JITO Hostel/IMG-20220309-WA0012.jpg"
+
+    ],
     content:
       "Hostel building work for Jain International Trade organisation-An Educational Trust",
     segment: "Residential",
@@ -73,6 +93,21 @@ const institutionalprojectscompleted = [
   {
     src: "Sources/images/prouctlist/Institutional_projects/completed/lubi corporate.jpg",
     title: "LUBI CORPORATE",
+    imageGallery:[
+      "/Sources/images/prouctlist/Institutional_projects/completed/Lubi/Main photos/corporate-park-ahmedabad3.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Lubi/Main photos/Lubi - Main.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Lubi/Main photos/Lubi - 1.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Lubi/Main photos/Lubi - 2.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Lubi/Main photos/Lubi - 3.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Lubi/IMG-20220310-WA0010.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Lubi/IMG-20220310-WA0016.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Lubi/IMG-20220310-WA0021.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Lubi/IMG-20220310-WA0018.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Lubi/IMG-20220310-WA0020.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Lubi/IMG-20220310-WA0021.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Lubi/IMG-20220310-WA0012.jpg",
+      
+    ],
     content: "Corporate office at Tragad, Ahmedabad",
     segment: "Corporate",
     client: "Lubi Industries LLP",
@@ -87,6 +122,13 @@ const institutionalprojectscompleted = [
   {
     src: "Sources/images/prouctlist/Institutional_projects/completed/2.png",
     title: "ANAND NIKETAN JOEY'S CAMPUS",
+    imageGallery:[
+      "/Sources/images/prouctlist/Institutional_projects/completed/Anand Niketan School/Best Photos/Anand Niketan -Main.JPG",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Anand Niketan School/Best Photos/Anand Niketan -1.JPG",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Anand Niketan School/Best Photos/Anand Niketan -2.JPG",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Anand Niketan School/NDT_4579.JPG",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Anand Niketan School/NDT_4580.JPG"
+    ],
     content:
       "Anand Niketan is a School having 50,000 Sqft built up area in Sughad, Ahmedabad with various facilities including Special Room, Sports Arenas & Activity Rooms.",
     segment: "Education",
@@ -102,6 +144,12 @@ const institutionalprojectscompleted = [
   {
     src: "Sources/images/prouctlist/Institutional_projects/completed/3.png",
     title: "NARAYANA HRUDALAYA HOSPITAL",
+    imageGallery:[
+      "/Sources/images/prouctlist/Institutional_projects/completed/Narayana Hrudalaya Hsopital/Narayana Hrudalaya - Main.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Narayana Hrudalaya Hsopital/Narayana Hrudalaya - 1.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Narayana Hrudalaya Hsopital/Narayana Hrudalaya - 2.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Narayana Hrudalaya Hsopital/Narayana Hrudalaya - 3.webp",
+    ],
     content: "NARAYANA HRUDALAYA HOSPITAL",
     segment: "Healthcare",
     client: "Narayana Hrudalaya Hospital",

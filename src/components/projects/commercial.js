@@ -149,6 +149,34 @@ const commercialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/completed/1.png",
     title: "AHMEDABAD ONE MALL-II",
+    imageGallery:[
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/Best photos/One Mall - Main.jpeg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/IMG_20210315_184912.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/IMG-20210508-WA0015.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/IMG-20210508-WA0021.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/IMG-20210508-WA0016.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/IMG-20210508-WA0017.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/WhatsApp Image 2022-03-16 at 16.33.23 (1).jpeg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/IMG-20210508-WA0013.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/IMG-20210508-WA0014.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/IMG-20210508-WA0018.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/IMG-20210508-WA0019.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/IMG-20210508-WA0020.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/IMG-20210508-WA0021.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/IMG-20210508-WA0022.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/IMG-20210508-WA0023.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/IMG-20210508-WA0024.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/IMG-20210508-WA0025.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/IMG-20210508-WA0026.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/IMG-20210508-WA0027.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/IMG-20210508-WA0028.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/IMG-20210508-WA0029.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/Best photos/One mall - Others/One Mall -1.jpeg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/Best photos/One mall - Others/One Mall -2.jpeg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/Best photos/One mall - Others/One Mall -3.jpeg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/Best photos/One mall - Others/One Mall -4.jpeg",
+      "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/Best photos/One mall - Others/One Mall -5.jpeg"
+    ],
     content:
       "Ahmedabad One mall (Nexus Malls, A group of Blackstone), is the city's iconic shopping destination and it entered into constructing phase2 building with wellknown F&B and Retail brands.",
     segment: "Corporate",
@@ -179,6 +207,19 @@ const commercialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/completed/13.jpg",
     title: "SUN WEST BANK",
+    imageGallery:[
+      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0240.JPG",
+      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0250.JPG",
+      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0251.JPG",
+      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0261.JPG",
+      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0210.JPG",
+      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0196.JPG",
+      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0194.JPG",
+      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0183.JPG",
+      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0147.JPG",
+      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0083.JPG",
+      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0045.JPG"
+    ],
     content:
       "Sun Westbank is one of the commercial developments offering spacious and skillfully designed office spaces and commercial shops.",
     segment: "Commercial",
@@ -194,6 +235,22 @@ const commercialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/completed/14.jpg",
     title: "SHARNAM SOLITAIRE",
+    imageGallery:[
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Solitare/Jpg/IMG_9125.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Solitare/Jpg/IMG_9151.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Solitare/Jpg/IMG_9173.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Solitare/Jpg/IMG_9183.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Solitare/Jpg/IMG_9187.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Solitare/Jpg/IMG_9196.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Solitare/Jpg/IMG_9197.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Solitare/Jpg/IMG_9200.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Solitare/Jpg/IMG_9207.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Solitare/Jpg/IMG_9213.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Solitare/Jpg/IMG_9217.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Solitare/Jpg/IMG_9220.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Solitare/Jpg/IMG_9232.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Solitare/Jpg/IMG_9242.jpg",
+    ],
     content:
       "A world class business centre designed to harness opportunities with its 3 Towers comprising of 1B+G+4 measuring upto a total of 2,80,000 sq ft.",
     segment: "Commercial",
@@ -209,6 +266,18 @@ const commercialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/completed/5.png",
     title: "SHARNAM SMART SPACE",
+    imageGallery:[
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Smart Space/Main Photos/Sharnam Smart Space - Main.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Smart Space/Main Photos/Sharnam Smart Space - 1.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Smart Space/Main Photos/Sharnam Smart Space - 2.jfif",
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Smart Space/Smart Space 1.jfif",
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Smart Space/Smart Space 2.jfif",
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Smart Space/Smart Space 3.jfif",
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Smart Space/Smart Space 4.jfif",
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Smart Space/Smart Space 5.jfif",
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Smart Space/Smart Space 6.jpg"
+    
+    ],
     content:
       "A world class business centre designed to harness opportunities with its five Towers comprising of 2B+G+4 measuring upto a total of 4,25,000 sq ft.",
     segment: "Commercial",
@@ -224,6 +293,18 @@ const commercialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/completed/6.jpg",
     title: "WESTGATE D BLOCK",
+    imageGallery:[
+      "/Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture 1.jpg",
+      "/Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture 2.jpg",
+      "/Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture 3.jpg",
+      "/Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture 4.jpg",
+      "/Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture 5.jpg",
+      "/Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture 6.jpg",
+      "/Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture 7.jpg",
+      "/Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture 8.jpg",
+      "/Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture 9.jpg",
+      "/Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture 10.JPG"
+    ],
     content:
       "Westgate brings all the goodness from the heavenly powers to its occupants, a 20 storey building with 70 mt. height, 8 high speed Mitsubishi lifts and ample car parking.",
     segment: "Commercial",
@@ -254,6 +335,15 @@ const commercialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/completed/8.png",
     title: "RATNAAKAR NINE SQUARE",
+    imageGallery:[
+      "/Sources/images/prouctlist/commercial/completed/Ratnakar Nine Square/2.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ratnakar Nine Square/3.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ratnakar Nine Square/4.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ratnakar Nine Square/1.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ratnakar Nine Square/Ratnakar Nine - 1.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ratnakar Nine Square/Ratnakar Nine - 2.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Ratnakar Nine Square/Ratnakar Nine - Main.jpg"
+    ],
     content:
       "Experience a fully furnished business center enabled with the best of form and function, to deliver everything you need.",
     segment: "Commercial",
@@ -269,6 +359,15 @@ const commercialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/completed/9.png",
     title: "WESTGATE BUSINESS BAY",
+    imageGallery:[
+      "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture -1.jpg",
+      "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture -2.jpg",
+      "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture -3.jpg",
+      "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture -4.jpg",
+      "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture 5.jpg",
+      "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture 6.png",
+      "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture 7.JPG"
+    ],
     content:
       "Spread across two towers, Westgate Business Bay is a sought-after commercial project loaded with all the conveniences.",
     segment: "Commercial",
@@ -298,6 +397,25 @@ const commercialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/completed/11.png",
     title: "SUMEL 8",
+    imageGallery:[
+      "/Sources/images/prouctlist/commercial/completed/Sumel 8/Main photos/Sumel 8 - Main.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sumel 8/Main photos/Sumel 8 - 1.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sumel 8/Main photos/Sumel 8 - 2.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sumel 8/Main photos/Sumel 8 - 3.jfif",
+      "/Sources/images/prouctlist/commercial/completed/Sumel 8/Main photos/Sumel 8 - 4.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sumel 8/Main photos/5.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sumel 8/1.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sumel 8/2.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sumel 8/4.jpg",
+      // "/Sources/images/prouctlist/commercial/completed/Sumel 8/6.jfif",
+      // "/Sources/images/prouctlist/commercial/completed/Sumel 8/7.jpg",
+      "/Sources/images/prouctlist/commercial/completed/Sumel 8/WhatsApp Image 2018-04-13 at 3.29.00 PM.jpeg",
+      "/Sources/images/prouctlist/commercial/completed/Sumel 8/WhatsApp Image 2018-04-13 at 3.29.01 PM.jpeg",
+      "/Sources/images/prouctlist/commercial/completed/Sumel 8/WhatsApp Image 2018-04-13 at 3.29.10 PM.jpeg",
+      "/Sources/images/prouctlist/commercial/completed/Sumel 8/WhatsApp Image 2018-04-13 at 3.29.12 PM.jpeg",
+      "/Sources/images/prouctlist/commercial/completed/Sumel 8/WhatsApp Image 2018-04-13 at 3.29.16 PM (1).jpeg",
+      "/Sources/images/prouctlist/commercial/completed/Sumel 8/WhatsApp Image 2018-04-13 at 3.28.57 PM (1).jpeg"
+    ],
     content:
       "Well designed by H N Safal, Sumel 8 shelters 11 high rise towers with 1983 units that are highly impressive.",
     segment: "Commercial",
