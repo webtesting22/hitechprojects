@@ -254,6 +254,10 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/residential/ongoing/7.png",
     title: "THE WATERFALL",
+    imageGallery:[
+      "/Sources/images/NewImages/The Water Fall/The waterfall- Main.jpg",
+      "/Sources/images/NewImages/The Water Fall/The waterfall- 1.jpg"
+    ],
     content:
       "The waterfall project by Armaan Infrastucture is a high-end luxurious apartment scheme constructed at Ambli Road",
     segment: "Residential",
@@ -269,8 +273,9 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/residential/ongoing/6.png",
     title: "ALPHABET A",
-    imageGallery: ["/Sources/images/prouctlist/residential/completed/Alphabet/Picture3.jfif",
-      "/Sources/images/prouctlist/residential/completed/Alphabet/Picture6.webp",
+    imageGallery: [
+      "/Sources/images/NewImages/Alphabet/Picture 3.jfif",
+      "/Sources/images/NewImages/Alphabet/Picture 6.webp"
     ],
     content: "4 BHK, 5 BHK class-apart lifestyle apartments",
     segment: "Residential",
@@ -286,6 +291,12 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/residential/completed/1.png",
     title: "ARVIND AAVISHKAR",
+    imageGallery:[
+      "/Sources/images/NewImages/Arvind Aavishkar/Arvind-5.jpg",
+      "/Sources/images/NewImages/Arvind Aavishkar/Arvind-3.jpg",
+      "/Sources/images/NewImages/Arvind Aavishkar/Arvind-6.jpg",
+      "/Sources/images/NewImages/Arvind Aavishkar/Arvind-1.jpg"
+    ],
     content:
       "Arvind Aavishkaar is a residential development constructed by Arvind Smartspaces.",
     client: "Arvind Smartspaces",
@@ -300,6 +311,10 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/residential/completed/2.png",
     title: "SUN SKY PARK",
+    imageGallery:[
+      "/Sources/images/NewImages/From Raj Sir/Sun Sky Park/Picture 1.jpg",
+      "/Sources/images/NewImages/From Raj Sir/Sun Sky Park/Sun Sky Park.jpg"
+    ],
     content:
       "Welcome to a new perspective to city living in Ahmedabad through Community, Central Park, Club, Homes, Penthouse etc.",
     client: "Shilp Developers - Sun Builders",
@@ -314,6 +329,10 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/residential/completed/3.png",
     title: "INDRAPRASTH GULMOHAR",
+    imageGallery:[
+      "/Sources/images/NewImages/From Raj Sir/Indraprasth Gulmohar.png",
+      "/Sources/images/NewImages/Indraprastha Gulmohar/Picture2.png"
+    ],
     content:
       "Indraprasth Gulmohar is a name that will make the difference between elite and everyone else.",
     client: "Deep Group",
@@ -328,6 +347,11 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/residential/completed/4.png",
     title: "THE BANYAN",
+    imageGallery:[
+      "/Sources/images/NewImages/The Banyan/The Banyan - Main.jpg",
+      "/Sources/images/NewImages/The Banyan/The Banyan - 1.jpg",
+      "/Sources/images/NewImages/The Banyan/The Banyan - 2.jpg"
+    ],
     content:
       "For the first time in Gujarat, Quintessentially, the world’s leading luxury lifestyle concierge service is now at ‘The Banyan’.",
     client: "Suryam Group",
@@ -342,6 +366,12 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/residential/completed/5.png",
     title: "ONE49",
+    imageGallery:[
+      "/Sources/images/NewImages/One 49/One 49 - Main.jpg",
+      "/Sources/images/NewImages/One 49/One 49 - 1.jpg",
+      "/Sources/images/NewImages/One 49/One 49 - 2.png",
+      "/Sources/images/NewImages/From Raj Sir/One 49/One49.jpg"
+    ],
     content:
       "ONE49, an iconic high-rise residential development is one of the most sought after neighborhoods in Ahmedabad today.",
     client: "Amaya Properties Group",
@@ -398,6 +428,14 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/residential/completed/9.jpg",
     title: "APPLEWOODS",
+    imageGallery:[
+      "/Sources/images/NewImages/Applewoods/Main Photos/Applewoods-Main.jpg",
+      "/Sources/images/NewImages/Applewoods/Main Photos/Orchid Greenfield - Applewoods -1.jpg",
+      "/Sources/images/NewImages/Applewoods/Main Photos/Orchid Greenfield - Applewoods -2.jpg",
+      "/Sources/images/NewImages/Applewoods/Main Photos/Orchid Greenfield - Applewoods -3.jpg",
+      "/Sources/images/NewImages/Applewoods/Main Photos/Orchid Greenfield - Applewoods -4.jpg",
+      "/Sources/images/NewImages/Applewoods/Orchid Greenfield-Applewoods -1.jfif"
+    ],
     content:
       "The Applewoods township consists of 400 luxurious bungalows accommodated in a plush green environment occupied with open garden spaces, parks and lakes.",
     client: "Goyal Safal Developers",
