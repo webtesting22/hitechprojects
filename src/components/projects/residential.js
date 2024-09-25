@@ -1,21 +1,22 @@
 import { Modal, Col, Image, Row } from "antd";
 import React, { useEffect, useState } from "react";
 import Header from "../header/header";
+
 const industriallist = [
-  // {
-  //   src: "Sources/images/prouctlist/residential/ongoing/dharohar.jpg",
-  //   title: "Dharohar",
-  //   content: "...",
-  //   segment: "Residential",
-  //   client: "MAHICA PROCON PRIVATE LIMITED",
-  //   location: "Vaishnovdevi Circle, Ahmedabad",
-  //   projectSize: "16,92,477 Sq. ft.",
-  //   projectDes: "-",
-  //   projectYear: "2024-Current",
-  //   architect: "Hiren Patel & Associates",
-  //   consultant: "Setu Infrastructure",
-  //   scope: "RCC Frame works, Block work, Plaster work for Residential Building 3B+G+22 Floors (5 Towers).",
-  // },
+  {
+    src: "Sources/images/prouctlist/residential/ongoing/dharohar.jpg",
+    title: "Dharohar",
+    content: "...",
+    segment: "Residential",
+    client: "MAHICA PROCON PRIVATE LIMITED",
+    location: "Vaishnovdevi Circle, Ahmedabad",
+    projectSize: "16,92,477 Sq. ft.",
+    projectDes: "-",
+    projectYear: "2024-Current",
+    architect: "Hiren Patel & Associates",
+    consultant: "Setu Infrastructure",
+    scope: "RCC Frame works, Block work, Plaster work for Residential Building 3B+G+22 Floors (5 Towers).",
+  },
   {
     src: "Sources/images/prouctlist/residential/ongoing/supercity.jpeg",
     title: "SUPERCITY LUXURIA 3",
@@ -268,6 +269,9 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/residential/ongoing/6.png",
     title: "ALPHABET A",
+    imageGallery: ["/Sources/images/prouctlist/residential/completed/Alphabet/Picture3.jfif",
+      "/Sources/images/prouctlist/residential/completed/Alphabet/Picture6.webp",
+    ],
     content: "4 BHK, 5 BHK class-apart lifestyle apartments",
     segment: "Residential",
     client: "Jaydeep Buildcon LLP",
@@ -451,24 +455,24 @@ const Residential = () => {
   };
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalDetails, setModalDetails] = useState(null);
-  const showModal = (details) => {
-    setModalDetails(details);
+  const showModal = (item) => {
+    setModalDetails(item);
     setIsModalOpen(true);
     console.log("open")
 
-};
+  };
 
-const handleOk = () => {
+  const handleOk = () => {
     setIsModalOpen(false);
     setModalDetails(null);
 
-};
+  };
 
-const handleCancel = () => {
+  const handleCancel = () => {
     setIsModalOpen(false);
     setModalDetails(null);
 
-};
+  };
   // Toggle function for completed projects
   const toggleCompleted = (key) => {
     if (expandedCompleted === key) {
@@ -644,13 +648,9 @@ const handleCancel = () => {
                           style={{ minHeight: "200px" }}
                         >
                           <div className="propertylist_image">
-                            <img src={item.src} alt="404 - Not Given" onClick={showModal} />
-                            {modalDetails &&(<Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} mask={false} style={{ boxShadow: "none" }} width={800}>
-                              <p>Some contents...</p>
-                              <p>Some contents...</p>
-                              <p>Some contents...</p>
-                            </Modal>)}
-                            
+                            <img src={item.src} alt="404 - Not Given" onClick={() => showModal(item)} />
+
+
                           </div>
 
                           <div className="propertylist_content p-4">
@@ -743,6 +743,19 @@ const handleCancel = () => {
                     );
                   })}
               </Row>
+              {modalDetails && (
+                <Modal title={modalDetails.title} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={800}>
+                  <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+                    {modalDetails.imageGallery.map((imgSrc, idx) => (
+                      <img
+                        key={idx}
+                        src={imgSrc}
+                        alt={`Gallery Image ${idx + 1}`}
+                        style={{ width: "200px", cursor: "pointer" }}
+                      />
+                    ))}
+                  </div>
+                </Modal>)}
             </div>
           </div>
         </section>

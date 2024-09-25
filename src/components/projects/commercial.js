@@ -500,6 +500,14 @@ const Commercial = () => {
                                 </span>
                                 {item.location}
                               </p>
+                            </div> 
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">
+                                  Project Size:&nbsp;
+                                </span>
+                                {item.projectSize}
+                              </p>
                             </div>
                             {expandedOngoing !== key && (
                               <div className="pt-3">
