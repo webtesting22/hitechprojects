@@ -254,7 +254,7 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/residential/ongoing/7.png",
     title: "THE WATERFALL",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/NewImages/The Water Fall/The waterfall- Main.jpg",
       "/Sources/images/NewImages/The Water Fall/The waterfall- 1.jpg"
     ],
@@ -291,7 +291,7 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/residential/completed/1.png",
     title: "ARVIND AAVISHKAR",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/NewImages/Arvind Aavishkar/Arvind-5.jpg",
       "/Sources/images/NewImages/Arvind Aavishkar/Arvind-3.jpg",
       "/Sources/images/NewImages/Arvind Aavishkar/Arvind-6.jpg",
@@ -311,7 +311,7 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/residential/completed/2.png",
     title: "SUN SKY PARK",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/NewImages/From Raj Sir/Sun Sky Park/Picture 1.jpg",
       "/Sources/images/NewImages/From Raj Sir/Sun Sky Park/Sun Sky Park.jpg"
     ],
@@ -329,7 +329,7 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/residential/completed/3.png",
     title: "INDRAPRASTH GULMOHAR",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/NewImages/From Raj Sir/Indraprasth Gulmohar.png",
       "/Sources/images/NewImages/Indraprastha Gulmohar/Picture2.png"
     ],
@@ -347,7 +347,7 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/residential/completed/4.png",
     title: "THE BANYAN",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/NewImages/The Banyan/The Banyan - Main.jpg",
       "/Sources/images/NewImages/The Banyan/The Banyan - 1.jpg",
       "/Sources/images/NewImages/The Banyan/The Banyan - 2.jpg"
@@ -366,7 +366,7 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/residential/completed/5.png",
     title: "ONE49",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/NewImages/One 49/One 49 - Main.jpg",
       "/Sources/images/NewImages/One 49/One 49 - 1.jpg",
       "/Sources/images/NewImages/One 49/One 49 - 2.png",
@@ -428,7 +428,7 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/residential/completed/9.jpg",
     title: "APPLEWOODS",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/NewImages/Applewoods/Main Photos/Applewoods-Main.jpg",
       "/Sources/images/NewImages/Applewoods/Main Photos/Orchid Greenfield - Applewoods -1.jpg",
       "/Sources/images/NewImages/Applewoods/Main Photos/Orchid Greenfield - Applewoods -2.jpg",
@@ -784,15 +784,21 @@ const Residential = () => {
               {modalDetails && (
                 <Modal title={modalDetails.title} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={800}>
                   <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
-                    {modalDetails.imageGallery.map((imgSrc, idx) => (
-                      <img
-                        key={idx}
-                        src={imgSrc}
-                        alt={`Gallery Image ${idx + 1}`}
-                        style={{ width: "200px", cursor: "pointer" }}
-                      />
-                    ))}
-                  </div>
+                    {/* Check if imageGallery exists and has images */}
+                    {modalDetails.imageGallery && modalDetails.imageGallery.length > 0 ? (
+                      modalDetails.imageGallery.map((imgSrc, idx) => (
+                        <img
+                          key={idx}
+                          src={imgSrc}
+                          alt={`Gallery Image ${idx + 1}`}
+                          style={{ width: "200px", cursor: "pointer" }}
+                        />
+                      ))
+                    ) : (
+                      <p>No images found</p>
+                       /* Show this if imageGallery is empty */
+                       )}                  
+                       </div>
                 </Modal>)}
             </div>
           </div>
