@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "../header/header";
-import {Row,Col,Modal,Image} from "antd";
+import { Row, Col, Modal, Image } from "antd";
 const commerciallist = [
 
   // {
@@ -149,7 +149,7 @@ const commercialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/completed/1.png",
     title: "AHMEDABAD ONE MALL-II",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/Best photos/One Mall - Main.jpeg",
       "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/IMG_20210315_184912.jpg",
       "/Sources/images/prouctlist/commercial/completed/Ahmedabad One Alpha Mall/IMG-20210508-WA0015.jpg",
@@ -207,7 +207,7 @@ const commercialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/completed/13.jpg",
     title: "SUN WEST BANK",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0240.JPG",
       "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0250.JPG",
       "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0251.JPG",
@@ -235,7 +235,7 @@ const commercialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/completed/14.jpg",
     title: "SHARNAM SOLITAIRE",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/commercial/completed/Sharnam Solitare/Jpg/IMG_9125.jpg",
       "/Sources/images/prouctlist/commercial/completed/Sharnam Solitare/Jpg/IMG_9151.jpg",
       "/Sources/images/prouctlist/commercial/completed/Sharnam Solitare/Jpg/IMG_9173.jpg",
@@ -266,7 +266,7 @@ const commercialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/completed/5.png",
     title: "SHARNAM SMART SPACE",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/commercial/completed/Sharnam Smart Space/Main Photos/Sharnam Smart Space - Main.jpg",
       "/Sources/images/prouctlist/commercial/completed/Sharnam Smart Space/Main Photos/Sharnam Smart Space - 1.jpg",
       "/Sources/images/prouctlist/commercial/completed/Sharnam Smart Space/Main Photos/Sharnam Smart Space - 2.jfif",
@@ -276,7 +276,7 @@ const commercialcompleted = [
       "/Sources/images/prouctlist/commercial/completed/Sharnam Smart Space/Smart Space 4.jfif",
       "/Sources/images/prouctlist/commercial/completed/Sharnam Smart Space/Smart Space 5.jfif",
       "/Sources/images/prouctlist/commercial/completed/Sharnam Smart Space/Smart Space 6.jpg"
-    
+
     ],
     content:
       "A world class business centre designed to harness opportunities with its five Towers comprising of 2B+G+4 measuring upto a total of 4,25,000 sq ft.",
@@ -293,7 +293,7 @@ const commercialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/completed/6.jpg",
     title: "WESTGATE D BLOCK",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture 1.jpg",
       "/Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture 2.jpg",
       "/Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture 3.jpg",
@@ -335,7 +335,7 @@ const commercialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/completed/8.png",
     title: "RATNAAKAR NINE SQUARE",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/commercial/completed/Ratnakar Nine Square/2.jpg",
       "/Sources/images/prouctlist/commercial/completed/Ratnakar Nine Square/3.jpg",
       "/Sources/images/prouctlist/commercial/completed/Ratnakar Nine Square/4.jpg",
@@ -359,7 +359,7 @@ const commercialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/completed/9.png",
     title: "WESTGATE BUSINESS BAY",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture -1.jpg",
       "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture -2.jpg",
       "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture -3.jpg",
@@ -397,7 +397,7 @@ const commercialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/completed/11.png",
     title: "SUMEL 8",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/commercial/completed/Sumel 8/Main photos/Sumel 8 - Main.jpg",
       "/Sources/images/prouctlist/commercial/completed/Sumel 8/Main photos/Sumel 8 - 1.jpg",
       "/Sources/images/prouctlist/commercial/completed/Sumel 8/Main photos/Sumel 8 - 2.jpg",
@@ -492,45 +492,20 @@ const commercialcompleted = [
 const Commercial = () => {
   const [isOngoing, setIsOngoing] = useState(true);
   const [isCompleted, setIsCompleted] = useState(false);
-  const [expandedOngoing, setExpandedOngoing] = useState(null);
-  // State for completed projects
-  const [expandedCompleted, setExpandedCompleted] = useState(null);
-  const toggleOngoing = (key) => {
-    if (expandedOngoing === key) {
-      setExpandedOngoing(null);
-    } else {
-      setExpandedOngoing(key);
-    }
-  };
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalDetails, setModalDetails] = useState(null);
   const showModal = (item) => {
     setModalDetails(item);
     setIsModalOpen(true);
-    console.log("open")
-
+    console.log("open");
   };
-
   const handleOk = () => {
     setIsModalOpen(false);
     setModalDetails(null);
-
   };
-
   const handleCancel = () => {
     setIsModalOpen(false);
     setModalDetails(null);
-
-  };
-
-
-  // Toggle function for completed projects
-  const toggleCompleted = (key) => {
-    if (expandedCompleted === key) {
-      setExpandedCompleted(null);
-    } else {
-      setExpandedCompleted(key);
-    }
   };
   return (
     <>
@@ -602,9 +577,7 @@ const Commercial = () => {
                             <Image src={item.src} alt="404 - Not Given"
                               preview={{ getContainer: null, }}
                             />
-
                           </div>
-
                           <div className="propertylist_content p-4">
                             <div className="pt-2">
                               <p className="is-size-4 has-text-centered blue_color has-text-weight-semibold">
@@ -622,7 +595,6 @@ const Commercial = () => {
                             Commercial
                           </p>
                         </div> */}
-
                             <div className="pt-3">
                               <p className="is-size-6">
                                 <span className="has-text-weight-semibold">
@@ -647,49 +619,36 @@ const Commercial = () => {
                                 {item.projectSize}
                               </p>
                             </div>
-                            {expandedOngoing !== key && (
-                              <div className="pt-3">
-                                <button onClick={() => toggleOngoing(key)}>Read More</button>
-                              </div>
-                            )}
-                            {expandedOngoing === key && (
-                              <div className="project-details-hidden">
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Project Description:&nbsp;</span>
-                                    {item.projectDes}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Project Year:&nbsp;</span>
-                                    {item.projectYear}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Architect:&nbsp;</span>
-                                    {item.architect}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Str. Consultant:&nbsp;</span>
-                                    {item.consultant}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Scope:&nbsp;</span>
-                                    {item.scope}
-                                  </p>
-                                </div>
-                                {/* Button to hide the details */}
-                                <div className="pt-3">
-                                  <button onClick={() => toggleOngoing(key)}>Show Less</button>
-                                </div>
-                              </div>
-                            )}
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Project Description:&nbsp;</span>
+                                {item.projectDes}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Project Year:&nbsp;</span>
+                                {item.projectYear}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Architect:&nbsp;</span>
+                                {item.architect}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Str. Consultant:&nbsp;</span>
+                                {item.consultant}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Scope:&nbsp;</span>
+                                {item.scope}
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </Col>
@@ -708,7 +667,7 @@ const Commercial = () => {
                           style={{ minHeight: "200px" }}
                         >
                           <div className="propertylist_image">
-                          <img src={item.src} alt="404 - Not Given" onClick={() => showModal(item)} />
+                            <img src={item.src} alt="404 - Not Given" onClick={() => showModal(item)} />
                           </div>
 
                           <div className="propertylist_content p-4">
@@ -752,49 +711,36 @@ const Commercial = () => {
                                 {item.projectSize}
                               </p>
                             </div>
-                            {expandedCompleted !== key && (
-                              <div className="pt-3">
-                                <button onClick={() => toggleCompleted(key)}>Read More</button>
-                              </div>
-                            )}
-                            {expandedCompleted === key && (
-                              <div className="project-details-hidden">
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Project Description:&nbsp;</span>
-                                    {item.projectDes}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Project Year:&nbsp;</span>
-                                    {item.projectYear}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Architect:&nbsp;</span>
-                                    {item.architect}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Str. Consultant:&nbsp;</span>
-                                    {item.consultant}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Scope:&nbsp;</span>
-                                    {item.scope}
-                                  </p>
-                                </div>
-                                {/* Button to hide the details */}
-                                <div className="pt-3">
-                                  <button onClick={() => toggleCompleted(key)}>Show Less</button>
-                                </div>
-                              </div>
-                            )}
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Project Description:&nbsp;</span>
+                                {item.projectDes}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Project Year:&nbsp;</span>
+                                {item.projectYear}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Architect:&nbsp;</span>
+                                {item.architect}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Str. Consultant:&nbsp;</span>
+                                {item.consultant}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Scope:&nbsp;</span>
+                                {item.scope}
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </Col>
@@ -802,16 +748,16 @@ const Commercial = () => {
                   })}
               </Row>
               {modalDetails && (
-                <Modal title={modalDetails.title} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={800}>
+                <Modal title={modalDetails.title} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={1000}>
                   <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
                     {/* Check if imageGallery exists and has images */}
                     {modalDetails.imageGallery && modalDetails.imageGallery.length > 0 ? (
                       modalDetails.imageGallery.map((imgSrc, idx) => (
-                        <img
+                        <Image
                           key={idx}
                           src={imgSrc}
                           alt={`Gallery Image ${idx + 1}`}
-                          style={{ width: "200px", cursor: "pointer" }}
+                          style={{ width: "400px", cursor: "pointer" }}
                         />
                       ))
                     ) : (
@@ -829,4 +775,4 @@ const Commercial = () => {
   );
 
 }
-  export default Commercial;
+export default Commercial;

@@ -255,8 +255,8 @@ const industrialcompleted = [
     src: "Sources/images/prouctlist/residential/ongoing/7.png",
     title: "THE WATERFALL",
     imageGallery: [
-      "/Sources/images/NewImages/The Water Fall/The waterfall- Main.jpg",
-      "/Sources/images/NewImages/The Water Fall/The waterfall- 1.jpg"
+      "/Sources/images/prouctlist/residential/completed/The Water Fall/The waterfall- Main.jpg",
+      "/Sources/images/prouctlist/residential/completed/The Water Fall/The waterfall- 1.jpg",
     ],
     content:
       "The waterfall project by Armaan Infrastucture is a high-end luxurious apartment scheme constructed at Ambli Road",
@@ -274,8 +274,9 @@ const industrialcompleted = [
     src: "Sources/images/prouctlist/residential/ongoing/6.png",
     title: "ALPHABET A",
     imageGallery: [
-      "/Sources/images/NewImages/Alphabet/Picture 3.jfif",
-      "/Sources/images/NewImages/Alphabet/Picture 6.webp"
+      "/Sources/images/prouctlist/residential/completed/Alphabet/Picture 3.jfif",
+      "/Sources/images/prouctlist/residential/completed/Alphabet/Picture 5.gif",
+      "/Sources/images/prouctlist/residential/completed/Alphabet/Picture 6.webp",
     ],
     content: "4 BHK, 5 BHK class-apart lifestyle apartments",
     segment: "Residential",
@@ -292,10 +293,10 @@ const industrialcompleted = [
     src: "Sources/images/prouctlist/residential/completed/1.png",
     title: "ARVIND AAVISHKAR",
     imageGallery: [
-      "/Sources/images/NewImages/Arvind Aavishkar/Arvind-5.jpg",
-      "/Sources/images/NewImages/Arvind Aavishkar/Arvind-3.jpg",
-      "/Sources/images/NewImages/Arvind Aavishkar/Arvind-6.jpg",
-      "/Sources/images/NewImages/Arvind Aavishkar/Arvind-1.jpg"
+      "/Sources/images//prouctlist/residential/completed/Arvind Aavishkar/Arvind-5.jpg",
+      "/Sources/images/prouctlist/residential/completed/Arvind Aavishkar/Arvind-3.jpg",
+      "/Sources/images/prouctlist/residential/completed/Arvind Aavishkar/Arvind-6.jpg",
+      "/Sources/images/prouctlist/residential/completed/Arvind Aavishkar/Arvind-1.jpg"
     ],
     content:
       "Arvind Aavishkaar is a residential development constructed by Arvind Smartspaces.",
@@ -330,8 +331,8 @@ const industrialcompleted = [
     src: "Sources/images/prouctlist/residential/completed/3.png",
     title: "INDRAPRASTH GULMOHAR",
     imageGallery: [
-      "/Sources/images/NewImages/From Raj Sir/Indraprasth Gulmohar.png",
-      "/Sources/images/NewImages/Indraprastha Gulmohar/Picture2.png"
+      "/Sources/images/prouctlist/residential/completed/Indraprastha Gulmohar/Picture2.png",
+      "/Sources/images/prouctlist/residential/completed/Indraprastha Gulmohar/Indraprastha Gulmohar - Main.png",
     ],
     content:
       "Indraprasth Gulmohar is a name that will make the difference between elite and everyone else.",
@@ -348,9 +349,9 @@ const industrialcompleted = [
     src: "Sources/images/prouctlist/residential/completed/4.png",
     title: "THE BANYAN",
     imageGallery: [
-      "/Sources/images/NewImages/The Banyan/The Banyan - Main.jpg",
-      "/Sources/images/NewImages/The Banyan/The Banyan - 1.jpg",
-      "/Sources/images/NewImages/The Banyan/The Banyan - 2.jpg"
+      "/Sources/images/prouctlist/residential/completed/The Banyan/The Banyan - Main.jpg",
+      "/Sources/images/prouctlist/residential/completed/The Banyan/The Banyan - 1.jpg",
+      "/Sources/images/prouctlist/residential/completed/The Banyan/The Banyan - 2.jpg"
     ],
     content:
       "For the first time in Gujarat, Quintessentially, the world’s leading luxury lifestyle concierge service is now at ‘The Banyan’.",
@@ -367,10 +368,9 @@ const industrialcompleted = [
     src: "Sources/images/prouctlist/residential/completed/5.png",
     title: "ONE49",
     imageGallery: [
-      "/Sources/images/NewImages/One 49/One 49 - Main.jpg",
-      "/Sources/images/NewImages/One 49/One 49 - 1.jpg",
-      "/Sources/images/NewImages/One 49/One 49 - 2.png",
-      "/Sources/images/NewImages/From Raj Sir/One 49/One49.jpg"
+      "/Sources/images/prouctlist/residential/completed/One 49/One 49 - Main.jpg",
+      "/Sources/images/prouctlist/residential/completed/One 49/One 49 - 1.jpg",
+      "/Sources/images/prouctlist/residential/completed/One 49/One 49 - 2.png",
     ],
     content:
       "ONE49, an iconic high-rise residential development is one of the most sought after neighborhoods in Ahmedabad today.",
@@ -429,12 +429,12 @@ const industrialcompleted = [
     src: "Sources/images/prouctlist/residential/completed/9.jpg",
     title: "APPLEWOODS",
     imageGallery: [
-      "/Sources/images/NewImages/Applewoods/Main Photos/Applewoods-Main.jpg",
-      "/Sources/images/NewImages/Applewoods/Main Photos/Orchid Greenfield - Applewoods -1.jpg",
-      "/Sources/images/NewImages/Applewoods/Main Photos/Orchid Greenfield - Applewoods -2.jpg",
-      "/Sources/images/NewImages/Applewoods/Main Photos/Orchid Greenfield - Applewoods -3.jpg",
-      "/Sources/images/NewImages/Applewoods/Main Photos/Orchid Greenfield - Applewoods -4.jpg",
-      "/Sources/images/NewImages/Applewoods/Orchid Greenfield-Applewoods -1.jfif"
+      "/Sources/images/prouctlist/residential/completed/Applewoods/Main Photos/Applewoods-Main.jpg",
+      "/Sources/images/prouctlist/residential/completed/Applewoods/Main Photos/Orchid Greenfield - Applewoods -1.jpg",
+      "/Sources/images/prouctlist/residential/completed/Applewoods/Main Photos/Orchid Greenfield - Applewoods -2.jpg",
+      "/Sources/images/prouctlist/residential/completed/Applewoods/Main Photos/Orchid Greenfield - Applewoods -3.jpg",
+      "/Sources/images/prouctlist/residential/completed/Applewoods/Main Photos/Orchid Greenfield - Applewoods -4.jpg",
+      "/Sources/images/prouctlist/residential/completed/Applewoods/Orchid Greenfield-Applewoods -1.jfif"
     ],
     content:
       "The Applewoods township consists of 400 luxurious bungalows accommodated in a plush green environment occupied with open garden spaces, parks and lakes.",
@@ -480,17 +480,6 @@ const industrialcompleted = [
 const Residential = () => {
   const [isOngoing, setIsOngoing] = useState(true);
   const [isCompleted, setIsCompleted] = useState(false);
-  // State for ongoing projects
-  const [expandedOngoing, setExpandedOngoing] = useState(null);
-  // State for completed projects
-  const [expandedCompleted, setExpandedCompleted] = useState(null);
-  const toggleOngoing = (key) => {
-    if (expandedOngoing === key) {
-      setExpandedOngoing(null);
-    } else {
-      setExpandedOngoing(key);
-    }
-  };
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalDetails, setModalDetails] = useState(null);
   const showModal = (item) => {
@@ -510,14 +499,6 @@ const Residential = () => {
     setIsModalOpen(false);
     setModalDetails(null);
 
-  };
-  // Toggle function for completed projects
-  const toggleCompleted = (key) => {
-    if (expandedCompleted === key) {
-      setExpandedCompleted(null);
-    } else {
-      setExpandedCompleted(key);
-    }
   };
   return (
     <>
@@ -625,49 +606,36 @@ const Residential = () => {
                                 {item.projectSize}
                               </p>
                             </div>
-                            {expandedOngoing !== key && (
-                              <div className="pt-3">
-                                <button onClick={() => toggleOngoing(key)}>Read More</button>
-                              </div>
-                            )}
-                            {expandedOngoing === key && (
-                              <div className="project-details-hidden">
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Project Description:&nbsp;</span>
-                                    {item.projectDes}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Project Year:&nbsp;</span>
-                                    {item.projectYear}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Architect:&nbsp;</span>
-                                    {item.architect}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Str. Consultant:&nbsp;</span>
-                                    {item.consultant}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Scope:&nbsp;</span>
-                                    {item.scope}
-                                  </p>
-                                </div>
-                                {/* Button to hide the details */}
-                                <div className="pt-3">
-                                  <button onClick={() => toggleOngoing(key)}>Show Less</button>
-                                </div>
-                              </div>
-                            )}
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Project Description:&nbsp;</span>
+                                {item.projectDes}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Project Year:&nbsp;</span>
+                                {item.projectYear}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Architect:&nbsp;</span>
+                                {item.architect}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Str. Consultant:&nbsp;</span>
+                                {item.consultant}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Scope:&nbsp;</span>
+                                {item.scope}
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </Col>
@@ -732,49 +700,38 @@ const Residential = () => {
                                 {item.projectSize}
                               </p>
                             </div>
-                            {expandedCompleted !== key && (
-                              <div className="pt-3">
-                                <button onClick={() => toggleCompleted(key)}>Read More</button>
-                              </div>
-                            )}
-                            {expandedCompleted === key && (
-                              <div className="project-details-hidden">
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Project Description:&nbsp;</span>
-                                    {item.projectDes}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Project Year:&nbsp;</span>
-                                    {item.projectYear}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Architect:&nbsp;</span>
-                                    {item.architect}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Str. Consultant:&nbsp;</span>
-                                    {item.consultant}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Scope:&nbsp;</span>
-                                    {item.scope}
-                                  </p>
-                                </div>
-                                {/* Button to hide the details */}
-                                <div className="pt-3">
-                                  <button onClick={() => toggleCompleted(key)}>Show Less</button>
-                                </div>
-                              </div>
-                            )}
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Project Description:&nbsp;</span>
+                                {item.projectDes}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Project Year:&nbsp;</span>
+                                {item.projectYear}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Architect:&nbsp;</span>
+                                {item.architect}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Str. Consultant:&nbsp;</span>
+                                {item.consultant}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Scope:&nbsp;</span>
+                                {item.scope}
+                              </p>
+                            </div>
+
+
                           </div>
                         </div>
                       </Col>
@@ -782,23 +739,23 @@ const Residential = () => {
                   })}
               </Row>
               {modalDetails && (
-                <Modal title={modalDetails.title} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={800}>
+                <Modal title={modalDetails.title} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={1000}>
                   <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
                     {/* Check if imageGallery exists and has images */}
                     {modalDetails.imageGallery && modalDetails.imageGallery.length > 0 ? (
                       modalDetails.imageGallery.map((imgSrc, idx) => (
-                        <img
+                        <Image
                           key={idx}
                           src={imgSrc}
                           alt={`Gallery Image ${idx + 1}`}
-                          style={{ width: "200px", cursor: "pointer" }}
+                          style={{ width: "400px", cursor: "pointer" }}
                         />
                       ))
                     ) : (
                       <p>No images found</p>
-                       /* Show this if imageGallery is empty */
-                       )}                  
-                       </div>
+                      /* Show this if imageGallery is empty */
+                    )}
+                  </div>
                 </Modal>)}
             </div>
           </div>

@@ -1,5 +1,5 @@
 
-import { Col, Image, Row,Modal } from "antd";
+import { Col, Image, Row, Modal } from "antd";
 import React, { useState } from "react";
 import Header from "../header/header";
 
@@ -20,13 +20,13 @@ const institutionalprojectslist = [
   //   scope:
   //     "Civil Works Excavation, Backfiling, pile Foundation work, masonary, plaster, flooring, painting for School Building",
   // },
-  
+
 ];
 const institutionalprojectscompleted = [
   {
     src: "Sources/images/prouctlist/Institutional_projects/ongoing/1-1.jpg",
     title: "ANAND NIKETAN SCHOOL",
-    
+
     content:
       "Anand Niketan is a School having 50,000 Sqft built up area in Sughad, Ahmedabad with various facilities including Special Room, Sports Arenas & Activity Rooms.",
     segment: "Education",
@@ -43,7 +43,7 @@ const institutionalprojectscompleted = [
   {
     src: "Sources/images/prouctlist/Institutional_projects/ongoing/2.png",
     title: "MUSEUM KOBA",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/Institutional_projects/completed/Museum/Main Photos/Jain Museum - Main.jpg",
       "/Sources/images/prouctlist/Institutional_projects/completed/Museum/Main Photos/Jain Museum - 1.jpg",
       "/Sources/images/prouctlist/Institutional_projects/completed/Museum/IMG_20220310_105045.jpg",
@@ -69,12 +69,12 @@ const institutionalprojectscompleted = [
   {
     src: "Sources/images/prouctlist/Institutional_projects/ongoing/1.png",
     title: "JITO HOSTEL",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/Institutional_projects/completed/JITO Hostel/IMG-20220309-WA0003.jpg",
       "/Sources/images/prouctlist/Institutional_projects/completed/JITO Hostel/IMG-20220309-WA0004.jpg",
       "/Sources/images/prouctlist/Institutional_projects/completed/JITO Hostel/IMG-20220309-WA0008.jpg",
       "/Sources/images/prouctlist/Institutional_projects/completed/JITO Hostel/IMG-20220309-WA0005.jpg",
-      "/Sources/images/prouctlist/Institutional_projects/completed/JITO Hostel/IMG-20220309-WA0011.jpg", 
+      "/Sources/images/prouctlist/Institutional_projects/completed/JITO Hostel/IMG-20220309-WA0011.jpg",
       "/Sources/images/prouctlist/Institutional_projects/completed/JITO Hostel/IMG-20220309-WA0012.jpg"
 
     ],
@@ -93,7 +93,7 @@ const institutionalprojectscompleted = [
   {
     src: "Sources/images/prouctlist/Institutional_projects/completed/lubi corporate.jpg",
     title: "LUBI CORPORATE",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/Institutional_projects/completed/Lubi/Main photos/corporate-park-ahmedabad3.jpg",
       "/Sources/images/prouctlist/Institutional_projects/completed/Lubi/Main photos/Lubi - Main.jpg",
       "/Sources/images/prouctlist/Institutional_projects/completed/Lubi/Main photos/Lubi - 1.jpg",
@@ -106,7 +106,7 @@ const institutionalprojectscompleted = [
       "/Sources/images/prouctlist/Institutional_projects/completed/Lubi/IMG-20220310-WA0020.jpg",
       "/Sources/images/prouctlist/Institutional_projects/completed/Lubi/IMG-20220310-WA0021.jpg",
       "/Sources/images/prouctlist/Institutional_projects/completed/Lubi/IMG-20220310-WA0012.jpg",
-      
+
     ],
     content: "Corporate office at Tragad, Ahmedabad",
     segment: "Corporate",
@@ -122,7 +122,7 @@ const institutionalprojectscompleted = [
   {
     src: "Sources/images/prouctlist/Institutional_projects/completed/2.png",
     title: "ANAND NIKETAN JOEY'S CAMPUS",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/Institutional_projects/completed/Anand Niketan School/Best Photos/Anand Niketan -Main.JPG",
       "/Sources/images/prouctlist/Institutional_projects/completed/Anand Niketan School/Best Photos/Anand Niketan -1.JPG",
       "/Sources/images/prouctlist/Institutional_projects/completed/Anand Niketan School/Best Photos/Anand Niketan -2.JPG",
@@ -144,7 +144,7 @@ const institutionalprojectscompleted = [
   {
     src: "Sources/images/prouctlist/Institutional_projects/completed/3.png",
     title: "NARAYANA HRUDALAYA HOSPITAL",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/Institutional_projects/completed/Narayana Hrudalaya Hsopital/Narayana Hrudalaya - Main.jpg",
       "/Sources/images/prouctlist/Institutional_projects/completed/Narayana Hrudalaya Hsopital/Narayana Hrudalaya - 1.jpg",
       "/Sources/images/prouctlist/Institutional_projects/completed/Narayana Hrudalaya Hsopital/Narayana Hrudalaya - 2.jpg",
@@ -166,25 +166,6 @@ const institutionalprojectscompleted = [
 const Institutionalprojects = () => {
   const [isOngoing, setIsOngoing] = useState(false);
   const [isCompleted, setIsCompleted] = useState(true);
-  const [expandedOngoing, setExpandedOngoing] = useState(null);
-  // State for completed projects
-  const [expandedCompleted, setExpandedCompleted] = useState(null);
-  const toggleOngoing = (key) => {
-    if (expandedOngoing === key) {
-      setExpandedOngoing(null);
-    } else {
-      setExpandedOngoing(key);
-    }
-  };
-
-  // Toggle function for completed projects
-  const toggleCompleted = (key) => {
-    if (expandedCompleted === key) {
-      setExpandedCompleted(null);
-    } else {
-      setExpandedCompleted(key);
-    }
-  };
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalDetails, setModalDetails] = useState(null);
   const showModal = (item) => {
@@ -451,7 +432,7 @@ const Institutionalprojects = () => {
                           style={{ minHeight: "200px" }}
                         >
                           <div className="propertylist_image">
-                          <img src={item.src} alt="404 - Not Given" onClick={() => showModal(item)} />
+                            <img src={item.src} alt="404 - Not Given" onClick={() => showModal(item)} />
                           </div>
 
                           <div className="propertylist_content p-4">
@@ -495,49 +476,36 @@ const Institutionalprojects = () => {
                                 {item.projectSize}
                               </p>
                             </div>
-                            {expandedCompleted !== key && (
-                              <div className="pt-3">
-                                <button onClick={() => toggleCompleted(key)}>Read More</button>
-                              </div>
-                            )}
-                            {expandedCompleted === key && (
-                              <div className="project-details-hidden">
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Project Description:&nbsp;</span>
-                                    {item.projectDes}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Project Year:&nbsp;</span>
-                                    {item.projectYear}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Architect:&nbsp;</span>
-                                    {item.architect}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Str. Consultant:&nbsp;</span>
-                                    {item.consultant}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Scope:&nbsp;</span>
-                                    {item.scope}
-                                  </p>
-                                </div>
-                                {/* Button to hide the details */}
-                                <div className="pt-3">
-                                  <button onClick={() => toggleCompleted(key)}>Show Less</button>
-                                </div>
-                              </div>
-                            )}
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Project Description:&nbsp;</span>
+                                {item.projectDes}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Project Year:&nbsp;</span>
+                                {item.projectYear}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Architect:&nbsp;</span>
+                                {item.architect}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Str. Consultant:&nbsp;</span>
+                                {item.consultant}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Scope:&nbsp;</span>
+                                {item.scope}
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </Col>
@@ -545,16 +513,16 @@ const Institutionalprojects = () => {
                   })}
               </Row>
               {modalDetails && (
-                <Modal title={modalDetails.title} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={800}>
+                <Modal title={modalDetails.title} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={1000}>
                   <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
                     {/* Check if imageGallery exists and has images */}
                     {modalDetails.imageGallery && modalDetails.imageGallery.length > 0 ? (
                       modalDetails.imageGallery.map((imgSrc, idx) => (
-                        <img
+                        <Image
                           key={idx}
                           src={imgSrc}
                           alt={`Gallery Image ${idx + 1}`}
-                          style={{ width: "200px", cursor: "pointer" }}
+                          style={{ width: "400px", cursor: "pointer" }}
                         />
                       ))
                     ) : (

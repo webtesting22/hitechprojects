@@ -1,4 +1,4 @@
-import { Col, Image, Row,Modal } from "antd";
+import { Col, Image, Row, Modal } from "antd";
 import React, { useState } from "react";
 import Header from "../header/header";
 
@@ -42,7 +42,7 @@ const industriallist = [
     projectYear: "2022-Current",
     scope: "Civil, Plumbing and Finishing works for Torrent Substation",
   },
-  
+
   // {
   //   src: "Sources/images/prouctlist/industrial/ongoing/1-2.jpeg",
   //   title: "TORRENT POWER “B” STATION",
@@ -61,7 +61,7 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/industrial/ongoing/1-2.jpeg",
     title: "TORRENT B STATION ",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Torrent Katargam - Main.jpg",
       "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture2.jpg",
       "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture3.jpg",
@@ -86,7 +86,7 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/industrial/completed/17.jpg",
     title: "TORRENT POWER 'E' STATION",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/industrial/completed/Torrent Varachha/Torrent Varacha - Main.jpg",
       "/Sources/images/prouctlist/industrial/completed/Torrent Varachha/Torrent Varacha - 1.jpg"
     ],
@@ -104,7 +104,7 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/ongoing/4.png",
     title: "TORRENT POWER LTD. ",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/industrial/completed/Torrent Naranpura/Picture1.jpg",
       "/Sources/images/prouctlist/industrial/completed/Torrent Naranpura/Picture2.jpg",
       "/Sources/images/prouctlist/industrial/completed/Torrent Naranpura/Picture3.jpg"
@@ -124,7 +124,7 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/ongoing/5.png",
     title: "TORRENT POWER LTD.",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Main Photos/Torrent Odhav - Main.jpg",
       "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Main Photos/Torrent Odhav - 2.jpg",
       "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Main Photos/Torrent Odhav - 1.jpg",
@@ -159,11 +159,11 @@ const industrialcompleted = [
     consultant: " Ducon Consultant Pvt Ltd",
     scope: "RCC Framework, Plumbing, Finishing Work",
   },
- 
+
   {
     src: "Sources/images/prouctlist/industrial/completed/1.png",
     title: "TORRENT SUBSTATION",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/Main Photos/Torrent Dholera - Main.jpg",
       "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/Main Photos/Torrent Dholera - 1.jpg",
       "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/IMG_0319.JPG",
@@ -188,7 +188,7 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/industrial/completed/2.png",
     title: "FINECURE PHARMACEUTICALS LTD",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140520.jpg",
       "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140604.jpg",
       "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140710.jpg",
@@ -570,8 +570,8 @@ const Industrial = () => {
                         >
                           <div
                             className="propertylist_image"
-                            // style={{ minHeight: "300px" }}
-                            
+                          // style={{ minHeight: "300px" }}
+
                           >
                             <Image src={item.src} alt="404 - Not Given" />
                           </div>
@@ -617,49 +617,37 @@ const Industrial = () => {
                                 {item.projectSize}
                               </p>
                             </div>
-                            {expandedOngoing !== key && (
-                              <div className="pt-3">
-                                <button onClick={() => toggleOngoing(key)}>Read More</button>
-                              </div>
-                            )}
-                            {expandedOngoing === key && (
-                              <div className="project-details-hidden">
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Project Description:&nbsp;</span>
-                                    {item.projectDes}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Project Year:&nbsp;</span>
-                                    {item.projectYear}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Architect:&nbsp;</span>
-                                    {item.architect}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Str. Consultant:&nbsp;</span>
-                                    {item.consultant}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Scope:&nbsp;</span>
-                                    {item.scope}
-                                  </p>
-                                </div>
-                                {/* Button to hide the details */}
-                                <div className="pt-3">
-                                  <button onClick={() => toggleOngoing(key)}>Show Less</button>
-                                </div>
-                              </div>
-                            )}
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Project Description:&nbsp;</span>
+                                {item.projectDes}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Project Year:&nbsp;</span>
+                                {item.projectYear}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Architect:&nbsp;</span>
+                                {item.architect}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Str. Consultant:&nbsp;</span>
+                                {item.consultant}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Scope:&nbsp;</span>
+                                {item.scope}
+                              </p>
+                            </div>
+
                           </div>
                         </div>
                       </Col>
@@ -678,7 +666,7 @@ const Industrial = () => {
                           style={{ minHeight: "200px" }}
                         >
                           <div className="propertylist_image">
-                          <img src={item.src} alt="404 - Not Given" onClick={() => showModal(item)} />
+                            <img src={item.src} alt="404 - Not Given" onClick={() => showModal(item)} />
                           </div>
 
                           <div className="propertylist_content p-4">
@@ -722,49 +710,37 @@ const Industrial = () => {
                                 {item.projectSize}
                               </p>
                             </div>
-                            {expandedCompleted !== key && (
-                              <div className="pt-3">
-                                <button onClick={() => toggleCompleted(key)}>Read More</button>
-                              </div>
-                            )}
-                            {expandedCompleted === key && (
-                              <div className="project-details-hidden">
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Project Description:&nbsp;</span>
-                                    {item.projectDes}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Project Year:&nbsp;</span>
-                                    {item.projectYear}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Architect:&nbsp;</span>
-                                    {item.architect}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Str. Consultant:&nbsp;</span>
-                                    {item.consultant}
-                                  </p>
-                                </div>
-                                <div className="pt-3">
-                                  <p className="is-size-6">
-                                    <span className="has-text-weight-semibold">Scope:&nbsp;</span>
-                                    {item.scope}
-                                  </p>
-                                </div>
-                                {/* Button to hide the details */}
-                                <div className="pt-3">
-                                  <button onClick={() => toggleCompleted(key)}>Show Less</button>
-                                </div>
-                              </div>
-                            )}
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Project Description:&nbsp;</span>
+                                {item.projectDes}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Project Year:&nbsp;</span>
+                                {item.projectYear}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Architect:&nbsp;</span>
+                                {item.architect}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Str. Consultant:&nbsp;</span>
+                                {item.consultant}
+                              </p>
+                            </div>
+                            <div className="pt-3">
+                              <p className="is-size-6">
+                                <span className="has-text-weight-semibold">Scope:&nbsp;</span>
+                                {item.scope}
+                              </p>
+                            </div>
+
                           </div>
                         </div>
                       </Col>
@@ -772,16 +748,16 @@ const Industrial = () => {
                   })}
               </Row>
               {modalDetails && (
-                <Modal title={modalDetails.title} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={800}>
+                <Modal title={modalDetails.title} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={1000}>
                   <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
                     {/* Check if imageGallery exists and has images */}
                     {modalDetails.imageGallery && modalDetails.imageGallery.length > 0 ? (
                       modalDetails.imageGallery.map((imgSrc, idx) => (
-                        <img
+                        <Image
                           key={idx}
                           src={imgSrc}
                           alt={`Gallery Image ${idx + 1}`}
-                          style={{ width: "200px", cursor: "pointer" }}
+                          style={{ width: "400px", cursor: "pointer" }}
                         />
                       ))
                     ) : (
