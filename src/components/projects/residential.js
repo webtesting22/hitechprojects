@@ -1,6 +1,7 @@
 import { Modal, Col, Image, Row } from "antd";
 import React, { useEffect, useState } from "react";
 import Header from "../header/header";
+import { Container } from "@mui/material";
 
 const industriallist = [
   {
@@ -314,7 +315,13 @@ const industrialcompleted = [
     title: "SUN SKY PARK",
     imageGallery: [
       "/Sources/images/NewImages/From Raj Sir/Sun Sky Park/Picture 1.jpg",
-      "/Sources/images/NewImages/From Raj Sir/Sun Sky Park/Sun Sky Park.jpg"
+      "/Sources/images/NewImages/From Raj Sir/Sun Sky Park/Sun Sky Park.jpg",
+      "/Sources/images/prouctlist/residential/completed/SUN SKY PARK & CENTRAL PLACE/Main Photos/Sun Sky Park - 8.jpg",
+      "/Sources/images/prouctlist/residential/completed/SUN SKY PARK & CENTRAL PLACE/Main Photos/Sun Sky Park - 7.jpg",
+      "/Sources/images/prouctlist/residential/completed/SUN SKY PARK & CENTRAL PLACE/Edits 2/23.jpg",
+      "/Sources/images/prouctlist/residential/completed/SUN SKY PARK & CENTRAL PLACE/Edits 2/24.jpg",
+      "/Sources/images/prouctlist/residential/completed/SUN SKY PARK & CENTRAL PLACE/Edits 2/32.jpg",
+      "/Sources/images/prouctlist/residential/completed/SUN SKY PARK & CENTRAL PLACE/Edits 2/81.jpg"
     ],
     content:
       "Welcome to a new perspective to city living in Ahmedabad through Community, Central Park, Club, Homes, Penthouse etc.",
@@ -384,8 +391,17 @@ const industrialcompleted = [
     scope: "RCC Framework, Masonry , Plaster, Finishing Work",
   },
   {
-    src: "Sources/images/prouctlist/residential/completed/6.JPG",
+    src: "/Sources/images/prouctlist/residential/completed/SUN EVOQ/IMG_20170527_161857.jpg",
     title: "SUN EVOQ",
+    imageGallery:[
+      "/Sources/images/prouctlist/residential/completed/SUN EVOQ/1518241082__16R1706.jpg",
+      "/Sources/images/prouctlist/residential/completed/SUN EVOQ/Sun Evoq - 6.JPG",
+      "/Sources/images/prouctlist/residential/completed/SUN EVOQ/DSC_3950.JPG",
+      "/Sources/images/prouctlist/residential/completed/SUN EVOQ/DSC_3963.JPG",
+      "/Sources/images/prouctlist/residential/completed/SUN EVOQ/DSC_3972.JPG",
+      "/Sources/images/prouctlist/residential/completed/SUN EVOQ/DSC_4086.JPG",
+      
+    ],
     content:
       "The project offers residential units with top class specifications that meet the expectations of the lifestyle of the urban.",
     client: "Shilp Developers",
@@ -740,16 +756,19 @@ const Residential = () => {
               </Row>
               {modalDetails && (
                 <Modal title={modalDetails.title} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={1000}>
-                  <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+                  <div style={{ display: "flex", gap: "10px", flexWrap: "wrap",  }}>
                     {/* Check if imageGallery exists and has images */}
                     {modalDetails.imageGallery && modalDetails.imageGallery.length > 0 ? (
                       modalDetails.imageGallery.map((imgSrc, idx) => (
+                <div className="image_position">
                         <Image
                           key={idx}
                           src={imgSrc}
                           alt={`Gallery Image ${idx + 1}`}
-                          style={{ width: "400px", cursor: "pointer" }}
+                          style={{ cursor: "pointer", }}
+                        
                         />
+                        </div>
                       ))
                     ) : (
                       <p>No images found</p>

@@ -4,29 +4,26 @@ import React, { useState } from "react";
 import Header from "../header/header";
 
 const institutionalprojectslist = [
-  // {
-  //   src: "",
-  //   title: "Anubhav School",
-  //   content:
-  //     "Anand Niketan is a School having 50,000 Sqft built up area in Sughad, Ahmedabad with various facilities including Special Room, Sports Arenas & Activity Rooms.",
-  //   segment: "Education",
-  //   client: "Pilak Shah",
-  //   location: "Sanand, Ahmedabad",
-  //   projectSize: "75,704 Sq. ft.",
-  //   projectDes: "8 Floors, 43 Meters",
-  //   projectYear: "2024 - Current",
-  //   architect: "Kakani Associates",
-  //   consultant: "Japan Shah Consulting Engineers",
-  //   scope:
-  //     "Civil Works Excavation, Backfiling, pile Foundation work, masonary, plaster, flooring, painting for School Building",
-  // },
+  {
+    src: "",
+    title: "ANUBHAV SCHOOL",
+    content:  "----------------------------------------------",
+    client: "----------",
+    location: "Sanand, Ahmedabad",
+    projectSize: "75,000 Sq. ft.",
+    projectDes: "----------",
+    projectYear: "2024 - Current",
+    architect: "------------",
+    consultant: "------------------",
+    scope:
+      "Civil Works Excavation, Backfiling, pile Foundation work, masonary, plaster, flooring, painting for School Building",
+  },
 
 ];
 const institutionalprojectscompleted = [
   {
     src: "Sources/images/prouctlist/Institutional_projects/ongoing/1-1.jpg",
     title: "ANAND NIKETAN SCHOOL",
-
     content:
       "Anand Niketan is a School having 50,000 Sqft built up area in Sughad, Ahmedabad with various facilities including Special Room, Sports Arenas & Activity Rooms.",
     segment: "Education",
@@ -161,6 +158,7 @@ const institutionalprojectscompleted = [
     consultant: "Umesh & Co",
     scope: "Earthwork,RCC Framework,Masonry, Plaster.",
   },
+  
 ];
 
 const Institutionalprojects = () => {
@@ -518,12 +516,14 @@ const Institutionalprojects = () => {
                     {/* Check if imageGallery exists and has images */}
                     {modalDetails.imageGallery && modalDetails.imageGallery.length > 0 ? (
                       modalDetails.imageGallery.map((imgSrc, idx) => (
-                        <Image
+                        <div className="image_position">                        <Image
                           key={idx}
                           src={imgSrc}
                           alt={`Gallery Image ${idx + 1}`}
-                          style={{ width: "400px", cursor: "pointer" }}
+                          style={{cursor: "pointer" }}
                         />
+                        </div>
+
                       ))
                     ) : (
                       <p>No images found</p>

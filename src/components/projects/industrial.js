@@ -42,6 +42,21 @@ const industriallist = [
     projectYear: "2022-Current",
     scope: "Civil, Plumbing and Finishing works for Torrent Substation",
   },
+  {
+    src: "",
+    title: "URMIN",
+    segment: "Industrial",
+    content: "------------------",
+    client: "------------",
+    location: "Ahmedabad",
+    projectSize:
+      "2,00,000 Sq. ft.",
+    projectDes: "------------",
+    projectYear: "--------",
+    architect: "------------",
+    consultant: "----------",
+    scope: "RCC Core, Shell Work, Finishing Work",
+  },
 
   // {
   //   src: "Sources/images/prouctlist/industrial/ongoing/1-2.jpeg",
@@ -753,12 +768,14 @@ const Industrial = () => {
                     {/* Check if imageGallery exists and has images */}
                     {modalDetails.imageGallery && modalDetails.imageGallery.length > 0 ? (
                       modalDetails.imageGallery.map((imgSrc, idx) => (
+                        <div className="image_position">
                         <Image
                           key={idx}
                           src={imgSrc}
                           alt={`Gallery Image ${idx + 1}`}
-                          style={{ width: "400px", cursor: "pointer" }}
+                          style={{cursor: "pointer" }}
                         />
+                        </div>
                       ))
                     ) : (
                       <p>No images found</p>

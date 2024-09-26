@@ -70,6 +70,34 @@ const commerciallist = [
     consultant: "S3M Design Consultants LLP",
     scope: "Structual Work, RCC Framework, Masonry ,Plaster , Painting",
   },
+  {
+    src: "",
+    title: "DEVX",
+    content: "------------------",
+    client: "------------",
+    location: "Ahmedabad",
+    projectSize:
+      "4,50,000 Sq. ft.",
+    projectDes: "------------",
+    projectYear: "--------",
+    architect: "------------",
+    consultant: "----------",
+    scope: "Civil work, Waterproofing, ELV work",
+  },
+  {
+    src: "",
+    title: "ADANI WILMAR HEADQUARTER",
+    content: "------------------",
+    client: "------------",
+    location: "Ahmedabad",
+    projectSize:
+      "4,85,000 Sq. ft.",
+    projectDes: "------------",
+    projectYear: "--------",
+    architect: "------------",
+    consultant: "----------",
+    scope: "Civil work, Waterproofing, ELV work",
+  },
 ];
 const commercialcompleted = [
   {
@@ -210,15 +238,13 @@ const commercialcompleted = [
     imageGallery: [
       "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0240.JPG",
       "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0250.JPG",
-      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0251.JPG",
-      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0261.JPG",
-      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0210.JPG",
       "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0196.JPG",
-      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0194.JPG",
-      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0183.JPG",
-      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0147.JPG",
-      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0083.JPG",
-      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0045.JPG"
+      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/DJI_0045.JPG",
+      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/Sun West Bank - 1.jpg",
+      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/Sun West Bank - Main.jpg",
+      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/Sun West Bank - 2.jpg",
+      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/25.jpg",
+      "/Sources/images/prouctlist/commercial/completed/West Bank Drone Photos/26.jpg"
     ],
     content:
       "Sun Westbank is one of the commercial developments offering spacious and skillfully designed office spaces and commercial shops.",
@@ -753,12 +779,14 @@ const Commercial = () => {
                     {/* Check if imageGallery exists and has images */}
                     {modalDetails.imageGallery && modalDetails.imageGallery.length > 0 ? (
                       modalDetails.imageGallery.map((imgSrc, idx) => (
+                        <div className="image_position">
                         <Image
                           key={idx}
                           src={imgSrc}
                           alt={`Gallery Image ${idx + 1}`}
-                          style={{ width: "400px", cursor: "pointer" }}
+                          style={{cursor: "pointer" }}
                         />
+                        </div>
                       ))
                     ) : (
                       <p>No images found</p>

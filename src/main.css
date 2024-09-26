@@ -1949,3 +1949,9 @@ textarea.form_input::placeholder {
 .ReactModalPortal .ReactModal__Overlay {
   z-index: 1000000;
 }
+
+.image_position img{ 
+  width: 300px;
+  object-fit: contain;
+  aspect-ratio: 3/2;
+}
