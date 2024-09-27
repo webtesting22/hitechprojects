@@ -329,7 +329,9 @@ const Institutionalprojects = () => {
                           style={{ minHeight: "650px" }}
                         >
                           <div className="propertylist_image">
-                            <Image src={item.src} alt="404 - Not Given" />
+                            <Image src={item.src} alt="404 - Not Given"  preview={{
+          getContainer: '#root', // This ensures the image preview is rendered within the root element
+        }} />
                           </div>
 
                           <div className="propertylist_content p-4">
@@ -511,7 +513,7 @@ const Institutionalprojects = () => {
                   })}
               </Row>
               {modalDetails && (
-                <Modal title={modalDetails.title} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={1000}>
+                <Modal getContainer="#root" title={modalDetails.title} open={isModalOpen} footer={null} onOk={handleOk} onCancel={handleCancel}  mask={true} style={{ boxShadow: "none" }} width={1000}>
                   <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }} className="imageGalleryContainer">
                     {/* Check if imageGallery exists and has images */}
                     {modalDetails.imageGallery && modalDetails.imageGallery.length > 0 ? (
@@ -521,6 +523,9 @@ const Institutionalprojects = () => {
                           src={imgSrc}
                           alt={`Gallery Image ${idx + 1}`}
                           style={{cursor: "pointer" }}
+                          preview={{
+                                getContainer: '#root', // This ensures the image preview is rendered within the root element
+                              }}
                         />
                         </div>
 

@@ -615,7 +615,9 @@ const Commercial = () => {
                         >
                           <div className="propertylist_image">
                             <Image src={item.src} alt="404 - Not Given"
-                              preview={{ getContainer: null, }}
+                               preview={{
+          getContainer: '#root', // This ensures the image preview is rendered within the root element
+        }}
                             />
                           </div>
                           <div className="propertylist_content p-4">
@@ -788,13 +790,16 @@ const Commercial = () => {
                   })}
               </Row>
               {modalDetails && (
-                <Modal title={modalDetails.title} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={1000}>
+                <Modal getContainer="#root" title={modalDetails.title} open={isModalOpen} footer={null} mask={true} onOk={handleOk} onCancel={handleCancel} style={{ boxShadow: "none" }} width={1000}>
                   <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }} className="imageGalleryContainer">
                     {/* Check if imageGallery exists and has images */}
                     {modalDetails.imageGallery && modalDetails.imageGallery.length > 0 ? (
                       modalDetails.imageGallery.map((imgSrc, idx) => (
                         <div className="image_position">
                         <Image
+                         preview={{
+          getContainer: '#root', // This ensures the image preview is rendered within the root element
+        }}
                           key={idx}
                           src={imgSrc}
                           alt={`Gallery Image ${idx + 1}`}

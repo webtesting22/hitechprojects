@@ -1859,7 +1859,7 @@ hr.footerhr {
 .propertylist_image img {
   width: 100%;
   aspect-ratio: 3/2;
-  /* object-fit: contain; */
+  
 }
 
 @media (min-width: 350px) and (max-width: 700px) {
@@ -1945,15 +1945,16 @@ textarea.form_input::placeholder {
   font-size: 16px;
   border-radius: 2px;
 }
-
 .ReactModalPortal .ReactModal__Overlay {
   z-index: 1000000;
 }
 
 .image_position img{ 
-  width: 300px;
-  object-fit: contain;
+  width: 400px;
+  /* object-fit: contain; */
   aspect-ratio: 3/2;
+  
+ 
 }
 @media (max-width:576px){
  
@@ -1963,4 +1964,5 @@ textarea.form_input::placeholder {
   .navbar-item{
     flex-shrink: unset;
   }
+  
 }

@@ -394,14 +394,14 @@ const industrialcompleted = [
   {
     src: "/Sources/images/prouctlist/residential/completed/SUN EVOQ/IMG_20170527_161857.jpg",
     title: "SUN EVOQ",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/residential/completed/SUN EVOQ/1518241082__16R1706.jpg",
       "/Sources/images/prouctlist/residential/completed/SUN EVOQ/Sun Evoq - 6.JPG",
       "/Sources/images/prouctlist/residential/completed/SUN EVOQ/DSC_3950.JPG",
       "/Sources/images/prouctlist/residential/completed/SUN EVOQ/DSC_3963.JPG",
       "/Sources/images/prouctlist/residential/completed/SUN EVOQ/DSC_3972.JPG",
       "/Sources/images/prouctlist/residential/completed/SUN EVOQ/DSC_4086.JPG",
-      
+
     ],
     content:
       "The project offers residential units with top class specifications that meet the expectations of the lifestyle of the urban.",
@@ -502,7 +502,7 @@ const Residential = () => {
   const showModal = (item) => {
     setModalDetails(item);
     setIsModalOpen(true);
-    console.log("open")
+    // console.log("open")
 
   };
 
@@ -579,7 +579,9 @@ const Residential = () => {
                           style={{ minHeight: "200px" }}
                         >
                           <div className="propertylist_image">
-                            <Image src={item.src} alt="404 - Not Given" />
+                            <Image src={item.src} alt="404 - Not Given" preview={{
+                              getContainer: '#root', // This ensures the image preview is rendered within the root element
+                            }} />
                           </div>
 
                           <div className="propertylist_content p-4">
@@ -756,26 +758,33 @@ const Residential = () => {
                   })}
               </Row>
               {modalDetails && (
-                <Modal title={modalDetails.title} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={1000}>
-                  <div style={{ display: "flex", gap: "10px", flexWrap: "wrap",  }} className="imageGalleryContainer">
+                <Modal getContainer="#root" title={modalDetails.title} open={isModalOpen} footer={null} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={1000}>
+                  <Row>
                     {/* Check if imageGallery exists and has images */}
                     {modalDetails.imageGallery && modalDetails.imageGallery.length > 0 ? (
                       modalDetails.imageGallery.map((imgSrc, idx) => (
-                <div className="image_position">
-                        <Image
-                          key={idx}
-                          src={imgSrc}
-                          alt={`Gallery Image ${idx + 1}`}
-                          style={{ cursor: "pointer", }}
-                        
-                        />
-                        </div>
+                        <Col lg={8}>
+                          <div className="image_position">
+
+                            <Image
+                              key={idx}
+                              src={imgSrc}
+                              alt={`Gallery Image ${idx + 1}`}
+                              style={{ cursor: "pointer", }}
+                              preview={{
+                                getContainer: '#root', // This ensures the image preview is rendered within the root element
+                              }}
+                            />
+                          </div>
+                        </Col>
                       ))
                     ) : (
-                      <p>No images found</p>
+                      <Col lg={24} style={{ textAlign: 'center', padding: '20px' }}>
+                        <p>No Images Found</p>
+                      </Col>
                       /* Show this if imageGallery is empty */
                     )}
-                  </div>
+                  </Row>
                 </Modal>)}
             </div>
           </div>
