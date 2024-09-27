@@ -190,7 +190,10 @@ const Header = () => {
 
   // function afterOpenModal() {
   //   subtitle.style.color = "#f00";
-  // }
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    subtitle.style.color = "#f00";
+  }
 
   function closeModal() {
     setIsOpen(false);
@@ -204,10 +207,9 @@ const Header = () => {
         </button>
         <Modal
           isOpen={modalIsOpen}
-          // onAfterOpen={afterOpenModal}
+          onAfterOpen={afterOpenModal}
           onRequestClose={closeModal}
           style={window.innerWidth >= 992 ? customStyles : mobilecustomStyles}
-          
           contentLabel="Example Modal"
         >
           {/* <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
