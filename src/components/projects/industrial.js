@@ -46,18 +46,47 @@ const industriallist = [
     src: "",
     title: "URMIN",
     segment: "Industrial",
-    content: "------------------",
-    client: "------------",
+    
+    client: "-",
     location: "Ahmedabad",
     projectSize:
       "2,00,000 Sq. ft.",
-    projectDes: "------------",
-    projectYear: "--------",
-    architect: "------------",
-    consultant: "----------",
+    projectDes: "-",
+    projectYear: "-",
+    architect: "-",
+    consultant: "-",
     scope: "RCC Core, Shell Work, Finishing Work",
   },
+  {
+    src: "",
+    title: "New VCB and GIS Building for 66 kV Substation",
+    segment: "Industrial",
+    
+    client: "Torrent Power Ltd.",
+    location: "Near Vastadevdi,Surat",
+    projectSize:
+      "-",
+    projectDes: "-",
+    projectYear: "-",
+    architect: "-",
+    consultant: "-",
+    scope: "Civil and Structural Works",
+  },
+  {
+    src: "",
+    title: "VCB and GIS Building ",
+    segment: "Industrial",
 
+    client: "Torrent Power Ltd.",
+    location: "Ashwanikumar road,Surat",
+    projectSize:
+      "-",
+    projectDes: "-",
+    projectYear: "-",
+    architect: "-",
+    consultant: "-",
+    scope: "RCC Core, Shell Work, Finishing Work",
+  }
   // {
   //   src: "Sources/images/prouctlist/industrial/ongoing/1-2.jpeg",
   //   title: "TORRENT POWER “B” STATION",
@@ -764,7 +793,7 @@ const Industrial = () => {
               </Row>
               {modalDetails && (
                 <Modal title={modalDetails.title} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={1000}>
-                  <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+                  <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }} className="imageGalleryContainer">
                     {/* Check if imageGallery exists and has images */}
                     {modalDetails.imageGallery && modalDetails.imageGallery.length > 0 ? (
                       modalDetails.imageGallery.map((imgSrc, idx) => (

@@ -73,30 +73,44 @@ const commerciallist = [
   {
     src: "",
     title: "DEVX",
-    content: "------------------",
-    client: "------------",
+    content: "-",
+    client: "-",
     location: "Ahmedabad",
     projectSize:
       "4,50,000 Sq. ft.",
-    projectDes: "------------",
-    projectYear: "--------",
-    architect: "------------",
-    consultant: "----------",
+    projectDes: "-",
+    projectYear: "-",
+    architect: "-",
+    consultant: "-",
     scope: "Civil work, Waterproofing, ELV work",
   },
   {
     src: "",
     title: "ADANI WILMAR HEADQUARTER",
-    content: "------------------",
-    client: "------------",
+    content: "-",
+    client: "-",
     location: "Ahmedabad",
     projectSize:
       "4,85,000 Sq. ft.",
-    projectDes: "------------",
-    projectYear: "--------",
-    architect: "------------",
-    consultant: "----------",
+    projectDes: "-",
+    projectYear: "-",
+    architect: "-",
+    consultant: "-",
     scope: "Civil work, Waterproofing, ELV work",
+  },
+  {
+    src:"",
+    title:"UNIVERSAL COMMERCIAL CAPITAL",
+    content:"-",
+    segment:"Commercial",
+    client:"UCC Infra",
+    location:"Surat",
+    projectSize:"3,26,615 Sq. ft",
+    projectDes:"-",
+    projectYear:"-",
+    architect:"-",
+    consultant:"-",
+    scope:"RCC Core & Shell Work",
   },
 ];
 const commercialcompleted = [
@@ -775,7 +789,7 @@ const Commercial = () => {
               </Row>
               {modalDetails && (
                 <Modal title={modalDetails.title} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={1000}>
-                  <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+                  <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }} className="imageGalleryContainer">
                     {/* Check if imageGallery exists and has images */}
                     {modalDetails.imageGallery && modalDetails.imageGallery.length > 0 ? (
                       modalDetails.imageGallery.map((imgSrc, idx) => (

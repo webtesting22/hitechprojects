@@ -233,6 +233,7 @@ const industriallist = [
     scope:
       "Structural Work, Diaphragm Wall, RCC Framework, Masonry, Plaster",
   },
+
 ];
 const industrialcompleted = [
 
@@ -756,7 +757,7 @@ const Residential = () => {
               </Row>
               {modalDetails && (
                 <Modal title={modalDetails.title} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={1000}>
-                  <div style={{ display: "flex", gap: "10px", flexWrap: "wrap",  }}>
+                  <div style={{ display: "flex", gap: "10px", flexWrap: "wrap",  }} className="imageGalleryContainer">
                     {/* Check if imageGallery exists and has images */}
                     {modalDetails.imageGallery && modalDetails.imageGallery.length > 0 ? (
                       modalDetails.imageGallery.map((imgSrc, idx) => (

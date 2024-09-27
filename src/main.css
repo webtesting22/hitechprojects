@@ -1955,3 +1955,12 @@ textarea.form_input::placeholder {
   object-fit: contain;
   aspect-ratio: 3/2;
 }
+@media (max-width:576px){
+ 
+  .image_position img{
+    width: 200px;
+  }
+  .navbar-item{
+    flex-shrink: unset;
+  }
+}
