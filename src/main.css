@@ -1956,6 +1956,9 @@ textarea.form_input::placeholder {
   
  
 }
+.image_position{
+  margin: 5px;
+}
 @media (max-width:576px){
  
   .image_position img{
