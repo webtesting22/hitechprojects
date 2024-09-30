@@ -39,7 +39,7 @@ const consultantslist = [
   { src: "Sources/images/consultants/33.png" },
   { src: "Sources/images/consultants/34.png" },
   { src: "Sources/images/consultants/35.png" },
-  { src: "Sources/images/consultants/36.png" },
+  //{ src: "Sources/images/consultants/36.png" },
   { src: "Sources/images/consultants/37.png" },
   { src: "Sources/images/consultants/38.png" },
   { src: "Sources/images/consultants/39.png" },

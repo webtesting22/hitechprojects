@@ -38,10 +38,9 @@ const institutionalprojectscompleted = [
       "Civil works, Masonry & Plaster, Painting, Flooring, and Waterproofing.",
   },
   {
-    src: "Sources/images/prouctlist/Institutional_projects/ongoing/2.png",
+    src: "/Sources/images/prouctlist/Institutional_projects/completed/Museum/Main Photos/Jain Museum - 1.jpg",
     title: "MUSEUM KOBA",
     imageGallery: [
-      "/Sources/images/prouctlist/Institutional_projects/completed/Museum/Main Photos/Jain Museum - Main.jpg",
       "/Sources/images/prouctlist/Institutional_projects/completed/Museum/Main Photos/Jain Museum - 1.jpg",
       "/Sources/images/prouctlist/Institutional_projects/completed/Museum/IMG_20220310_105045.jpg",
       "/Sources/images/prouctlist/Institutional_projects/completed/Museum/IMG_20220310_105252.jpg",
@@ -117,7 +116,7 @@ const institutionalprojectscompleted = [
     scope: "RCC Framework, Masonry ,Plaster.",
   },
   {
-    src: "Sources/images/prouctlist/Institutional_projects/completed/2.png",
+    src: "/Sources/images/prouctlist/Institutional_projects/completed/Anand Niketan School/NDT_4579.JPG",
     title: "ANAND NIKETAN JOEY'S CAMPUS",
     imageGallery: [
       "/Sources/images/prouctlist/Institutional_projects/completed/Anand Niketan School/Best Photos/Anand Niketan -Main.JPG",

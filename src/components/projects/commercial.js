@@ -99,18 +99,18 @@ const commerciallist = [
     scope: "Civil work, Waterproofing, ELV work",
   },
   {
-    src:"",
-    title:"UNIVERSAL COMMERCIAL CAPITAL",
-    content:"-",
-    segment:"Commercial",
-    client:"UCC Infra",
-    location:"Surat",
-    projectSize:"3,26,615 Sq. ft",
-    projectDes:"-",
-    projectYear:"-",
-    architect:"-",
-    consultant:"-",
-    scope:"RCC Core & Shell Work",
+    src: "",
+    title: "UNIVERSAL COMMERCIAL CAPITAL",
+    content: "-",
+    segment: "Commercial",
+    client: "UCC Infra",
+    location: "Surat",
+    projectSize: "3,26,615 Sq. ft",
+    projectDes: "-",
+    projectYear: "-",
+    architect: "-",
+    consultant: "-",
+    scope: "RCC Core & Shell Work",
   },
 ];
 const commercialcompleted = [
@@ -331,7 +331,7 @@ const commercialcompleted = [
     scope: "RCC Framework,Structural Work , Finishing Work",
   },
   {
-    src: "Sources/images/prouctlist/commercial/completed/6.jpg",
+    src: "Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture 9.jpg",
     title: "WESTGATE D BLOCK",
     imageGallery: [
       "/Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture 1.jpg",
@@ -373,7 +373,7 @@ const commercialcompleted = [
     scope: "RCC Framework, Masonry ,Plaster",
   },
   {
-    src: "Sources/images/prouctlist/commercial/completed/8.png",
+    src: "/Sources/images/prouctlist/commercial/completed/Ratnakar Nine Square/Ratnakar Nine - Main.jpg",
     title: "RATNAAKAR NINE SQUARE",
     imageGallery: [
       "/Sources/images/prouctlist/commercial/completed/Ratnakar Nine Square/2.jpg",
@@ -382,7 +382,7 @@ const commercialcompleted = [
       "/Sources/images/prouctlist/commercial/completed/Ratnakar Nine Square/1.jpg",
       "/Sources/images/prouctlist/commercial/completed/Ratnakar Nine Square/Ratnakar Nine - 1.jpg",
       "/Sources/images/prouctlist/commercial/completed/Ratnakar Nine Square/Ratnakar Nine - 2.jpg",
-      "/Sources/images/prouctlist/commercial/completed/Ratnakar Nine Square/Ratnakar Nine - Main.jpg"
+      
     ],
     content:
       "Experience a fully furnished business center enabled with the best of form and function, to deliver everything you need.",
@@ -397,7 +397,7 @@ const commercialcompleted = [
     scope: "RCC Framework, Masonry ,Plaster",
   },
   {
-    src: "Sources/images/prouctlist/commercial/completed/9.png",
+    src: "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture 7.JPG",
     title: "WESTGATE BUSINESS BAY",
     imageGallery: [
       "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture -1.jpg",
@@ -406,7 +406,7 @@ const commercialcompleted = [
       "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture -4.jpg",
       "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture 5.jpg",
       "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture 6.png",
-      "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture 7.JPG"
+      
     ],
     content:
       "Spread across two towers, Westgate Business Bay is a sought-after commercial project loaded with all the conveniences.",
@@ -615,9 +615,9 @@ const Commercial = () => {
                         >
                           <div className="propertylist_image">
                             <Image src={item.src} alt="404 - Not Given"
-                               preview={{
-          getContainer: '#root', // This ensures the image preview is rendered within the root element
-        }}
+                              preview={{
+                                getContainer: '#root', // This ensures the image preview is rendered within the root element
+                              }}
                             />
                           </div>
                           <div className="propertylist_content p-4">
@@ -796,15 +796,15 @@ const Commercial = () => {
                     {modalDetails.imageGallery && modalDetails.imageGallery.length > 0 ? (
                       modalDetails.imageGallery.map((imgSrc, idx) => (
                         <div className="image_position">
-                        <Image
-                         preview={{
-          getContainer: '#root', // This ensures the image preview is rendered within the root element
-        }}
-                          key={idx}
-                          src={imgSrc}
-                          alt={`Gallery Image ${idx + 1}`}
-                          style={{cursor: "pointer" }}
-                        />
+                          <Image
+                            preview={{
+                              getContainer: '#root', // This ensures the image preview is rendered within the root element
+                            }}
+                            key={idx}
+                            src={imgSrc}
+                            alt={`Gallery Image ${idx + 1}`}
+                            style={{ cursor: "pointer" }}
+                          />
                         </div>
                       ))
                     ) : (

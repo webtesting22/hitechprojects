@@ -254,7 +254,7 @@ const industrialcompleted = [
       "Structural Work, RCC Framework, Masonry, Plaster, MEP, Finishing Work",
   },
   {
-    src: "Sources/images/prouctlist/residential/ongoing/7.png",
+    src: "Sources/images/prouctlist/residential/completed/The Water Fall/The waterfall- Main.jpg",
     title: "THE WATERFALL",
     imageGallery: [
       "/Sources/images/prouctlist/residential/completed/The Water Fall/The waterfall- Main.jpg",
@@ -312,7 +312,7 @@ const industrialcompleted = [
     scope: "Structural Work, RCC Framework, MEP, Finishing Work",
   },
   {
-    src: "Sources/images/prouctlist/residential/completed/2.png",
+    src: "/Sources/images/NewImages/From Raj Sir/Sun Sky Park/Picture 1.jpg",
     title: "SUN SKY PARK",
     imageGallery: [
       "/Sources/images/NewImages/From Raj Sir/Sun Sky Park/Picture 1.jpg",
@@ -373,7 +373,7 @@ const industrialcompleted = [
     scope: "RCC Framework, Masonry , Plaster, Finishing Work",
   },
   {
-    src: "Sources/images/prouctlist/residential/completed/5.png",
+    src: "Sources/images/prouctlist/residential/completed/One 49/One 49 - 2.png",
     title: "ONE49",
     imageGallery: [
       "/Sources/images/prouctlist/residential/completed/One 49/One 49 - Main.jpg",
@@ -443,7 +443,7 @@ const industrialcompleted = [
     scope: "Structural Work, RCC Framework, MEP, Finishing Work",
   },
   {
-    src: "Sources/images/prouctlist/residential/completed/9.jpg",
+    src: "/Sources/images/prouctlist/residential/completed/Applewoods/Main Photos/Orchid Greenfield - Applewoods -1.jpg",
     title: "APPLEWOODS",
     imageGallery: [
       "/Sources/images/prouctlist/residential/completed/Applewoods/Main Photos/Applewoods-Main.jpg",
