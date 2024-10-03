@@ -22,8 +22,12 @@ const institutionalprojectslist = [
 ];
 const institutionalprojectscompleted = [
   {
-    src: "Sources/images/prouctlist/Institutional_projects/ongoing/1-1.jpg",
+    src: "/Sources/images/prouctlist/Institutional_projects/completed/AnandNiketan/1.jpg",
     title: "ANAND NIKETAN SCHOOL",
+    imageGallery:[
+      "/Sources/images/prouctlist/Institutional_projects/completed/AnandNiketan/1.jpg",
+      "Sources/images/prouctlist/Institutional_projects/ongoing/1-1.jpg"
+    ],
     content:
       "Anand Niketan is a School having 50,000 Sqft built up area in Sughad, Ahmedabad with various facilities including Special Room, Sports Arenas & Activity Rooms.",
     segment: "Education",

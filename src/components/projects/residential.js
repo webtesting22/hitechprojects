@@ -364,7 +364,7 @@ const industrialcompleted = [
     content:
       "For the first time in Gujarat, Quintessentially, the world’s leading luxury lifestyle concierge service is now at ‘The Banyan’.",
     client: "Suryam Group",
-    location: "Ashok Vatika, Bodakev, Ahmedabad",
+    location: "Ashok Vatika, BodakDev, Ahmedabad",
     projectSize: "  2,10,000 Sq. ft.",
     projectDes: "12 Floors, 45 Meters",
     projectYear: "2018",
