@@ -5,7 +5,7 @@ import { Container } from "@mui/material";
 
 const industriallist = [
   {
-    src: "Sources/images/prouctlist/residential/ongoing/dharohar.jpg",
+    src: "Sources/images/prouctlist/residential/ongoing/dharohar.avif",
     title: "Dharohar",
     content: "...",
     segment: "Residential",
