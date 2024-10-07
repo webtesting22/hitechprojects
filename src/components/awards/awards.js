@@ -144,6 +144,9 @@ const Awards = () => {
                         <div className="has-text-centered service_icon">
                           <div>
                             <Image
+                             preview={{
+                                getContainer: '#root', // This ensures the image preview is rendered within the root element
+                              }}
                               src={item.src}
                               alt="404 - Not Found"
                               style={{ height: "25vh", width: "100%" }}

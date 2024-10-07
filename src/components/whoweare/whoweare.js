@@ -586,7 +586,7 @@ const Whoweare = () => {
                             </div>
                             <p className="is-size-6 has-text-black mt-3">
                               Launched various commercial & residential projects
-                              in Ahmedabad & Gandhinagar as a developer
+                              in Ahmedabad & Gandhinagar as a developer.
                             </p>
                           </div>
                         </Space>
