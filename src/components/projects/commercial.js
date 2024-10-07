@@ -17,7 +17,7 @@ const commerciallist = [
   //   scope: "Civil Construction with finishing work of Commercial Building of B+G+4 storey (7 Blocks) and B+G+5 storey (2 Blocks).",
   // },
   {
-    src: "Sources/images/prouctlist/commercial/ongoing/1-1.jpeg",
+    src: "/Sources/images/prouctlist/commercial/ongoing/sharnam sq/1.jpg",
     title: "SHARANAM SQUARE",
     content: "...",
     client: "Sharanam Square LLP",
@@ -307,6 +307,7 @@ const commercialcompleted = [
     src: "Sources/images/prouctlist/commercial/completed/5.png",
     title: "SHARNAM SMART SPACE",
     imageGallery: [
+      "/Sources/images/prouctlist/commercial/completed/Sharnam Smart Space/SH.jpg",
       "/Sources/images/prouctlist/commercial/completed/Sharnam Smart Space/Main Photos/Sharnam Smart Space - Main.jpg",
       "/Sources/images/prouctlist/commercial/completed/Sharnam Smart Space/Main Photos/Sharnam Smart Space - 1.jpg",
       "/Sources/images/prouctlist/commercial/completed/Sharnam Smart Space/Main Photos/Sharnam Smart Space - 2.jfif",
@@ -331,7 +332,7 @@ const commercialcompleted = [
     scope: "RCC Framework,Structural Work , Finishing Work",
   },
   {
-    src: "Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture 9.jpg",
+    src: "/Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture 6.jpg",
     title: "WESTGATE D BLOCK",
     imageGallery: [
       "/Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture 1.jpg",
@@ -397,7 +398,7 @@ const commercialcompleted = [
     scope: "RCC Framework, Masonry ,Plaster",
   },
   {
-    src: "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture 7.JPG",
+    src: "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture -2.jpg",
     title: "WESTGATE BUSINESS BAY",
     imageGallery: [
       "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture -1.jpg",

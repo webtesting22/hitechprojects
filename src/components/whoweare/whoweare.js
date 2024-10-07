@@ -653,7 +653,7 @@ const Whoweare = () => {
                             </div>
                             <p className="is-size-6 has-text-black mt-3">
                               Bagged a landmark hospital project Narayana
-                              Hrueralava in Ahmedabad. Procured 1st Concrete
+                              Hrudalaya in Ahmedabad. Procured 1st Concrete
                               Batching Place & Pump.
                             </p>
                           </div>
@@ -680,7 +680,7 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                src="Sources/images/milestone/5.png"
+                                src="Sources/images/prouctlist/residential/ongoing/sunatmosphere/1.png"
                                 alt="404 - Not Given"
                               />
                             </div>
@@ -822,7 +822,7 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                src="Sources/images/milestone/9.png"
+                                src="Sources/images/prouctlist/commercial/completed/55.png"
                                 alt="404 - Not Given"
                               />
                             </div>
@@ -864,9 +864,7 @@ const Whoweare = () => {
                             </div>
                             <p className="is-size-6 has-text-black mt-3">
                               Expanded the corporate segment construction for
-                              clients like Torrent, Arvind & Nexus. Initiated
-                              geographical expansion by starting projects in
-                              Dholera & Surat.
+                              clients like Torrent, Arvind & Nexus. 
                             </p>
                           </div>
                         </Space>
@@ -876,7 +874,41 @@ const Whoweare = () => {
                 </Row>
               </div>
             </div>
-            <div className="timeline-block timeline-block-left different_width">
+            <div className="timeline-block timeline-block-left">
+              <div className="marker"></div>
+              <div>
+                <p className="is-size-4 timeline_year">2018</p>
+                <Row>
+                  <Col xxl={12} lg={17} md={24} sm={24} xs={24}>
+                    <div className="space-align-container">
+                      <div className="space-align-block">
+                        <Space
+                          align="center"
+                          direction="horizontal"
+                          className="mile_box"
+                        >
+                          {/* center1 */}
+                          <div>
+                            <div>
+                              <img
+                                src="Sources/images/milestone/10.png"
+                                alt="404 - Not Given"
+                              />
+                            </div>
+                            <p className="is-size-6 has-text-black mt-3">
+                               Initiated geographical expansion by starting projects in
+                               Dholera & Surat.
+                              
+                            </p>
+                          </div>
+                        </Space>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
+            </div>
+            <div className="timeline-block timeline-block-right different_width">
               <div className="marker"></div>
               <div>
                 <p className="is-size-4 timeline_year">2020</p>
@@ -911,7 +943,7 @@ const Whoweare = () => {
                 </div>
               </div>
             </div>
-            <div className="timeline-block timeline-block-right">
+            <div className="timeline-block timeline-block-left">
               <div className="marker"></div>
               <div>
                 <p className="is-size-4 timeline_year">2021</p>
@@ -946,7 +978,7 @@ const Whoweare = () => {
                 </Row>
               </div>
             </div>
-            <div className="timeline-block timeline-block-left different_width">
+            <div className="timeline-block timeline-block-right different_width">
               <div className="marker"></div>
               <div>
                 <p className="is-size-4 timeline_year">2022</p>
@@ -981,7 +1013,7 @@ const Whoweare = () => {
                 </div>
               </div>
             </div>
-            <div className="timeline-block timeline-block-right">
+            <div className="timeline-block timeline-block-left">
               <div className="marker"></div>
               <div>
                 <p className="is-size-4 timeline_year">2023</p>
@@ -1003,7 +1035,7 @@ const Whoweare = () => {
                               />
                             </div>
                             <p className="is-size-6 has-text-black mt-3">
-                              Begged several iconic projects like Regalia &
+                              Bagged several iconic projects like Regalia &
                               Flexone at GIFT city, Gandhinagar.
                             </p>
                           </div>

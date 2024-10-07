@@ -42,7 +42,7 @@ const institutionalprojectscompleted = [
       "Civil works, Masonry & Plaster, Painting, Flooring, and Waterproofing.",
   },
   {
-    src: "/Sources/images/prouctlist/Institutional_projects/completed/Museum/Main Photos/Jain Museum - 1.jpg",
+    src: "/Sources/images/prouctlist/Institutional_projects/completed/Museum/IMG_20220310_105045.jpg",
     title: "MUSEUM KOBA",
     imageGallery: [
       "/Sources/images/prouctlist/Institutional_projects/completed/Museum/Main Photos/Jain Museum - 1.jpg",

@@ -373,7 +373,7 @@ const industrialcompleted = [
     scope: "RCC Framework, Masonry , Plaster, Finishing Work",
   },
   {
-    src: "Sources/images/prouctlist/residential/completed/One 49/One 49 - 2.png",
+    src: "Sources/images/prouctlist/residential/completed/One 49/One 49 - Main.jpg",
     title: "ONE49",
     imageGallery: [
       "/Sources/images/prouctlist/residential/completed/One 49/One 49 - Main.jpg",
@@ -443,7 +443,7 @@ const industrialcompleted = [
     scope: "Structural Work, RCC Framework, MEP, Finishing Work",
   },
   {
-    src: "/Sources/images/prouctlist/residential/completed/Applewoods/Main Photos/Orchid Greenfield - Applewoods -1.jpg",
+    src: "/Sources/images/prouctlist/residential/completed/Applewoods/Main Photos/Applewoods-Main.jpg",
     title: "APPLEWOODS",
     imageGallery: [
       "/Sources/images/prouctlist/residential/completed/Applewoods/Main Photos/Applewoods-Main.jpg",

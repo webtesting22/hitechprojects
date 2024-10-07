@@ -166,7 +166,7 @@ const industrialcompleted = [
     scope: "RCC Framework, Plumbing, Finishing Work",
   },
   {
-    src: "Sources/images/prouctlist/commercial/ongoing/5.png",
+    src: "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Main Photos/Torrent Odhav - Main.jpg",
     title: "TORRENT POWER LTD.",
     imageGallery: [
       "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Main Photos/Torrent Odhav - Main.jpg",
