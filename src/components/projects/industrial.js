@@ -106,15 +106,15 @@ const industrialcompleted = [
     src: "Sources/images/prouctlist/industrial/ongoing/1-2.jpeg",
     title: "TORRENT B STATION ",
     imageGallery: [
-      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Torrent Katargam - Main.jpg",
-      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture2.jpg",
-      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture3.jpg",
-      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture4.jpg",
-      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture5.jpg",
-      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture6.jpg",
-      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture7.jpg",
-      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture8.png",
-      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture9.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Torrent Katargam - Main-min.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture2-min.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture3-min.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture4-min.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture5-min.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture6-min.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture7-min.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture8-min.png",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Katargam/Main Photos/Picture9-min.jpg",
 
     ],
     segment: "Industrial",
@@ -210,12 +210,12 @@ const industrialcompleted = [
     imageGallery: [
       "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/Main Photos/Torrent Dholera - Main.jpg",
       "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/Main Photos/Torrent Dholera - 1.jpg",
-      "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/IMG_0319.JPG",
-      "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/IMG_0322.JPG",
-      "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/IMG_0330.JPG",
-      "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/IMG20220113163710.jpg",
-      "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/IMG20220119171701.jpg",
-      "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/IMG20220129154549.jpg"
+      "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/IMG_0319-min.JPG",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/IMG_0322-min.JPG",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/IMG_0330-min.JPG",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/IMG20220113163710-min.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/IMG20220119171701-min.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/IMG20220129154549-min.jpg"
     ],
     content:
       "Torrent power, one of the largest integrated private sector power utilities in the country, is coming up with its 400KV and 200KV GIS building at Dholera.",
@@ -230,20 +230,21 @@ const industrialcompleted = [
     scope: "Structural Work, RCC Framework, Electrical Work",
   },
   {
-    src: "Sources/images/prouctlist/industrial/completed/2.png",
+    src:"/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140520-min.jpg",
+
     title: "FINECURE PHARMACEUTICALS LTD",
     imageGallery: [
-      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140520.jpg",
-      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140604.jpg",
-      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140710.jpg",
-      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140718.jpg",
-      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140739.jpg",
-      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140745.jpg",
-      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140851.jpg",
-      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140932.jpg",
-      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_103108.jpg",
-      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_103116.jpg",
-      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_103127.jpg"
+      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140520-min.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140604-min.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140710-min.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140718-min.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140739-min.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140745-min.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140851-min.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140932-min.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_103108-min.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_103116-min.jpg",
+      "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_103127-min.jpg"
     ],
     content:
       "Finecure Pharmaceuticals Limited is leading manufacturers and marketers of Pharmaceutical formulations and Nutraceuticals and its coming up with its Pharma building at Arvind Mega Park, Ahmedabad.",

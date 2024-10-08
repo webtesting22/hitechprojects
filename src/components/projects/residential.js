@@ -312,17 +312,17 @@ const industrialcompleted = [
     scope: "Structural Work, RCC Framework, MEP, Finishing Work",
   },
   {
-    src: "/Sources/images/NewImages/From Raj Sir/Sun Sky Park/Picture 1.jpg",
+    src: "Sources/images/prouctlist/residential/completed/SUN SKY PARK & CENTRAL PLACE/Edits/01-min.jpg",
     title: "SUN SKY PARK",
     imageGallery: [
-      "/Sources/images/NewImages/From Raj Sir/Sun Sky Park/Picture 1.jpg",
-      "/Sources/images/NewImages/From Raj Sir/Sun Sky Park/Sun Sky Park.jpg",
-      "/Sources/images/prouctlist/residential/completed/SUN SKY PARK & CENTRAL PLACE/Main Photos/Sun Sky Park - 8.jpg",
-      "/Sources/images/prouctlist/residential/completed/SUN SKY PARK & CENTRAL PLACE/Main Photos/Sun Sky Park - 7.jpg",
-      "/Sources/images/prouctlist/residential/completed/SUN SKY PARK & CENTRAL PLACE/Edits 2/23.jpg",
-      "/Sources/images/prouctlist/residential/completed/SUN SKY PARK & CENTRAL PLACE/Edits 2/24.jpg",
-      "/Sources/images/prouctlist/residential/completed/SUN SKY PARK & CENTRAL PLACE/Edits 2/32.jpg",
-      "/Sources/images/prouctlist/residential/completed/SUN SKY PARK & CENTRAL PLACE/Edits 2/81.jpg"
+      "Sources/images/prouctlist/residential/completed/SUN SKY PARK & CENTRAL PLACE/Edits/01-min.jpg",
+      // "/Sources/images/NewImages/From Raj Sir/Sun Sky Park/Sun Sky Park.jpg",
+      "/Sources/images/prouctlist/residential/completed/SUN SKY PARK & CENTRAL PLACE/Main Photos/Sun Sky Park - 8-min.jpg",
+      "/Sources/images/prouctlist/residential/completed/SUN SKY PARK & CENTRAL PLACE/Main Photos/Sun Sky Park - 7-min.jpg",
+      "/Sources/images/prouctlist/residential/completed/SUN SKY PARK & CENTRAL PLACE/Edits 2/23-min.jpg",
+      "/Sources/images/prouctlist/residential/completed/SUN SKY PARK & CENTRAL PLACE/Edits 2/24-min.jpg",
+      "/Sources/images/prouctlist/residential/completed/SUN SKY PARK & CENTRAL PLACE/Edits 2/32-min.jpg",
+      "/Sources/images/prouctlist/residential/completed/SUN SKY PARK & CENTRAL PLACE/Edits 2/81-min.jpg"
     ],
     content:
       "Welcome to a new perspective to city living in Ahmedabad through Community, Central Park, Club, Homes, Penthouse etc.",
@@ -364,7 +364,7 @@ const industrialcompleted = [
     content:
       "For the first time in Gujarat, Quintessentially, the world’s leading luxury lifestyle concierge service is now at ‘The Banyan’.",
     client: "Suryam Group",
-    location: "Ashok Vatika, BodakDev, Ahmedabad",
+    location: "BodakDev, Ahmedabad",
     projectSize: "  2,10,000 Sq. ft.",
     projectDes: "12 Floors, 45 Meters",
     projectYear: "2018",
@@ -392,15 +392,15 @@ const industrialcompleted = [
     scope: "RCC Framework, Masonry , Plaster, Finishing Work",
   },
   {
-    src: "/Sources/images/prouctlist/residential/completed/SUN EVOQ/IMG_20170527_161857.jpg",
+    src: "/Sources/images/prouctlist/residential/completed/SUN EVOQ/IMG_20170527_161857-min.jpg",
     title: "SUN EVOQ",
     imageGallery: [
-      "/Sources/images/prouctlist/residential/completed/SUN EVOQ/1518241082__16R1706.jpg",
-      "/Sources/images/prouctlist/residential/completed/SUN EVOQ/Sun Evoq - 6.JPG",
-      "/Sources/images/prouctlist/residential/completed/SUN EVOQ/DSC_3950.JPG",
-      "/Sources/images/prouctlist/residential/completed/SUN EVOQ/DSC_3963.JPG",
-      "/Sources/images/prouctlist/residential/completed/SUN EVOQ/DSC_3972.JPG",
-      "/Sources/images/prouctlist/residential/completed/SUN EVOQ/DSC_4086.JPG",
+      "/Sources/images/prouctlist/residential/completed/SUN EVOQ/1518241082__16R1706-min.jpg",
+      "/Sources/images/prouctlist/residential/completed/SUN EVOQ/Sun Evoq - 6-min.JPG",
+      "/Sources/images/prouctlist/residential/completed/SUN EVOQ/DSC_3950-min.JPG",
+      "/Sources/images/prouctlist/residential/completed/SUN EVOQ/DSC_3963-min.JPG",
+      "/Sources/images/prouctlist/residential/completed/SUN EVOQ/DSC_3972-min.JPG",
+      "/Sources/images/prouctlist/residential/completed/SUN EVOQ/DSC_4086-min.JPG",
 
     ],
     content:
