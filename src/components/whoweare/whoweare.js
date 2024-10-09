@@ -107,7 +107,7 @@ const Whoweare = () => {
         src="Sources/images/whoarewe/whoarewe.JPG"
         alt="404 -Not Given"
         className="about_img"
-        //style={{ marginLeft: window.innerWidth > 1355 ? "5%" : "" }}
+      //style={{ marginLeft: window.innerWidth > 1355 ? "5%" : "" }}
       />
 
       <div className="about-us-bg">
@@ -793,10 +793,10 @@ const Whoweare = () => {
                               />
                             </div>
                             <p className="is-size-6 has-text-black mt-3">
-                              Organisation converted to Private Limited from
-                              Partnership firm. Association with Sun builders
-                              for High end residential complex-Sun Evoq. 3
-                              million sqft built for them till date.
+                              The organization has transitioned to a private limited company
+                              with a strong association with Sun Builders, having built 3
+                              million square feet, including the high-end Sun Evoq residential
+                              project.
                             </p>
                           </div>
                         </Space>
@@ -864,7 +864,7 @@ const Whoweare = () => {
                             </div>
                             <p className="is-size-6 has-text-black mt-3">
                               Expanded the corporate segment construction for
-                              clients like Torrent, Arvind & Nexus. 
+                              clients like Torrent, Arvind & Nexus.
                             </p>
                           </div>
                         </Space>
@@ -896,9 +896,9 @@ const Whoweare = () => {
                               />
                             </div>
                             <p className="is-size-6 has-text-black mt-3">
-                               Initiated geographical expansion by starting projects in
-                               Dholera & Surat.
-                              
+                              Initiated geographical expansion by starting projects in
+                              Dholera & Surat.
+
                             </p>
                           </div>
                         </Space>

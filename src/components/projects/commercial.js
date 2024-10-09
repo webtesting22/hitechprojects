@@ -330,7 +330,7 @@ const commercialcompleted = [
     architect: "99 studio",
     consultant: "Millimeter designs",
     scope: "RCC Framework,Structural Work , Finishing Work",
-  },
+  },  
   {
     src: "/Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture 6.jpg",
     title: "WESTGATE D BLOCK",
@@ -359,8 +359,13 @@ const commercialcompleted = [
     scope: "RCC Framework, Masonry ,Plaster",
   },
   {
-    src: "Sources/images/prouctlist/commercial/completed/7.png",
+    src: "/Sources/images/prouctlist/commercial/completed/shivalik-shilp2/2.jpg",
     title: "SHIVALIK SHILP II",
+    imageGallery:[
+      "/Sources/images/prouctlist/commercial/completed/shivalik-shilp2/2.jpg",
+      "/Sources/images/prouctlist/commercial/completed/shivalik-shilp2/1.jpg",
+      "/Sources/images/prouctlist/commercial/completed/shivalik-shilp2/Front.png"
+    ],
     content:
       "Shivalik Shilp II, a magnificient architecture for the city is a perfect commercial place near Keshavbaug, Ahmedabad having 588 sqft of offices and 2289 sqft of showrooms.",
     segment: "Commercial",
@@ -448,8 +453,6 @@ const commercialcompleted = [
       "/Sources/images/prouctlist/commercial/completed/Sumel 8/1.jpg",
       "/Sources/images/prouctlist/commercial/completed/Sumel 8/2.jpg",
       "/Sources/images/prouctlist/commercial/completed/Sumel 8/4.jpg",
-      // "/Sources/images/prouctlist/commercial/completed/Sumel 8/6.jfif",
-      // "/Sources/images/prouctlist/commercial/completed/Sumel 8/7.jpg",
       "/Sources/images/prouctlist/commercial/completed/Sumel 8/WhatsApp Image 2018-04-13 at 3.29.00 PM.jpeg",
       "/Sources/images/prouctlist/commercial/completed/Sumel 8/WhatsApp Image 2018-04-13 at 3.29.01 PM.jpeg",
       "/Sources/images/prouctlist/commercial/completed/Sumel 8/WhatsApp Image 2018-04-13 at 3.29.10 PM.jpeg",
