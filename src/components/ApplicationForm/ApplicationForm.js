@@ -2447,9 +2447,9 @@ const ApplicationForm = () => {
               {successMessage}
             </div>
           )}
-        </Form >
+        </Form>
 
-      </div >
+      </div>
     </>
   );
 };

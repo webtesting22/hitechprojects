@@ -544,7 +544,7 @@ const Header = () => {
                 <Link
                   onClick={() => {
                     onAboutChange(!isAboutOpen);
-                  }}
+                  }}                                   
                   className="navbar-link header_item"
                   style={{
                     display: small && "inline-block",
