@@ -332,7 +332,7 @@ const commercialcompleted = [
     architect: "99 studio",
     consultant: "Millimeter designs",
     scope: "RCC Framework,Structural Work , Finishing Work",
-  },  
+  },
   {
     src: "/Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture 6.jpg",
     title: "WESTGATE D BLOCK",
@@ -363,7 +363,7 @@ const commercialcompleted = [
   {
     src: "/Sources/images/prouctlist/commercial/completed/shivalik-shilp2/2.jpg",
     title: "SHIVALIK SHILP II",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/commercial/completed/shivalik-shilp2/2.jpg",
       "/Sources/images/prouctlist/commercial/completed/shivalik-shilp2/1.jpg",
       "/Sources/images/prouctlist/commercial/completed/shivalik-shilp2/Front.png"
@@ -390,7 +390,7 @@ const commercialcompleted = [
       "/Sources/images/prouctlist/commercial/completed/Ratnakar Nine Square/1.jpg",
       "/Sources/images/prouctlist/commercial/completed/Ratnakar Nine Square/Ratnakar Nine - 1.jpg",
       "/Sources/images/prouctlist/commercial/completed/Ratnakar Nine Square/Ratnakar Nine - 2.jpg",
-      
+
     ],
     content:
       "Experience a fully furnished business center enabled with the best of form and function, to deliver everything you need.",
@@ -414,7 +414,7 @@ const commercialcompleted = [
       "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture -4.jpg",
       "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture 5.jpg",
       "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture 6.png",
-      
+
     ],
     content:
       "Spread across two towers, Westgate Business Bay is a sought-after commercial project loaded with all the conveniences.",
@@ -797,27 +797,30 @@ const Commercial = () => {
               </Row>
               {modalDetails && (
                 <Modal getContainer="#root" title={modalDetails.title} open={isModalOpen} footer={null} mask={true} onOk={handleOk} onCancel={handleCancel} style={{ boxShadow: "none" }} width={1000}>
-                  <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }} className="imageGalleryContainer">
+                  <Row>
                     {/* Check if imageGallery exists and has images */}
                     {modalDetails.imageGallery && modalDetails.imageGallery.length > 0 ? (
                       modalDetails.imageGallery.map((imgSrc, idx) => (
-                        <div className="image_position">
-                          <Image
-                            preview={{
-                              getContainer: '#root', // This ensures the image preview is rendered within the root element
-                            }}
-                            key={idx}
-                            src={imgSrc}
-                            alt={`Gallery Image ${idx + 1}`}
-                            style={{ cursor: "pointer" }}
-                          />
-                        </div>
+                        <Col lg={8}>
+                          <div className="image_position">
+                            <Image
+                              preview={{
+                                getContainer: '#root', // This ensures the image preview is rendered within the root element
+                              }}
+                              key={idx}
+                              src={imgSrc}
+                              alt={`Gallery Image ${idx + 1}`}
+                              style={{ cursor: "pointer" }}
+                            />
+                          </div>
+                        </Col>
                       ))
                     ) : (
-                      <p>No images found</p>
-                      /* Show this if imageGallery is empty */
+                      <Col lg={24} style={{ textAlign: 'center', padding: '20px' }}>
+                        <p>No Images Found</p>
+                      </Col>                      /* Show this if imageGallery is empty */
                     )}
-                  </div>
+                  </Row>
                 </Modal>)}
             </div>
           </div>

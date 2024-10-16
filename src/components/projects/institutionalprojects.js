@@ -7,7 +7,7 @@ const institutionalprojectslist = [
   {
     src: "",
     title: "ANUBHAV SCHOOL",
-    content:  "----------------------------------------------",
+    content: "----------------------------------------------",
     client: "----------",
     location: "Sanand, Ahmedabad",
     projectSize: "75,000 Sq. ft.",
@@ -24,7 +24,7 @@ const institutionalprojectscompleted = [
   {
     src: "/Sources/images/prouctlist/Institutional_projects/completed/AnandNiketan/1.jpg",
     title: "ANAND NIKETAN SCHOOL",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/Institutional_projects/completed/AnandNiketan/1.jpg",
       "Sources/images/prouctlist/Institutional_projects/ongoing/1-1.jpg"
     ],
@@ -161,7 +161,7 @@ const institutionalprojectscompleted = [
     consultant: "Umesh & Co",
     scope: "Earthwork,RCC Framework,Masonry, Plaster.",
   },
-  
+
 ];
 
 const Institutionalprojects = () => {
@@ -332,9 +332,10 @@ const Institutionalprojects = () => {
                           style={{ minHeight: "650px" }}
                         >
                           <div className="propertylist_image">
-                            <Image src={item.src} alt="404 - Not Given"  preview={{
-          getContainer: '#root', // This ensures the image preview is rendered within the root element
-        }} />
+                            <Image src={item.src} alt="404 - Not Given" preview={{
+                              getContainer: '#root', // This ensures the image preview is rendered within the root element
+                            
+                            }} />
                           </div>
 
                           <div className="propertylist_content p-4">
@@ -516,28 +517,30 @@ const Institutionalprojects = () => {
                   })}
               </Row>
               {modalDetails && (
-                <Modal getContainer="#root" title={modalDetails.title} open={isModalOpen} footer={null} onOk={handleOk} onCancel={handleCancel}  mask={true} style={{ boxShadow: "none" }} width={1000}>
-                  <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }} className="imageGalleryContainer">
+                <Modal getContainer="#root" title={modalDetails.title} open={isModalOpen} footer={null} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={1000}>
+                  <Row>
                     {/* Check if imageGallery exists and has images */}
                     {modalDetails.imageGallery && modalDetails.imageGallery.length > 0 ? (
                       modalDetails.imageGallery.map((imgSrc, idx) => (
-                        <div className="image_position">                        <Image
-                          key={idx}
-                          src={imgSrc}
-                          alt={`Gallery Image ${idx + 1}`}
-                          style={{cursor: "pointer" }}
-                          preview={{
-                                getContainer: '#root', // This ensures the image preview is rendered within the root element
-                              }}
-                        />
-                        </div>
-
+                        <Col lg={8}>
+                          <div className="image_position">                        <Image
+                            key={idx}
+                            src={imgSrc}
+                            alt={`Gallery Image ${idx + 1}`}
+                            style={{ cursor: "pointer" }}
+                            preview={{
+                              getContainer: '#root', // This ensures the image preview is rendered within the root element
+                            }}
+                          />
+                          </div>
+                        </Col>
                       ))
                     ) : (
-                      <p>No images found</p>
-                      /* Show this if imageGallery is empty */
+                      <Col lg={24} style={{ textAlign: 'center', padding: '20px' }}>
+                        <p>No Images Found</p>
+                      </Col>                      /* Show this if imageGallery is empty */
                     )}
-                  </div>
+                  </Row>
                 </Modal>)}
             </div>
           </div>

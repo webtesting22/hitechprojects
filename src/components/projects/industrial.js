@@ -809,10 +809,11 @@ const Industrial = () => {
               </Row>
               {modalDetails && (
                 <Modal getContainer="#root" title={modalDetails.title} open={isModalOpen} footer={null} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={1000}>
-                  <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }} className="imageGalleryContainer">
+                  <Row>
                     {/* Check if imageGallery exists and has images */}
                     {modalDetails.imageGallery && modalDetails.imageGallery.length > 0 ? (
                       modalDetails.imageGallery.map((imgSrc, idx) => (
+                        <Col lg={8}>
                         <div className="image_position">
                           <Image
                             key={idx}
@@ -824,12 +825,13 @@ const Industrial = () => {
                             }}
                           />
                         </div>
+                        </Col>
                       ))
                     ) : (
                       <p>No images found</p>
                       /* Show this if imageGallery is empty */
                     )}
-                  </div>
+                  </Row>
                 </Modal>)}
             </div>
           </div>

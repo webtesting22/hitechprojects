@@ -543,7 +543,7 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                src="Sources/images/milestone/1.png"
+                                src="Sources/images/prouctlist/industrial/completed/15.png"
                                 alt="404 - Not Given"
                               />
                             </div>
@@ -552,7 +552,7 @@ const Whoweare = () => {
                                 Moved to 350 sqft office premises
                                 <br /> Bagged 1st green field industrial project
                                 of Export Oriented Manufacturing facility for
-                                Harsha Engineers.
+                                Harsha Engineers
                               </p>
                             </div>
                           </div>
@@ -647,7 +647,7 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                src="Sources/images/milestone/4.png"
+                                src="Sources/images/prouctlist/Institutional_projects/completed/Narayana Hrudalaya Hsopital/Narayana Hrudalaya - 1.jpg"
                                 alt="404 - Not Given"
                               />
                             </div>
@@ -751,7 +751,7 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                src="Sources/images/milestone/7.png"
+                                src="Sources/images/expertise/tech/1.png"
                                 alt="404 - Not Given"
                               />
                             </div>
@@ -897,8 +897,7 @@ const Whoweare = () => {
                             </div>
                             <p className="is-size-6 has-text-black mt-3">
                               Initiated geographical expansion by starting projects in
-                              Dholera & Surat.
-
+                              Dholera & Surat
                             </p>
                           </div>
                         </Space>
@@ -924,7 +923,7 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                src="Sources/images/milestone/11.png"
+                                src="Sources/images/awards/4.png"
                                 alt="404 - Not Given"
                               />
                             </div>
@@ -960,7 +959,7 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                style={{ width: "200px" }}
+
                                 src="Sources/images/whoarewe/12.jpeg"
                                 alt="404 - Not Given"
                               />
@@ -968,7 +967,7 @@ const Whoweare = () => {
                             <p className="is-size-6 has-text-black mt-3">
                               Started projects with Reliance Indutries Ltd at
                               Jamnagar. Added concrete boom placer in the feet
-                              of P&M equipment.
+                              of P&M equipment
                             </p>
                           </div>
                         </Space>
@@ -994,7 +993,7 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                src="Sources/images/milestone/13.png"
+                                src="Sources/images/gallery/3.png"
                                 alt="404 - Not Given"
                               />
                             </div>
@@ -1036,7 +1035,7 @@ const Whoweare = () => {
                             </div>
                             <p className="is-size-6 has-text-black mt-3">
                               Bagged several iconic projects like Regalia &
-                              Flexone at GIFT city, Gandhinagar.
+                              Flexone at GIFT city, Gandhinagar
                             </p>
                           </div>
                         </Space>
