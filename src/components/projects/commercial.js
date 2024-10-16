@@ -71,8 +71,14 @@ const commerciallist = [
     scope: "Structual Work, RCC Framework, Masonry ,Plaster , Painting",
   },
   {
-    src: "",
+    src: "/Sources/images/prouctlist/commercial/ongoing/devx/2.jpg",
     title: "DEVX",
+    imageGallery:[
+      "/Sources/images/prouctlist/commercial/ongoing/devx/1.jpg",
+      "/Sources/images/prouctlist/commercial/ongoing/devx/2.jpg",
+      "/Sources/images/prouctlist/commercial/ongoing/devx/3.jpg",
+      "/Sources/images/prouctlist/commercial/ongoing/devx/4.jpg"
+    ],
     content: "Commercial",
     client: "Ausil Enterprise Pvt. Ltd.",
     location: "Vastrapur, Ahmedabad",
