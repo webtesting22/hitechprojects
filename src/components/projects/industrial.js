@@ -3,19 +3,19 @@ import React, { useState } from "react";
 import Header from "../header/header";
 
 const industriallist = [
-  {
-    src: "",
-    title: "HARSHA ENGINEERS MANUFACTURING PLAN",
-    segment: "Industrial",
-    client: "Harsha Engineers Advantek Limited",
-    location: "Bhayala, Ahmedabad",
-    architect: "Shah & Talati",
-    consultant: "Shah & Talati",
-    projectSize: "- Sq. ft.",
-    projectDes: "-",
-    projectYear: "2022-Current",
-    scope: "Civil, Plumbing & Finishing , Aluminium & Infra Works for the Manufacturing Plant & Associated Works ",
-  },
+  // {
+  //   src: "",
+  //   title: "HARSHA ENGINEERS MANUFACTURING PLAN",
+  //   segment: "Industrial",
+  //   client: "Harsha Engineers Advantek Limited",
+  //   location: "Bhayala, Ahmedabad",
+  //   architect: "Shah & Talati",
+  //   consultant: "Shah & Talati",
+  //   projectSize: "- Sq. ft.",
+  //   projectDes: "-",
+  //   projectYear: "2022-Current",
+  //   scope: "Civil, Plumbing & Finishing , Aluminium & Infra Works for the Manufacturing Plant & Associated Works ",
+  // },
   {
     src: "Sources/images/prouctlist/industrial/ongoing/KHS.jpeg",
     title: "KHS MACHINERY EXPANSION WORKS",

@@ -202,7 +202,7 @@ const ApplicationForm = () => {
       };
 
       // Request upload policy from the backend
-      const response = await fetch(`https://napi.prepseed.com/chats/uploadPolicy`, {
+      const response = await fetch(`http://localhost:4040/api/chats/uploadPolicy`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -260,7 +260,7 @@ const ApplicationForm = () => {
 
       // Request upload policy from the backend
       const response = await fetch(
-        `https://napi.prepseed.com/chats/uploadPolicy`,
+        `http://localhost:4040/api/chats/uploadPolicy`,
         {
           method: "POST",
           headers: {
@@ -312,7 +312,7 @@ const ApplicationForm = () => {
         console.log("Data to be sent:", data); // Log data before sending
 
         const response = await fetch(
-          "https://napi.prepseed.com/hightech/addApplication",
+          "http://localhost:4040/api/hightech/addApplication",
           {
             method: "POST",
             headers: {
@@ -2417,21 +2417,37 @@ const ApplicationForm = () => {
           </div>
 
           <div className="Adjust">
-            <Form.Item label="Resume Upload" name="resume" rules={[{ required: true, }]}>
-              <Upload onChange={handleResumeChange} showUploadList={true}
+            <Form.Item
+              label="Resume Upload"
+              name="resume"
+              valuePropName="fileList" // Ensure the fileList is used for validation
+              getValueFromEvent={(e) => (Array.isArray(e) ? e : e && e.fileList)} // Normalize the value for form
+              rules={[
+                {
+                  required: true,
+                  message: 'Please upload your resume!',
+                },
+              ]}
+            >
+              <Upload
+                onChange={handleResumeChange}
+                showUploadList={true}
                 beforeUpload={(file) => {
-                  const isPdfOrWord = file.type === 'application/pdf' || file.type === 'application/msword' || file.type === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
+                  const isPdfOrWord =
+                    file.type === 'application/pdf' ||
+                    file.type === 'application/msword' ||
+                    file.type === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
                   if (!isPdfOrWord) {
                     message.error('You can only upload PDF or Word files!');
                   }
-                  return isPdfOrWord ? false : Upload.LIST_IGNORE; // Prevent upload if not PDF/Word
+                  return isPdfOrWord ? false : Upload.LIST_IGNORE;
                 }}
-                maxCount={1}>
-                <Button icon={<UploadOutlined />}>
-                  Click to Upload
-                </Button>
+                maxCount={1}
+              >
+                <Button icon={<UploadOutlined />}>Click to Upload</Button>
               </Upload>
             </Form.Item>
+
             <Form.Item label="Remarks (If any)" name="remarks">
               <Input placeholder="Enter your Remarks" onChange={(e) => { handleFormChange("remarks", e.target.value) }} />
             </Form.Item>

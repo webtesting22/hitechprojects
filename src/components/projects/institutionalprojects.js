@@ -4,20 +4,20 @@ import React, { useState } from "react";
 import Header from "../header/header";
 
 const institutionalprojectslist = [
-  {
-    src: "",
-    title: "ANUBHAV SCHOOL",
-    content: "----------------------------------------------",
-    client: "----------",
-    location: "Sanand, Ahmedabad",
-    projectSize: "75,000 Sq. ft.",
-    projectDes: "----------",
-    projectYear: "2024 - Current",
-    architect: "------------",
-    consultant: "------------------",
-    scope:
-      "Civil Works Excavation, Backfiling, pile Foundation work, masonary, plaster, flooring, painting for School Building",
-  },
+  // {
+  //   src: "",
+  //   title: "ANUBHAV SCHOOL",
+  //   content: "----------------------------------------------",
+  //   client: "----------",
+  //   location: "Sanand, Ahmedabad",
+  //   projectSize: "75,000 Sq. ft.",
+  //   projectDes: "----------",
+  //   projectYear: "2024 - Current",
+  //   architect: "------------",
+  //   consultant: "------------------",
+  //   scope:
+  //     "Civil Works Excavation, Backfiling, pile Foundation work, masonary, plaster, flooring, painting for School Building",
+  // },
 
 ];
 const institutionalprojectscompleted = [
@@ -203,7 +203,7 @@ const Institutionalprojects = () => {
             </p>
             <div>
               <Row>
-                <Col>
+                {/* <Col>
                   <p
                     className="is-size-5 has-text-weight-semibold blue_color mb-2 is-uppercase ongoing-projects"
                     onClick={() => {
@@ -216,7 +216,7 @@ const Institutionalprojects = () => {
                   >
                     Ongoing
                   </p>
-                </Col>
+                </Col> */}
                 <Col>
                   <p
                     className="is-size-5 has-text-weight-semibold blue_color mb-2 is-uppercase completed-projects"
@@ -334,7 +334,7 @@ const Institutionalprojects = () => {
                           <div className="propertylist_image">
                             <Image src={item.src} alt="404 - Not Given" preview={{
                               getContainer: '#root', // This ensures the image preview is rendered within the root element
-                            
+
                             }} />
                           </div>
 
