@@ -415,8 +415,13 @@ const industrialcompleted = [
     scope: "RCC Framework, Masonry, Plaster, MEP, Finishing Work",
   },
   {
-    src: "Sources/images/prouctlist/residential/completed/7.png",
+    src: "/Sources/images/prouctlist/residential/completed/yash arian/003.jpg",
     title: "YASH ARIAN",
+    imageGallery:[
+      "/Sources/images/prouctlist/residential/completed/yash arian/002.jpg",
+      "/Sources/images/prouctlist/residential/completed/yash arian/003.jpg",
+      "/Sources/images/prouctlist/residential/completed/yash arian/1.jpg"
+    ],
     content:
       "Yash Arian is a project with several modern amenities.It comes with a total of 204 spacious and luxurious apartments.",
     client: "Yash Arian Infra LLP",
@@ -481,6 +486,10 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/residential/completed/11.png",
     title: "SHALVIK HOMES",
+    imageGallery:[
+      "/Sources/images/prouctlist/residential/completed/shalvik homes/1.webp",
+      "/Sources/images/prouctlist/residential/completed/shalvik homes/2.jpg"
+    ],
     content:
       "Shalvik Homes by Aakar Developers offers 53 residential bungalows with common plots and play area.",
     client: "Aakar Developers",

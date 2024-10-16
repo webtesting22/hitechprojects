@@ -233,6 +233,9 @@ const commercialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/completed/2.png",
     title: "KP EPITOME",
+    imageGallery:[
+      "/Sources/images/prouctlist/commercial/completed/kp epitome/1.jpg"
+    ],
     content:
       "KP Epitome is a commercial development, providing perfectly built work spaces and commercial shops having 3 towers of 2B+G+14 And 8 towers of 2B+G+3.",
     segment: "Commercial",

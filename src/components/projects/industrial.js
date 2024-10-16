@@ -325,6 +325,12 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/industrial/completed/7.png",
     title: "JBM AUTO SYSTEM",
+    imageGallery:[
+      "/Sources/images/prouctlist/industrial/completed/jbm/4.jpeg",
+      "/Sources/images/prouctlist/industrial/completed/jbm/1.jpeg",
+      "/Sources/images/prouctlist/industrial/completed/jbm/2.jpg",
+      "/Sources/images/prouctlist/industrial/completed/jbm/3.jpg"
+    ],
     content:
       "Plant designed for the Press Shop And Weld Shop, equipped with presses up to 1200 ton capacity and a total built up area of 7,800 m2.",
     segment: "Automotive",
@@ -468,6 +474,11 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/industrial/completed/16.png",
     title: "SAFEXPRESS WAREHOUSE",
+    imageGallery:[
+      "/Sources/images/prouctlist/industrial/completed/safeexpress/3.jpeg",
+      "/Sources/images/prouctlist/industrial/completed/safeexpress/2.jpeg",
+      "/Sources/images/prouctlist/industrial/completed/safeexpress/1.webp"
+    ],
     content:
       "Safexpress,a Pan India supply chain services provider opened its Warehouse in 2008 at Changodar measuring 75,000 Sqft designed by CivTech Consultants.",
     segment: "Logistics Warehouse Plant",
