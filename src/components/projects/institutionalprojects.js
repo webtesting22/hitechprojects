@@ -173,7 +173,7 @@ const institutionalprojectscompleted = [
 
 const Institutionalprojects = () => {
   const [isOngoing, setIsOngoing] = useState(true);
-  const [isCompleted, setIsCompleted] = useState(true);
+  const [isCompleted, setIsCompleted] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalDetails, setModalDetails] = useState(null);
   const showModal = (item) => {
