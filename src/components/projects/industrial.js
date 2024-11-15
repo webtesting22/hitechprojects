@@ -3,19 +3,7 @@ import React, { useState } from "react";
 import Header from "../header/header";
 
 const industriallist = [
-  // {
-  //   src: "",
-  //   title: "HARSHA ENGINEERS MANUFACTURING PLAN",
-  //   segment: "Industrial",
-  //   client: "Harsha Engineers Advantek Limited",
-  //   location: "Bhayala, Ahmedabad",
-  //   architect: "Shah & Talati",
-  //   consultant: "Shah & Talati",
-  //   projectSize: "- Sq. ft.",
-  //   projectDes: "-",
-  //   projectYear: "2022-Current",
-  //   scope: "Civil, Plumbing & Finishing , Aluminium & Infra Works for the Manufacturing Plant & Associated Works ",
-  // },
+   
   {
     src: "Sources/images/prouctlist/industrial/ongoing/KHS.jpeg",
     title: "KHS MACHINERY EXPANSION WORKS",
@@ -44,18 +32,17 @@ const industriallist = [
   },
   {
     src: "",
-    title: "URMIN",
+    title: "CIVIL WORK OF PACKAGING UNIT",
     segment: "Industrial",
-
-    client: "-",
-    location: "Ahmedabad",
+    client: "Urmin Products Pvt. Ltd",
+    location: "Moraiya, Ahmedabad",
     projectSize:
       "2,00,000 Sq. ft.",
     projectDes: "-",
-    projectYear: "-",
-    architect: "-",
-    consultant: "-",
-    scope: "RCC Core, Shell Work, Finishing Work",
+    projectYear: "Current ",
+    architect: "Taknik Consultant",
+    consultant: "Taknik Consultant",
+    scope: "Civil Structural Work & External Infrastructural Work",
   },
   {
     src: "",
@@ -63,30 +50,43 @@ const industriallist = [
     segment: "Industrial",
 
     client: "Torrent Power Ltd.",
-    location: "Near Vastadevdi,Surat",
+    location: "Near Vastadevdi, Surat",
     projectSize:
       "-",
     projectDes: "-",
-    projectYear: "-",
+    projectYear: "Current",
     architect: "-",
     consultant: "-",
-    scope: "Civil and Structural Works",
+    scope: "Civil and Structural works for Construction of New VCB and GIS Building for 66 kV Substation",
   },
   {
     src: "",
-    title: "VCB and GIS Building ",
+    title: "New VCB and GIS Building for 66 kV Substation",
     segment: "Industrial",
 
     client: "Torrent Power Ltd.",
-    location: "Ashwanikumar road,Surat",
+    location: "Ashwanikumar road, Surat",
     projectSize:
       "-",
     projectDes: "-",
-    projectYear: "-",
+    projectYear: "Current",
     architect: "-",
     consultant: "-",
-    scope: "RCC Core, Shell Work, Finishing Work",
-  }
+    scope: "Civil and Structural works for Construction of New VCB and GIS Building for 66 kV Substation",
+  },
+  {
+    src: "",
+    title: "HARSHA ENGINEERS MANUFACTURING PLAN",
+    segment: "Industrial",
+    client: "Harsha Engineers Advantek Limited",
+    location: "Bhayala, Ahmedabad",
+    architect: "Shah & Talati",
+    consultant: "Shah & Talati",
+    projectSize: "- Sq. ft.",
+    projectDes: "-",
+    projectYear: "2022-Current",
+    scope: "Civil, Plumbing & Finishing , Aluminium & Infra Works for the Manufacturing Plant & Associated Works ",
+  },
   // {
   //   src: "Sources/images/prouctlist/industrial/ongoing/1-2.jpeg",
   //   title: "TORRENT POWER “B” STATION",
