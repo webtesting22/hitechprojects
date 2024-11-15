@@ -4,20 +4,27 @@ import React, { useState } from "react";
 import Header from "../header/header";
 
 const institutionalprojectslist = [
-  // {
-  //   src: "",
-  //   title: "ANUBHAV SCHOOL",
-  //   content: "----------------------------------------------",
-  //   client: "----------",
-  //   location: "Sanand, Ahmedabad",
-  //   projectSize: "75,000 Sq. ft.",
-  //   projectDes: "----------",
-  //   projectYear: "2024 - Current",
-  //   architect: "------------",
-  //   consultant: "------------------",
-  //   scope:
-  //     "Civil Works Excavation, Backfiling, pile Foundation work, masonary, plaster, flooring, painting for School Building",
-  // },
+   {
+     src: "/Sources/images/prouctlist/Institutional_projects/ongoing/Anubhav/new1.jpg",
+     title: "ANUBHAV SCHOOL",
+     imageGallery:[
+      "/Sources/images/prouctlist/Institutional_projects/ongoing/Anubhav/new1.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/ongoing/Anubhav/new2.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/ongoing/Anubhav/new3.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/ongoing/Anubhav/new4.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/ongoing/Anubhav/new5.jpg",
+     ],
+     content: "----------------------------------------------",
+     client: "Pilak Shah",
+     location: "Sanand, Ahmedabad",
+     projectSize: "75,704 Sq. ft.",
+     projectDes: "----------",
+     projectYear: "Current",
+     architect: "Kakani Associates",
+     consultant: "Japan Shah Consulting Engineers",
+     scope:
+       "Civil Works Excavation, Backfiling, pile Foundation work, masonary, plaster, flooring, painting for School Building",
+   },
 
 ];
 const institutionalprojectscompleted = [
@@ -42,15 +49,15 @@ const institutionalprojectscompleted = [
       "Civil works, Masonry & Plaster, Painting, Flooring, and Waterproofing.",
   },
   {
-    src: "/Sources/images/prouctlist/Institutional_projects/completed/Museum/IMG_20220310_105045.jpg",
+    src: "/Sources/images/prouctlist/Institutional_projects/completed/Museum/new5.jpg",
     title: "MUSEUM KOBA",
     imageGallery: [
       "/Sources/images/prouctlist/Institutional_projects/completed/Museum/Main Photos/Jain Museum - 1.jpg",
-      "/Sources/images/prouctlist/Institutional_projects/completed/Museum/IMG_20220310_105045.jpg",
-      "/Sources/images/prouctlist/Institutional_projects/completed/Museum/IMG_20220310_105252.jpg",
-      "/Sources/images/prouctlist/Institutional_projects/completed/Museum/IMG_20220310_105319.jpg",
-      "/Sources/images/prouctlist/Institutional_projects/completed/Museum/IMG_20220310_105459.jpg",
-      "/Sources/images/prouctlist/Institutional_projects/completed/Museum/IMG-20220310-WA0012.jpg"
+      "/Sources/images/prouctlist/Institutional_projects/completed/Museum/new2.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Museum/new3.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Museum/new4.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Museum/new5.jpg",
+      "/Sources/images/prouctlist/Institutional_projects/completed/Museum/new6.jpg"
 
     ],
     content:
@@ -165,7 +172,7 @@ const institutionalprojectscompleted = [
 ];
 
 const Institutionalprojects = () => {
-  const [isOngoing, setIsOngoing] = useState(false);
+  const [isOngoing, setIsOngoing] = useState(true);
   const [isCompleted, setIsCompleted] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalDetails, setModalDetails] = useState(null);
@@ -203,7 +210,7 @@ const Institutionalprojects = () => {
             </p>
             <div>
               <Row>
-                {/* <Col>
+                 <Col>
                   <p
                     className="is-size-5 has-text-weight-semibold blue_color mb-2 is-uppercase ongoing-projects"
                     onClick={() => {
@@ -216,7 +223,7 @@ const Institutionalprojects = () => {
                   >
                     Ongoing
                   </p>
-                </Col> */}
+                </Col> 
                 <Col>
                   <p
                     className="is-size-5 has-text-weight-semibold blue_color mb-2 is-uppercase completed-projects"
