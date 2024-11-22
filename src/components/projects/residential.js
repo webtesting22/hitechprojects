@@ -223,8 +223,12 @@ const industriallist = [
 const industrialcompleted = [
 
   {
-    src: "Sources/images/prouctlist/residential/completed/12.jpeg",
+    src: "Sources/images/prouctlist/residential/completed/SecurityStaff/Picture1.jpg",
     title: "SECURITY STAFF HOUSING",
+    imageGallery: [
+      "Sources/images/prouctlist/residential/completed/12.jpeg",
+      "Sources/images/prouctlist/residential/completed/SecurityStaff/Picture2.jpg"
+    ],
     content:
       "Security Staff Housing Complex project at Jamnagar-LC 01, LC 04 and LC 10",
     segment: "Residential",

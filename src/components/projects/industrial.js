@@ -260,7 +260,7 @@ const industrialcompleted = [
       "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
   },
   {
-    src: "Sources/images/prouctlist/industrial/completed/3.png",
+    src: "Sources/images/prouctlist/industrial/completed/Picture4.jpg",
     title: "HARSHA ENGINEERING",
     content:
       "Harsha Engineering opened its new plant of 50,000 Sqft designed by VMS Engineering.",
@@ -293,6 +293,9 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/industrial/completed/5.png",
     title: "TECHNICO INDUSTRIES",
+    imageGallery:[
+      "Sources/images/prouctlist/industrial/completed/Technico/Picture10.png"
+    ],
     content:
       "Technico, a class-leading manufacturer of high-quality automotive component is opening a new plant of 1,00,000 Sq ft in Vanod.",
     segment: "Automotive",
@@ -361,6 +364,9 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/industrial/completed/8.png",
     title: "URMIN PRODUCTS PVT LTD.",
+    imageGallery:[
+      "Sources/images/prouctlist/industrial/completed/urmin-sari/Picture8.jpg",
+    ],
     content:
       "Urmin Sari has a state-of-the-art facility spread over a 10,000 sq. m. area to cater to the production, warehousing and cold storage needs at Changodar.",
     segment: "Food Industry",
@@ -375,8 +381,11 @@ const industrialcompleted = [
       "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
   },
   {
-    src: "Sources/images/prouctlist/industrial/completed/9.png",
+    src: "Sources/images/prouctlist/industrial/completed/urmin-bavla/Picture9.jpg",
     title: "URMIN PRODUCTS PVT LTD.",
+    imageGallery:[
+      "Sources/images/prouctlist/industrial/completed/9.png",
+    ],
     content:
       "Urmin Bavla is spread across 80000 sqft area to set up its production facility in the city.",
     segment: "Food Industry",
@@ -391,8 +400,11 @@ const industrialcompleted = [
       "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
   },
   {
-    src: "Sources/images/prouctlist/industrial/completed/10.png",
+    src: "Sources/images/prouctlist/industrial/completed/Nirmiti/Picture11.jpg",
     title: "NIRMITI PRECISION",
+    imageGallery:[
+      "Sources/images/prouctlist/industrial/completed/10.png",
+    ],
     content:
       "Nirmiti precision is one of the leading engineering and manufacturing companies of of metal nut, metal bolt and metal bush which opened its factory in Sanand.",
     segment: "Automotive",
@@ -409,6 +421,9 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/industrial/completed/11.png",
     title: "RELIABLE AUTO TECH",
+    imageGallery:[
+      "Sources/images/prouctlist/industrial/completed/Reliable/Picture12.png",
+    ],
     content:
       "Reliable established a new manufacturing setup in Sanand GIDC catering to the automobile OEMs in the western region.",
     segment: "Automotive",

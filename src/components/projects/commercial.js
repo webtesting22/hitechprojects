@@ -135,6 +135,9 @@ const commercialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/ongoing/TheProfit.jpeg",
     title: "THE PROFIT",
+    imageGallery: [
+      "Sources/images/prouctlist/commercial/completed/TheProfit/Picture3.jpg",
+    ],
     content: "...",
     client: "The Building Company",
     location: "Adajan, Surat",
