@@ -356,7 +356,7 @@ const commercialcompleted = [
     scope: "RCC Framework,Structural Work , Finishing Work",
   },
   {
-    src: "/Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture 6.jpg",
+    src: "/Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture12.jpg",
     title: "WESTGATE D BLOCK",
     imageGallery: [
       "/Sources/images/prouctlist/commercial/completed/West Gate D Block/Picture 1.jpg",
@@ -427,7 +427,7 @@ const commercialcompleted = [
     scope: "RCC Framework, Masonry ,Plaster",
   },
   {
-    src: "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture -2.jpg",
+    src: "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture11.jpg",
     title: "WESTGATE BUSINESS BAY",
     imageGallery: [
       "/Sources/images/prouctlist/commercial/completed/West Gate Business Bay/Picture -1.jpg",
