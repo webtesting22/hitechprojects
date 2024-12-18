@@ -130,8 +130,6 @@ const commerciallist = [
     consultant: "Ducon Consultants Pvt Ltd",
     scope: "RCC Frame works, Block work, Plaster works for Commercial  Building 3 basement + G.F + 19 Floors",
   },
-];
-const commercialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/ongoing/TheProfit.jpeg",
     title: "THE PROFIT",
@@ -148,6 +146,9 @@ const commercialcompleted = [
     consultant: "SNV Engineers",
     scope: " RCC Framework, Masonry,Plaster",
   },
+];
+const commercialcompleted = [
+  
   // {
   //   src: "Sources/images/prouctlist/commercial/ongoing/2.png",
   //   title: "TORRENT POWER “B” STATION",
