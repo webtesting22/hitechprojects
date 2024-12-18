@@ -203,6 +203,10 @@ const industriallist = [
     scope:
       "Structural Work, Diaphragm Wall, RCC Framework, Masonry, Plaster",
   },
+  
+
+];
+const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/residential/ongoing/5.png",
     title: "SUN ATMOSPHERE",
@@ -212,15 +216,12 @@ const industriallist = [
     location: "Shela, Ahmedabad",
     projectSize: "1,25,000 Sq. ft.",
     projectDes: "14 Floors, 50 Meters",
-    projectYear: "2022-Current",
+    projectYear: "2022-2024",
     architect: "H M Architects",
     consultant: "Setu Infrastructure",
     scope:
       "Structural Work, Diaphragm Wall, RCC Framework, Masonry, Plaster",
   },
-
-];
-const industrialcompleted = [
 
   {
     src: "Sources/images/prouctlist/residential/completed/SecurityStaff/Picture1.jpg",
@@ -406,7 +407,7 @@ const industrialcompleted = [
   {
     src: "/Sources/images/prouctlist/residential/completed/yash arian/003.jpg",
     title: "YASH ARIAN",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/residential/completed/yash arian/002.jpg",
       "/Sources/images/prouctlist/residential/completed/yash arian/003.jpg",
       "/Sources/images/prouctlist/residential/completed/yash arian/1.jpg"
@@ -475,7 +476,7 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/residential/completed/11.png",
     title: "SHALVIK HOMES",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/residential/completed/shalvik homes/1.webp",
       "/Sources/images/prouctlist/residential/completed/shalvik homes/2.jpg"
     ],
@@ -755,35 +756,37 @@ const Residential = () => {
                     );
                   })}
               </Row>
-              {modalDetails && (
-                <Modal getContainer="#root" title={modalDetails.title} open={isModalOpen} footer={null} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={1000}>
-                  <Row>
-                    {/* Check if imageGallery exists and has images */}
-                    {modalDetails.imageGallery && modalDetails.imageGallery.length > 0 ? (
-                      modalDetails.imageGallery.map((imgSrc, idx) => (
-                        <Col lg={8}>
-                          <div className="image_position">
+              <div >
+                {modalDetails && (
+                  <Modal getContainer="#root" title={modalDetails.title} open={isModalOpen} footer={null} onOk={handleOk} onCancel={handleCancel} mask={true} style={{ boxShadow: "none" }} width={1000} className="CompletedModal">
+                    <Row>
+                      {/* Check if imageGallery exists and has images */}
+                      {modalDetails.imageGallery && modalDetails.imageGallery.length > 0 ? (
+                        modalDetails.imageGallery.map((imgSrc, idx) => (
+                          <Col lg={8} md={12}>
+                            <div className="image_position">
 
-                            <Image
-                              key={idx}
-                              src={imgSrc}
-                              alt={`Gallery Image ${idx + 1}`}
-                              style={{ cursor: "pointer", }}
-                              preview={{
-                                getContainer: '#root', // This ensures the image preview is rendered within the root element
-                              }}
-                            />
-                          </div>
+                              <Image
+                                key={idx}
+                                src={imgSrc}
+                                alt={`Gallery Image ${idx + 1}`}
+                                style={{ cursor: "pointer", }}
+                                preview={{
+                                  getContainer: '#root',
+                                }}
+                              />
+                            </div>
+                          </Col>
+                        ))
+                      ) : (
+                        <Col lg={24} style={{ textAlign: 'center', padding: '20px' }}>
+                          <p>No Images Found</p>
                         </Col>
-                      ))
-                    ) : (
-                      <Col lg={24} style={{ textAlign: 'center', padding: '20px' }}>
-                        <p>No Images Found</p>
-                      </Col>
-                      /* Show this if imageGallery is empty */
-                    )}
-                  </Row>
-                </Modal>)}
+                        /* Show this if imageGallery is empty */
+                      )}
+                    </Row>
+                  </Modal>)}
+              </div>
             </div>
           </div>
         </section>

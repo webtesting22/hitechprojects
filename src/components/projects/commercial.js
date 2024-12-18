@@ -30,7 +30,7 @@ const commerciallist = [
     scope: "Civil Construction with Finishing Work of commercial building of B + G + 2 storey (2 Blocks)",
   },
   {
-    src: "Sources/images/prouctlist/commercial/ongoing/1-3.png",
+    src: "Sources/images/prouctlist/commercial/ongoing/Regalia2.jpeg",
     title: "REGALIA",
     content: "...",
     client: "Nakshatra Infracon",
@@ -91,7 +91,7 @@ const commerciallist = [
     scope: "Civil work, Waterproofing, ELV work",
   },
   {
-    src: "",
+    src: "/Sources/images/prouctlist/commercial/ongoing/AdaniWilmar.png",
     title: "ADANI WILMAR HEADQUARTER",
     content: "Commercial",
     client: "Adani Estate Management Pvt Ltd.",
@@ -105,7 +105,7 @@ const commerciallist = [
     scope: "Civil work, Waterproofing, ELV work",
   },
   {
-    src: "",
+    src: "/Sources/images/prouctlist/commercial/ongoing/UCC.png",
     title: "UNIVERSAL COMMERCIAL CAPITAL",
     content: "Commercial",
     client: "UCC Infra",
@@ -118,7 +118,7 @@ const commerciallist = [
     scope: "RCC Frame works, Block work, Plaster works for Commercial  Building 3 basement + G.F + 11 Floors",
   },
   {
-    src: "",
+    src: "/Sources/images/prouctlist/commercial/ongoing/Citadel.png",
     title: "THE CITADEL",
     content: "Commercial",
     client: "Magnastar Realty LLP",

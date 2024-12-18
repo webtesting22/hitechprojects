@@ -1961,7 +1961,18 @@ textarea.form_input::placeholder {
 .image_position {
   margin: 5px;
 }
+.CompletedModal .ant-modal-content .ant-modal-body{
+  padding: 24px 5px !important;
+}
+.CompletedModal .ant-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 576px) {
+  .CompletedModal .ant-row .ant-col{
+    width: 50%;
+  }
   .image_position img {
     width: 200px;
   }
