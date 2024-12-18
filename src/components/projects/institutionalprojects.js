@@ -40,7 +40,7 @@ const institutionalprojectscompleted = [
     segment: "Education",
     client: "Utthan Sewa Trust",
     location: "Sanand, Ahmedabad",
-    projectSize: "349,062 Sq. ft.",
+    projectSize: "3,49,062 Sq. ft.",
     projectDes: "8 Floors, 43 Meters",
     projectYear: "2022 - Current",
     architect: "Kakani Associates",
