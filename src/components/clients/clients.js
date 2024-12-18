@@ -5,6 +5,8 @@ import Slider from "react-slick";
 import Header from "../header/header";
 
 const clientlist = [
+  { src: "Sources/images/our_client/Nakshatra.jpeg" },
+  { src: "Sources/images/our_client/UCC.jpeg" },
   { src: "Sources/images/our_client/1.png" },
   { src: "Sources/images/our_client/2.png" },
   { src: "Sources/images/our_client/3.png" },
@@ -163,7 +165,7 @@ const Clients = () => {
         src="Sources/images/bg/a8.jpg"
         alt="404 -Not Given"
         className="about_img"
-        //style={{ marginLeft: window.innerWidth > 1355 ? "5%" : "" }}
+      //style={{ marginLeft: window.innerWidth > 1355 ? "5%" : "" }}
       />
 
       <div className="clients">

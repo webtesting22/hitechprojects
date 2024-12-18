@@ -5,6 +5,7 @@ import { FaQuoteLeft } from "react-icons/fa";
 import Slider from "react-slick";
 
 const consultantslist = [
+  { src: "Sources/images/our_client/jw_consultants_llp_logo.jpeg" },
   { src: "Sources/images/consultants/2.png" },
   { src: "Sources/images/consultants/3.png" },
   { src: "Sources/images/consultants/4.png" },
@@ -118,7 +119,7 @@ const Architech = () => {
         src="Sources/images/our_client/clients.JPG"
         alt="404 -Not Given"
         className="about_img"
-        //style={{ marginLeft: window.innerWidth > 1355 ? "5%" : "" }}
+      //style={{ marginLeft: window.innerWidth > 1355 ? "5%" : "" }}
       />
       <Header />
       <section>

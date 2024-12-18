@@ -4,6 +4,9 @@ import Header from "../header/header";
 import { FaQuoteLeft } from "react-icons/fa";
 import Slider from "react-slick";
 const clientlist = [
+  { src: "Sources/images/our_client/Nakshatra.jpeg" },
+  { src: "Sources/images/our_client/UCC.jpeg" },
+  { src: "Sources/images/our_client/sp.jpg" },
   { src: "Sources/images/our_client/1.png" },
   { src: "Sources/images/our_client/2.png" },
   { src: "Sources/images/our_client/3.png" },
