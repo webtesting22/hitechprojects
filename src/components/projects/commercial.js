@@ -73,7 +73,7 @@ const commerciallist = [
   {
     src: "/Sources/images/prouctlist/commercial/ongoing/devx/2.jpg",
     title: "DEVX",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/commercial/ongoing/devx/1.jpg",
       "/Sources/images/prouctlist/commercial/ongoing/devx/2.jpg",
       "/Sources/images/prouctlist/commercial/ongoing/devx/3.jpg",
@@ -148,7 +148,7 @@ const commerciallist = [
   },
 ];
 const commercialcompleted = [
-  
+
   // {
   //   src: "Sources/images/prouctlist/commercial/ongoing/2.png",
   //   title: "TORRENT POWER “B” STATION",
@@ -256,7 +256,7 @@ const commercialcompleted = [
   {
     src: "Sources/images/prouctlist/commercial/completed/2.png",
     title: "KP EPITOME",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/commercial/completed/kp epitome/1.jpg"
     ],
     content:
