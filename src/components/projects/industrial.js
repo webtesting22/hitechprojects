@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Header from "../header/header";
 
 const industriallist = [
-   
+
   {
     src: "Sources/images/prouctlist/industrial/ongoing/KHS.jpeg",
     title: "KHS MACHINERY EXPANSION WORKS",
@@ -11,11 +11,11 @@ const industriallist = [
     client: "KHS Machinery PVT. LTD.",
     location: "Near Hirapur cross road, vatva-mahemdavad highway ",
     architect: "S3M Design",
-    consultant: "Anandjiwala Technical consultancy (ATC)",
-    projectSize: "- Sq. ft.",
+    consultant: "S3M Consultants",
+    projectSize: "-",
     projectDes: "-",
-    projectYear: "2022-Current",
-    scope: "Civil, Plumbing & Finishing , Aluminium & Infra Works for expansion project of Plant Building",
+    projectYear: "2024-Current",
+    scope: "Civil, Plumbing & Finishing , Aluminium & Infra Works for expansion project of Plant Building.",
   },
   {
     src: "Sources/images/prouctlist/industrial/ongoing/Asset1.png",
@@ -28,65 +28,65 @@ const industriallist = [
     projectSize: "69,481  Sq. ft.",
     projectDes: "30 Meters",
     projectYear: "2022-Current",
-    scope: "Civil, Plumbing and Finishing works for Torrent Substation",
+    scope: "Civil, Plumbing and Finishing works for Substation",
   },
-  // {
-  //   src: "",
-  //   title: "CIVIL WORK OF PACKAGING UNIT",
-  //   segment: "Industrial",
-  //   client: "Urmin Products Pvt. Ltd",
-  //   location: "Moraiya, Ahmedabad",
-  //   projectSize:
-  //     "2,00,000 Sq. ft.",
-  //   projectDes: "-",
-  //   projectYear: "Current ",
-  //   architect: "Taknik Consultant",
-  //   consultant: "Taknik Consultant",
-  //   scope: "Civil Structural Work & External Infrastructural Work",
-  // },
-  // {
-  //   src: "",
-  //   title: "New VCB and GIS Building for 66 kV Substation",
-  //   segment: "Industrial",
+  {
+    src: "/Sources/images/prouctlist/industrial/ongoing/HarshaEngine.png",
+    title: "Harsha Enginners Manufactuing Plant",
+    segment: "Industrial",
+    client: "Urmin Products Pvt. Ltd",
+    location: "Moraiya, Ahmedabad",
+    projectSize:
+      "-",
+    projectDes: "-",
+    projectYear: "2024-Current ",
+    architect: "Shah & Talati",
+    consultant: "Shah & Talati",
+    scope: "Civil, Plumbing & Finishing , Aluminium & Infra Works for the Manufacturing Plant & Associated Works.",
+  },
+  {
+    src: "",
+    title: "Civil works for packaging unit.",
+    segment: "Industrial",
 
-  //   client: "Torrent Power Ltd.",
-  //   location: "Near Vastadevdi, Surat",
-  //   projectSize:
-  //     "-",
-  //   projectDes: "-",
-  //   projectYear: "Current",
-  //   architect: "-",
-  //   consultant: "-",
-  //   scope: "Civil and Structural works for Construction of New VCB and GIS Building for 66 kV Substation",
-  // },
-  // {
-  //   src: "",
-  //   title: "New VCB and GIS Building for 66 kV Substation",
-  //   segment: "Industrial",
+    client: "Urmin Products Pvt. Ltd",
+    location: "Surat",
+    projectSize:
+      "2,00,000 Sq. ft.",
+    projectDes: "-",
+    projectYear: "2024-Current",
+    architect: "Taknik Consultant",
+    consultant: "Taknik Consultant",
+    scope: "Civil Structural Work & External Infrastructural Work.",
+  },
+  {
+    src: "",
+    title: "New VCB and GIS Building for 66 kV Substation ",
+    segment: "Industrial",
 
-  //   client: "Torrent Power Ltd.",
-  //   location: "Ashwanikumar road, Surat",
-  //   projectSize:
-  //     "-",
-  //   projectDes: "-",
-  //   projectYear: "Current",
-  //   architect: "-",
-  //   consultant: "-",
-  //   scope: "Civil and Structural works for Construction of New VCB and GIS Building for 66 kV Substation",
-  // },
-  // {
-  //   src: "",
-  //   title: "HARSHA ENGINEERS MANUFACTURING PLAN",
-  //   segment: "Industrial",
-  //   client: "Harsha Engineers Advantek Limited",
-  //   location: "Bhayala, Ahmedabad",
-  //   architect: "Shah & Talati",
-  //   consultant: "Shah & Talati",
-  //   projectSize: "- Sq. ft.",
-  //   projectDes: "-",
-  //   projectYear: "2022-Current",
-  //   scope: "Civil, Plumbing & Finishing , Aluminium & Infra Works for the Manufacturing Plant & Associated Works ",
-  // },
+    client: "Torrent Power Ltd",
+    location: "Surat",
+    projectSize:
+      "-",
+    projectDes: "-",
+    projectYear: "2024-Current",
+    architect: "-",
+    consultant: "-",
+    scope: "Civil and Structural works for Construction of New VCB and GIS Building for 66 kV Substation ",
+  },
+  {
+    src: "",
+    title: "Civil and Structural works for Construction of VCB and GIS Building at 66 kV",
+    segment: "Industrial",
+    client: "Torrent Power Ltd",
+    location: "Surat",
+    architect: "",
+    consultant: "",
+    projectSize: "- Sq. ft.",
+    projectDes: "-",
+    projectYear: "2022-Current",
+    scope: "Civil and Structural works for Construction of New VCB and GIS Building for 66 kV Substation ",
+  },
   // {
   //   src: "Sources/images/prouctlist/industrial/ongoing/1-2.jpeg",
   //   title: "TORRENT POWER “B” STATION",
@@ -230,7 +230,7 @@ const industrialcompleted = [
     scope: "Structural Work, RCC Framework, Electrical Work",
   },
   {
-    src:"/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140520-min.jpg",
+    src: "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140520-min.jpg",
 
     title: "FINECURE PHARMACEUTICALS LTD",
     imageGallery: [
@@ -293,7 +293,7 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/industrial/completed/5.png",
     title: "TECHNICO INDUSTRIES",
-    imageGallery:[
+    imageGallery: [
       "Sources/images/prouctlist/industrial/completed/Technico/Picture10.png"
     ],
     content:
@@ -328,7 +328,7 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/industrial/completed/7.png",
     title: "JBM AUTO SYSTEM",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/industrial/completed/jbm/4.jpeg",
       "/Sources/images/prouctlist/industrial/completed/jbm/1.jpeg",
       "/Sources/images/prouctlist/industrial/completed/jbm/2.jpg",
@@ -364,7 +364,7 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/industrial/completed/8.png",
     title: "URMIN PRODUCTS PVT LTD.",
-    imageGallery:[
+    imageGallery: [
       "Sources/images/prouctlist/industrial/completed/urmin-sari/Picture8.jpg",
     ],
     content:
@@ -383,7 +383,7 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/industrial/completed/urmin-bavla/Picture9.jpg",
     title: "URMIN PRODUCTS PVT LTD.",
-    imageGallery:[
+    imageGallery: [
       "Sources/images/prouctlist/industrial/completed/9.png",
     ],
     content:
@@ -402,7 +402,7 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/industrial/completed/Nirmiti/Picture11.jpg",
     title: "NIRMITI PRECISION",
-    imageGallery:[
+    imageGallery: [
       "Sources/images/prouctlist/industrial/completed/10.png",
     ],
     content:
@@ -421,7 +421,7 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/industrial/completed/11.png",
     title: "RELIABLE AUTO TECH",
-    imageGallery:[
+    imageGallery: [
       "Sources/images/prouctlist/industrial/completed/Reliable/Picture12.png",
     ],
     content:
@@ -489,7 +489,7 @@ const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/industrial/completed/16.png",
     title: "SAFEXPRESS WAREHOUSE",
-    imageGallery:[
+    imageGallery: [
       "/Sources/images/prouctlist/industrial/completed/safeexpress/3.jpeg",
       "/Sources/images/prouctlist/industrial/completed/safeexpress/2.jpeg",
       "/Sources/images/prouctlist/industrial/completed/safeexpress/1.webp"
@@ -829,17 +829,17 @@ const Industrial = () => {
                     {modalDetails.imageGallery && modalDetails.imageGallery.length > 0 ? (
                       modalDetails.imageGallery.map((imgSrc, idx) => (
                         <Col lg={8}>
-                        <div className="image_position">
-                          <Image
-                            key={idx}
-                            src={imgSrc}
-                            alt={`Gallery Image ${idx + 1}`}
-                            style={{ cursor: "pointer" }}
-                            preview={{
-                              getContainer: '#root', // This ensures the image preview is rendered within the root element
-                            }}
-                          />
-                        </div>
+                          <div className="image_position">
+                            <Image
+                              key={idx}
+                              src={imgSrc}
+                              alt={`Gallery Image ${idx + 1}`}
+                              style={{ cursor: "pointer" }}
+                              preview={{
+                                getContainer: '#root', // This ensures the image preview is rendered within the root element
+                              }}
+                            />
+                          </div>
                         </Col>
                       ))
                     ) : (

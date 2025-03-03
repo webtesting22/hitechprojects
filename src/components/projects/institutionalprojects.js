@@ -5,7 +5,7 @@ import Header from "../header/header";
 
 const institutionalprojectslist = [
    {
-     src: "/Sources/images/prouctlist/Institutional_projects/ongoing/Anubhav/new1.jpg",
+     src: "/Sources/images/prouctlist/Institutional_projects/ongoing/Anubhav/AnubhavSchool2.JPG",
      title: "ANUBHAV SCHOOL",
      imageGallery:[
       "/Sources/images/prouctlist/Institutional_projects/ongoing/Anubhav/new1.jpg",
@@ -18,13 +18,30 @@ const institutionalprojectslist = [
      client: "Pilak Shah",
      location: "Sanand, Ahmedabad",
      projectSize: "75,704 Sq. ft.",
-     projectDes: "----------",
-     projectYear: "Current",
+     projectDes: "GF+2 Floor",
+     projectYear: "2024-Current",
      architect: "Kakani Associates",
      consultant: "Japan Shah Consulting Engineers",
      scope:
-       "Civil Works Excavation, Backfiling, pile Foundation work, masonary, plaster, flooring, painting for School Building",
+       "Civil Works icluding excavation, RCC frame work, Expose masnory work, plaster work, flooring, painting, plumbing & external infrastructure work.",
    },
+   {
+    src: "/Sources/images/prouctlist/Institutional_projects/ongoing/SoulPicture.png",
+    title: "SOUL - University",
+    imageGallery:[
+     
+    ],
+    content: "",
+    client: "SOUL University ",
+    location: "Gandhinagar",
+    projectSize: "1,36,000 Sq. ft.",
+    projectDes: "GF+03 Floor",
+    projectYear: "2025-Current",
+    architect: "Edifice Consultant Pvt Ltd.",
+    consultant: "Ducon Consultants Pvt Ltd",
+    scope:
+      "Civil and Allied Structure & all finishing work for University campus.",
+  },
 
 ];
 const institutionalprojectscompleted = [
@@ -42,7 +59,7 @@ const institutionalprojectscompleted = [
     location: "Sanand, Ahmedabad",
     projectSize: "3,49,062 Sq. ft.",
     projectDes: "8 Floors, 43 Meters",
-    projectYear: "2022 - Current",
+    projectYear: "2022",
     architect: "Kakani Associates",
     consultant: "DELF Consulting Engineers (India) Private Limited",
     scope:

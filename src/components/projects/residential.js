@@ -12,11 +12,11 @@ const industriallist = [
     client: "MAHICA PROCON PRIVATE LIMITED",
     location: "Vaishnovdevi Circle, Ahmedabad",
     projectSize: "16,92,477 Sq. ft.",
-    projectDes: "-",
-    projectYear: "2024-Current",
+    projectDes: "3B+GF+22 Floor",
+    projectYear: "2023-Current",
     architect: "Hiren Patel & Associates",
     consultant: "Setu Infrastructure",
-    scope: "RCC Frame works, Block work, Plaster work for Residential Building 3B+G+22 Floors (5 Towers).",
+    scope: "RCC Frame works, masonary & Plaster work.",
   },
   {
     src: "Sources/images/prouctlist/residential/ongoing/supercity.jpeg",
@@ -26,11 +26,11 @@ const industriallist = [
     client: "Shrinivas Organisors Pvt ltd.",
     location: "Bhadaj, Ahmedabad",
     projectSize: "4,44,723 Sq. ft.",
-    projectDes: "-",
+    projectDes: "3B+GF+20 Floor",
     projectYear: "2024-Current",
     architect: "9th Street Architech",
     consultant: "NK shah Consultant",
-    scope: "RCC Frame works, Block work, Plaster works for Residential Building 3 basement + G.F + 20 Floors (2 Towers)",
+    scope: "RCC Frame works, masonary & Plaster work.",
   },
   {
     src: "Sources/images/prouctlist/residential/ongoing/Ikaria.png",
@@ -40,11 +40,11 @@ const industriallist = [
     client: "Alinea Properties LLP",
     location: "Adani Shantigram, Ahmedabad",
     projectSize: "2,24,000 Sq. ft.",
-    projectDes: "-",
+    projectDes: "1B+GF+13 floor",
     projectYear: "2022-Current",
     architect: "Studio ARA",
     consultant: "N K Shah Consulting LLP",
-    scope: "Civil Structure (Core & Shell) and Finishing works",
+    scope: "Civil Structure (Core & Shell) and Finishing works.",
   },
   // {
   //   src: "Sources/images/prouctlist/residential/ongoing/Gharana.png",
@@ -82,11 +82,11 @@ const industriallist = [
     client: "Aaryan Developers",
     location: "Shilaj, Ahmedabad",
     projectSize: "18,61,168 Sq. ft.",
-    projectDes: "21 Floors, 70 Meters",
+    projectDes: "2B+GF+21 Floor",
     projectYear: "2023-Current",
     architect: "AAA Architects",
     consultant: "HNBS Associates",
-    scope: "RCC Frame works, Block work, Plaster work",
+    scope: "RCC Frame works, masonary & Plaster work.",
   },
   {
     src: "Sources/images/prouctlist/residential/ongoing/2-2.jpg",
@@ -96,11 +96,11 @@ const industriallist = [
     client: "Palak Group",
     location: "S.G. Highway, Ahmedabad",
     projectSize: "1,060,422 Sq. ft.",
-    projectDes: "23 Floors, 85 Meters",
+    projectDes: "2B+GF+22 Floor",
     projectYear: "2023-Current",
     architect: "Studio Mansi Shah",
     consultant: "HNBS Associates",
-    scope: "Construction of 02 Basement + G.F + 2 Podium + HP + 20 floors of Residential Building",
+    scope: "RCC Frame works, masonary & Plaster work.",
   },
   // {
   //   // src: "Sources/images/prouctlist/residential/ongoing/1.png",
@@ -159,21 +159,13 @@ const industriallist = [
   //   scope: "Structural Work, RCC Framework, Finishing Work",
   // },
 
-  {
-    src: "Sources/images/prouctlist/residential/ongoing/2.png",
-    title: "GHARANA",
-    content: "5 and 6 BHK Sky Villas of 22 floored structure.",
-    segment: "Residential",
-    client: "Sheetal Infrastructure",
-    location: "Ambli, Ahmedabad",
-    projectSize: "5,00,000 Sqft.",
-    projectDes: "21 Floors, 75 Meters",
-    projectYear: "2022-Current",
-    architect: "ADS Architect",
-    consultant: "Ducon Consultants",
-    scope:
-      "Structural Work, Diaphragm Wall, RCC Framework, Masonry, Plaster",
-  },
+  
+  
+  
+  
+
+];
+const industrialcompleted = [
   {
     src: "Sources/images/prouctlist/residential/ongoing/Oeuvre.png",
     title: "Oeuvre -2",
@@ -183,32 +175,43 @@ const industriallist = [
     location: "Rajpath Club, Bodakdev, Amedabad",
     projectSize: "6,05,957 Sq. ft.",
     projectDes: "22 Floors",
-    projectYear: "2021-Current",
+    projectYear: "2021",
     architect: "HM Architects",
     consultant: "Setu Infrastructure",
-    scope: "Construction of residential building with material having 2 no of Basement (with 107 stores with plaster) + G.F. + P-1 + P-2 + H.P- + Typical 22 floors as below considerations including parapet terrace cabin, water tank (UGWT & OHWT).",
+    scope: "Civil Construction work of RCC Frame, Block & Plaster work.",
+  },
+  {
+    src: "Sources/images/prouctlist/residential/ongoing/2.png",
+    title: "GHARANA",
+    content: "5 and 6 BHK Sky Villas of 22 floored structure.",
+    segment: "Residential",
+    client: "Sheetal Infrastructure",
+    location: "Ambli, Ahmedabad",
+    projectSize: "5,00,000 Sqft.",
+    projectDes: "21 Floors, 75 Meters",
+    projectYear: "2024",
+    architect: "ADS Architect",
+    consultant: "Ducon Consultants",
+    scope:
+      "Civil Construction work of RCC Frame, Block & Plaster work.",
   },
   {
     src: "Sources/images/prouctlist/residential/ongoing/4.png",
-    title: "VENUS PASHMINA",
+    title: "Venush Pashmina",
     content: "4 and 5 BHK regal Appartments.",
     segment: "Residential",
     client: "Sarthi Prospace LLP- Venus Lifespace Creators",
     location: "Bodakdev, Amedabad",
     projectSize: "8,89,160 Sq. ft.",
     projectDes: "21 Floors, 70 Meters",
-    projectYear: "2022",
+    projectYear: "2024",
     architect: "H M Architects",
     consultant: "Setu Infrastructure",
     scope:
-      "Structural Work, Diaphragm Wall, RCC Framework, Masonry, Plaster",
+      "Civil Construction work of RCC Frame, Block & Plaster work.",
   },
-  
-
-];
-const industrialcompleted = [
   {
-    src: "Sources/images/prouctlist/residential/ongoing/5.png",
+    src: "Sources/images/prouctlist/residential/completed/sunatmosphere.png",
     title: "SUN ATMOSPHERE",
     content: "Sun Atmosphere are 2 to 3 BHK Appartments And Retail at Shela.",
     segment: "Residential",
@@ -216,11 +219,11 @@ const industrialcompleted = [
     location: "Shela, Ahmedabad",
     projectSize: "1,25,000 Sq. ft.",
     projectDes: "14 Floors, 50 Meters",
-    projectYear: "2022-2024",
+    projectYear: "2024",
     architect: "H M Architects",
     consultant: "Setu Infrastructure",
     scope:
-      "Structural Work, Diaphragm Wall, RCC Framework, Masonry, Plaster",
+      "Civil Construction work of RCC Frame, Block Masonry Plaster work, MEPF work, Waterproofing and Finishing Works",
   },
 
   {
@@ -237,7 +240,7 @@ const industrialcompleted = [
     location: "Jamnagar,Gujarat",
     projectSize: "2,81,000 Sq. ft.",
     projectDes: "2 Floors, 12 Meters",
-    projectYear: "2020-2023",
+    projectYear: "2023",
     architect: "PVDRS, Ahmedabad",
     consultant: "PVDRS, Ahmedabad",
     scope:
