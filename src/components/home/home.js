@@ -70,7 +70,7 @@ const valueparameter = [
 ];
 const carousel = [
   {
-    src: "Sources/images/carousel/1.png",
+    src: "Sources/images/carousel/NewCarousalBanner.jpg",
   },
   {
     src: "Sources/images/carousel/2.png",

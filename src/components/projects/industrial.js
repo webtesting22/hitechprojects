@@ -10,12 +10,12 @@ const industriallist = [
     segment: "Industrial",
     client: "KHS Machinery PVT. LTD.",
     location: "Near Hirapur cross road, vatva-mahemdavad highway ",
-    architect: "S3M Design",
-    consultant: "S3M Consultants",
+    architect: "S3M Design Consultants LLP",
+    consultant: "S3M Design Consultants LLP",
     projectSize: "-",
     projectDes: "-",
-    projectYear: "2024-Current",
-    scope: "Civil, Plumbing & Finishing , Aluminium & Infra Works for expansion project of Plant Building.",
+    projectYear: "2024 - Current",
+    scope: "Civil work, with all Finishing include Plumbing, Flooring, Painting, Door & Window & Infrastructure development work.",
   },
   {
     src: "Sources/images/prouctlist/industrial/ongoing/Asset1.png",
@@ -34,59 +34,59 @@ const industriallist = [
     src: "/Sources/images/prouctlist/industrial/ongoing/HarshaEngine.png",
     title: "Harsha Enginners Manufactuing Plant",
     segment: "Industrial",
-    client: "Urmin Products Pvt. Ltd",
+    client: "Harsha Engineers Advantek Limited.",
     location: "Moraiya, Ahmedabad",
     projectSize:
-      "-",
+      "1,00,000 sq. ft.",
     projectDes: "-",
-    projectYear: "2024-Current ",
+    projectYear: "2024 - Current ",
     architect: "Shah & Talati",
     consultant: "Shah & Talati",
-    scope: "Civil, Plumbing & Finishing , Aluminium & Infra Works for the Manufacturing Plant & Associated Works.",
+    scope: "Civil work, with all Finishing include Plumbing, Flooring, Painting, Door & Window & Infrastructure development work.",
   },
-  {
-    src: "",
-    title: "Civil works for packaging unit.",
-    segment: "Industrial",
+  // {
+  //   src: "",
+  //   title: "Construction of Packaging Unit for Urmin Products",
+  //   segment: "Industrial",
+  //   client: "Urmin Product Pvt. Ltd.",
+  //   location: "Surat",
+  //   projectSize:
+  //     "75,000 Sq. ft.",
+  //   projectDes: "-",
+  //   projectYear: "2024-Current",
+  //   architect: "Taknik Consultants",
+  //   consultant: "Taknik Consultants",
+  //   scope: "Civil work, with all Finishing include Plumbing, Flooring, Painting, Door & Window & Infrastructure development work.",
+  // },
+  // {
+  //   src: "",
+  //   title: "New VCB and GIS Building for 66 kV Substation ",
+  //   segment: "Industrial",
 
-    client: "Urmin Products Pvt. Ltd",
-    location: "Surat",
-    projectSize:
-      "2,00,000 Sq. ft.",
-    projectDes: "-",
-    projectYear: "2024-Current",
-    architect: "Taknik Consultant",
-    consultant: "Taknik Consultant",
-    scope: "Civil Structural Work & External Infrastructural Work.",
-  },
-  {
-    src: "",
-    title: "New VCB and GIS Building for 66 kV Substation ",
-    segment: "Industrial",
+  //   client: "Torrent Power Ltd",
+  //   location: "Surat",
+  //   projectSize:
+  //     "-",
+  //   projectDes: "-",
+  //   projectYear: "2024-Current",
+  //   architect: "-",
+  //   consultant: "-",
+  //   scope: "Civil and Structural works for Construction of New VCB and GIS Building for 66 kV Substation ",
+  // },
+  // {
+  //   src: "",
+  //   title: "Civil and Structural works for Construction of VCB and GIS Building at 66 kV",
+  //   segment: "Industrial",
+  //   client: "Torrent Power Ltd",
+  //   location: "Surat",
+  //   architect: "",
+  //   consultant: "",
+  //   projectSize: "- Sq. ft.",
+  //   projectDes: "-",
+  //   projectYear: "2022-Current",
+  //   scope: "Civil and Structural works for Construction of New VCB and GIS Building for 66 kV Substation ",
+  // },
 
-    client: "Torrent Power Ltd",
-    location: "Surat",
-    projectSize:
-      "-",
-    projectDes: "-",
-    projectYear: "2024-Current",
-    architect: "-",
-    consultant: "-",
-    scope: "Civil and Structural works for Construction of New VCB and GIS Building for 66 kV Substation ",
-  },
-  {
-    src: "",
-    title: "Civil and Structural works for Construction of VCB and GIS Building at 66 kV",
-    segment: "Industrial",
-    client: "Torrent Power Ltd",
-    location: "Surat",
-    architect: "",
-    consultant: "",
-    projectSize: "- Sq. ft.",
-    projectDes: "-",
-    projectYear: "2022-Current",
-    scope: "Civil and Structural works for Construction of New VCB and GIS Building for 66 kV Substation ",
-  },
   // {
   //   src: "Sources/images/prouctlist/industrial/ongoing/1-2.jpeg",
   //   title: "TORRENT POWER “B” STATION",
@@ -118,18 +118,18 @@ const industrialcompleted = [
 
     ],
     segment: "Industrial",
-    client: "Torrent Power Ltd",
-    location: "Katargam, Surat",
+    client: "Torrent Power Ltd.",
+    location: "Surat",
     architect: "Munjal Bhatt Architects",
     consultant: "S3M Design Consultants LLP",
     projectSize: "1,11,000  Sq. ft.",
     projectDes: "30 Meters",
     projectYear: "2022",
-    scope: "Civil, Plumbing and Finishing works for Torrent B station",
+    scope: "RCC works, Masonary, Plaster works, Plumbing, Finishing work, Structural Steel work & Infrastructure Development. ",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/17.jpg",
-    title: "TORRENT POWER 'E' STATION",
+    title: "Torrent E Station",
     imageGallery: [
       "/Sources/images/prouctlist/industrial/completed/Torrent Varachha/Torrent Varacha - Main.jpg",
       "/Sources/images/prouctlist/industrial/completed/Torrent Varachha/Torrent Varacha - 1.jpg"
@@ -137,17 +137,17 @@ const industrialcompleted = [
     content:
       "Torrent power, one of the largest integrated private sector power utilities in the country, is coming up with its Power supply center, TSD Workshop, Plug point and other applied work at 'E' station premises, Varachha Surat.",
     client: "Torrent Power Ltd",
-    location: "Varachha, Surat",
+    location: "Surat",
     projectSize: "50,000 Sq. ft.",
     projectDes: "25.44 Meters",
     projectYear: "2022",
     architect: "Munjal Bhatt",
     consultant: "S3M Design Consultants LLP",
-    scope: "RCC Framework, Plumbing, Finishing Work",
+    scope: "RCC works, Masonary, Plaster works, Plumbing, Finishing work, Structural Steel work & Infrastructure Development. ",
   },
   {
     src: "Sources/images/prouctlist/commercial/ongoing/4.png",
-    title: "TORRENT POWER LTD. ",
+    title: "Torrent PSC Building",
     imageGallery: [
       "/Sources/images/prouctlist/industrial/completed/Torrent Naranpura/Picture1.jpg",
       "/Sources/images/prouctlist/industrial/completed/Torrent Naranpura/Picture2.jpg",
@@ -155,7 +155,7 @@ const industrialcompleted = [
     ],
     content:
       "Torrent power, one of the largest integrated private sector power utilities in the country, is coming up with its HT PSC building and meter Lab building at Naranpura, Ahmedabad.",
-    client: "Torrent Power Ltd",
+    client: "Torrent Power Ltd.",
     location: "Naranpura,Ahmedabad",
     projectSize: "1,70,000 Sq. ft.",
     projectDes: "45 Meters",
@@ -163,11 +163,11 @@ const industrialcompleted = [
     projectYear: "2022",
     architect: "Munjal Bhatt",
     consultant: "Ducon Consultant Pvt Ltd",
-    scope: "RCC Framework, Plumbing, Finishing Work",
+    scope: "RCC works, Masonary, Plaster works, Plumbing, Finishing work, Structural Steel work & Infrastructure Development. ",
   },
   {
     src: "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Main Photos/Torrent Odhav - Main.jpg",
-    title: "TORRENT POWER LTD.",
+    title: "Torrent PSC Building",
     imageGallery: [
       "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Main Photos/Torrent Odhav - Main.jpg",
       "/Sources/images/prouctlist/industrial/completed/Torrent Odhav/Main Photos/Torrent Odhav - 2.jpg",
@@ -194,14 +194,14 @@ const industrialcompleted = [
     ],
     content:
       "Torrent power, one of the largest integrated private sector power utilities in the country, is coming up with its PSC building And Plug point building at Odhav.",
-    client: "Torrent Power Ltd",
+    client: "Torrent Power Ltd.",
     location: "Odhav, Ahmedabad",
     projectSize: "1,10,000 Sq. ft.",
     projectDes: "25.44 Meters",
     projectYear: "2022",
     architect: "Munjal Bhatt",
     consultant: " Ducon Consultant Pvt Ltd",
-    scope: "RCC Framework, Plumbing, Finishing Work",
+    scope: "RCC works, Masonary, Plaster works, Plumbing, Finishing work, Structural Steel work & Infrastructure Development. ",
   },
 
   {
@@ -226,8 +226,8 @@ const industrialcompleted = [
     projectDes: "15 Meters",
     projectYear: "2022",
     architect: "Munjal Bhatt Architects",
-    consultant: "TCS",
-    scope: "Structural Work, RCC Framework, Electrical Work",
+    consultant: "TCS Consultant",
+    scope: "Construction Civil & Finishing work for 400kV & 220kV GIS Building  with Infrastructure Work.",
   },
   {
     src: "/Sources/images/prouctlist/industrial/completed/Finecure Pharma/IMG_20220109_140520-min.jpg",
@@ -249,15 +249,15 @@ const industrialcompleted = [
     content:
       "Finecure Pharmaceuticals Limited is leading manufacturers and marketers of Pharmaceutical formulations and Nutraceuticals and its coming up with its Pharma building at Arvind Mega Park, Ahmedabad.",
     segment: "Industrial",
-    client: "Finecure Pharmaceuticals Ltd",
+    client: "Finecure Pharmaceuticals Ltd.",
     location: "Arvind Megapark, Changodar",
     projectSize: "35,000 Sq. ft.",
     projectDes: "-",
     projectYear: "2019",
-    architect: "N.K.Shah",
-    consultant: "N.K.Shah",
+    architect: "N.K. Shah Consulting Engineers LLP",
+    consultant: "N.K. Shah Consulting Engineers LLP",
     scope:
-      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
+      "Construction Civil & Finishing work for Production unit with Infrastructure Work.",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/Picture4.jpg",
@@ -265,14 +265,14 @@ const industrialcompleted = [
     content:
       "Harsha Engineering opened its new plant of 50,000 Sqft designed by VMS Engineering.",
     segment: "Industrial",
-    client: "Harsha Engineers Ltd.",
-    location: "Changodar, Ahmedabad",
+    client: "Harsha Engineers Advantek Limited.",
+    location: "Ahmedabad",
     projectSize: " 50,000 Sq. ft.",
     projectDes: "12 Meters",
     projectYear: "2019",
-    architect: "VMS Engineering And Design Services Pvt. Ltd.",
-    consultant: "VMS Engineering And Design Services Pvt. Ltd.",
-    scope: "Structural Work RCC Framework, Finishing Work",
+    architect: "VMS Engineering & Design Services Pvt. Ltd.",
+    consultant: "VMS Engineering & Design Services Pvt. Ltd.",
+    scope: "Construction Civil & Finishing work for TRB Building with Infrastructure Work.",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/4.png",
@@ -280,15 +280,15 @@ const industrialcompleted = [
     content:
       "HIGHTEMP, a leading manufacturer of furnaces opens its plant of 1,00,000 Sq ft in Sanand, Gujarat designed by VBT Consortium.",
     segment: "Furnace Plant",
-    client: " High Temp Furnaces Ltd",
-    location: "Sanand, Ahmedabad",
+    client: "HighTemp Furnaces Ltd.",
+    location: "Ahmedabad",
     projectSize: "1,00,000 Sq. ft.",
     projectDes: "-",
     projectYear: "2018",
-    architect: "M/s VBT Consortium",
+    architect: "VBT Consortium",
     consultant: "Base Engineering Services",
     scope:
-      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
+      "Construction Civil & Finishing work for Factory Building with Infrastructure Work & PEB work.",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/5.png",
@@ -300,14 +300,14 @@ const industrialcompleted = [
       "Technico, a class-leading manufacturer of high-quality automotive component is opening a new plant of 1,00,000 Sq ft in Vanod.",
     segment: "Automotive",
     client: "Technico Industries Ltd.",
-    location: "Vanod, Surendranagar",
+    location: "Surendranagar",
     projectSize: "1,00,000 Sq. ft.",
     projectDes: "-",
     projectYear: "2018",
     architect: "S3M Design Consultants LLP",
     consultant: "S3M Design Consultants LLP",
     scope:
-      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
+      "Construction Civil & Finishing work for Manufacturing Unit with Infrastructure Work.",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/6.png",
@@ -315,15 +315,15 @@ const industrialcompleted = [
     content:
       "Sanitary products supplier Unicharm is opening its third disposable diaper plant in Sanand.",
     segment: "Disposable Diaper Plant",
-    client: "Kajima India Pvt Ltd",
-    location: "Sanand, Gujarat",
+    client: "Kajima India Pvt. Ltd.",
+    location: "Ahmedabad",
     projectSize: "7,00,000 Sq. ft.",
     projectDes: "-",
     projectYear: "2018",
-    architect: "Kajima India Pvt Ltd.",
-    consultant: "Kajima India Pvt Ltd.",
+    architect: "Kajima India Pvt. Ltd.",
+    consultant: "Kajima India Pvt. Ltd.",
     scope:
-      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
+      "Construction Civil & Finishing work for Unicharm Factory Unit with Infrastructure Work.",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/7.png",
@@ -342,10 +342,10 @@ const industrialcompleted = [
     projectSize: "2,00,000 Sq. ft.",
     projectDes: "-",
     projectYear: "2015",
-    architect: "VMS Engineering Consultant",
-    consultant: "VMS Engineering Consultant",
+    architect: "VMS Engineering & Design Services Pvt. Ltd.",
+    consultant: "VMS Engineering & Design Services Pvt. Ltd.",
     scope:
-      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
+      "Construction Civil & Finishing work for Factory Unit & Site development Work.",
   },
   // {
   //   src: "Sources/images/prouctlist/industrial/completed/7.png",
@@ -370,15 +370,15 @@ const industrialcompleted = [
     content:
       "Urmin Sari has a state-of-the-art facility spread over a 10,000 sq. m. area to cater to the production, warehousing and cold storage needs at Changodar.",
     segment: "Food Industry",
-    client: "Urmin Product Pvt. Ltd..",
+    client: "Urmin Product Pvt. Ltd.",
     location: "Sari, Ahmedabad",
     projectSize: "1,00,000 Sq. ft.",
     projectDes: "-",
     projectYear: "2017",
-    architect: "Taknik Consultants, Ahmedabad",
+    architect: "Taknik Consultants",
     consultant: "Taknik Consultants",
     scope:
-      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
+      "Construction Civil & Finishing work for Warehouse Building with Infrastructure Work.",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/urmin-bavla/Picture9.jpg",
@@ -397,7 +397,7 @@ const industrialcompleted = [
     architect: "Taknik Consultants, Ahmedabad",
     consultant: "Taknik Consultants",
     scope:
-      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
+      "Construction Civil & Finishing work for Factory Building with Infrastructure Work.",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/Nirmiti/Picture11.jpg",
@@ -408,15 +408,15 @@ const industrialcompleted = [
     content:
       "Nirmiti precision is one of the leading engineering and manufacturing companies of of metal nut, metal bolt and metal bush which opened its factory in Sanand.",
     segment: "Automotive",
-    client: "Nirmiti Precision Pvt. Ltd..",
+    client: "Nirmiti Precision Pvt Ltd.",
     location: "Sanand, Ahmedabad",
     projectSize: "1,00,000 Sq. ft.",
     projectDes: "-",
     projectYear: "2016",
-    architect: "L. J. Purani Architect, Ahmedabad",
-    consultant: " L. J. Purani Architect",
+    architect: " L. J. Purani Architect",
+    consultant: " L. J. Purani Architect",
     scope:
-      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
+      "Construction Civil & Finishing work for Plant Building with Infrastructure Work.",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/11.png",
@@ -427,15 +427,15 @@ const industrialcompleted = [
     content:
       "Reliable established a new manufacturing setup in Sanand GIDC catering to the automobile OEMs in the western region.",
     segment: "Automotive",
-    client: "Reliable Auto System Pvt. Ltd",
+    client: "Reliable Autotech Pvt Ltd.",
     location: "Sanand, Ahmedabad",
     projectSize: "1,00,000 Sq. ft.",
     projectDes: "-",
     projectYear: "2016",
-    architect: " M. R. Fegde And Associate, Nasik",
+    architect: "M. R. Fegde And Associate",
     consultant: "Chhaya Consulting Engineers",
     scope:
-      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
+      "Construction Civil & Finishing work for Factory Unit and Anciliary Buildings with Infrastructure Work.",
   },
 
   {
@@ -452,7 +452,7 @@ const industrialcompleted = [
     architect: "Tata Motors",
     consultant: "Tata Motors",
     scope:
-      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
+      "Construction Civil & Finishing work for Weld Shop Unit & Site development Work.",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/14.png",
@@ -468,7 +468,7 @@ const industrialcompleted = [
     architect: "N.K. Shah Consulting Engineers LLP",
     consultant: "N.K. Shah Consulting Engineers LLP",
     scope:
-      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
+      "Construction Civil & Finishing work for Plant Building & Site development Work.",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/15.png",
@@ -476,7 +476,7 @@ const industrialcompleted = [
     content:
       "Harsha Engineers, a global solution provider of Bearing Cages opened its new plant of 22,000 Sqft in 2008 designed by SMPS Consultants.",
     segment: " Mechanical Plant",
-    client: "Harsha Engineers Pvt. Ltd",
+    client: "Harsha Engineers Advantek Limited.",
     location: "Sanand, Ahmedabad",
     projectSize: "22,000 Sq. ft.",
     projectDes: "-",
@@ -484,7 +484,7 @@ const industrialcompleted = [
     architect: "SMPS, Ahmedababad",
     consultant: "SMPS, Ahmedababad",
     scope:
-      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
+      "Construction Civil & Finishing work for TRB Building with Infrastructure Work.",
   },
   {
     src: "Sources/images/prouctlist/industrial/completed/16.png",
@@ -505,7 +505,7 @@ const industrialcompleted = [
     architect: "CivTech Consultants",
     consultant: "CivTech Consultants",
     scope:
-      "Structural Work, RCC Framework, Finishing Work, Infrastructural Work",
+      "Construction Civil & Finishing work for Ware House & Site development Work.",
   },
   //  {
   //   src: "Sources/images/prouctlist/commercial/ongoing/2.png",
@@ -691,12 +691,13 @@ const Industrial = () => {
                                 {item.projectSize}
                               </p>
                             </div>
-                            <div className="pt-3">
+                          {/*  <div className="pt-3">
                               <p className="is-size-6">
                                 <span className="has-text-weight-semibold">Project Description:&nbsp;</span>
                                 {item.projectDes}
                               </p>
                             </div>
+                             */}
                             <div className="pt-3">
                               <p className="is-size-6">
                                 <span className="has-text-weight-semibold">Project Year:&nbsp;</span>
@@ -785,12 +786,12 @@ const Industrial = () => {
                                 {item.projectSize}
                               </p>
                             </div>
-                            <div className="pt-3">
+                            {/* <div className="pt-3">
                               <p className="is-size-6">
                                 <span className="has-text-weight-semibold">Project Description:&nbsp;</span>
                                 {item.projectDes}
                               </p>
-                            </div>
+                            </div> */}
                             <div className="pt-3">
                               <p className="is-size-6">
                                 <span className="has-text-weight-semibold">Project Year:&nbsp;</span>
