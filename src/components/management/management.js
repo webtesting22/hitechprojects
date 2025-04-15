@@ -40,16 +40,16 @@ const coremanagment = [
   {
     src: "Sources/images/management/team/4.png",
     corename: "Viral Shah",
-    coredes: "DGM",
-    coreedu: "(B.E Civil)",
+    coredes: "",
+    coreedu: "(General manager)",
     corepara:
       "With over 25 years of extensive experience in the civil construction sector, he has successfully executed a diverse portfolio of residential, commercial and industrial projects. His tenure includes collaborations with reputable companies such as JMC, K Raheja Corp. and Arvind Group. As a key member of Hitech family, he has showcased technical proficiency, an ability to meet deadlines and a commitment to quality. His well-established network has been a boon for the company, aiding in resource enhancement and rapid project mobilization.",
   },
   {
     src: "Sources/images/management/team/5.png",
     corename: "Jaydip Patel",
-    coredes: "AGM",
-    coreedu: "(B.E Civil)",
+    coredes: "",
+    coreedu: "(General manager)",
     corepara:
       "With an illustrious career spanning over 23 years, he has specialized in the execution of industrial, institutional, and large-scale high-end residential projects. Each project he has overseen stands as a testament to our company's excellence. A dedicated member of the Hitech team since 2008, his expertise in finishing sets new industry benchmarks. His profound understanding of project planning ensures the timely completion of all undertakings.",
   },

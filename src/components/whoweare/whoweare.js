@@ -891,7 +891,7 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                src="Sources/images/milestone/10.png"
+                                src="/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/Main Photos/Torrent Dholera - Main.jpg"
                                 alt="404 - Not Given"
                               />
                             </div>
