@@ -489,10 +489,8 @@ const Whoweare = () => {
                   <Col xxl={4} lg={8} md={8}>
                     <div className="main_timeline_text">
                       <p className="is-size-6 has-text-black mt-3 has-text-centered">
-                        Childhood friends Munir Shah & Tejas Dalal started
-                        Hi-Tech from their home office. The Journey started with
-                        an opportunity to build a corporate house for Harsha
-                        Engineers.
+                        Childhood friends Munir Shah and Tejas Dalal founded Hi-Tech from their home office.
+                        Their journey began with a unique opportunity: building a corporate office for Harsha Engineers.
                       </p>
                     </div>
                   </Col>
@@ -514,10 +512,8 @@ const Whoweare = () => {
                   <Col md={8} sm={24} xs={24}>
                     <div className="main_timeline_text">
                       <p className="is-size-6 has-text-black mt-3 has-text-centered">
-                        Childhood friends Munir Shah & Tejas Dalal started
-                        Hi-Tech from their home office. The Journey started with
-                        an opportunity to build a corporate house for Harsha
-                        Engineers.
+                        Childhood friends Munir Shah and Tejas Dalal founded Hi-Tech from their home office.
+                        Their journey began with a unique opportunity: building a corporate office for Harsha Engineers.
                       </p>
                     </div>
                   </Col>
@@ -530,7 +526,7 @@ const Whoweare = () => {
             <div className="timeline-block timeline-block-left different_width">
               <div className="marker"></div>
               <div>
-                <p className="is-size-4 timeline_year">1999</p>
+                <p className="is-size-4 timeline_year">2000</p>
                 <div className="space-align-container">
                   <Row>
                     <Col xxl={12} lg={17} md={24} sm={24} xs={24}>
@@ -543,16 +539,13 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                src="Sources/images/prouctlist/industrial/completed/15.png"
+                                src="Sources/images/JourneyImages/2000.jpg"
                                 alt="404 - Not Given"
                               />
                             </div>
                             <div>
                               <p className="is-size-6 has-text-black mt-3">
-                                Moved to 350 sqft office premises
-                                <br /> Bagged 1st green field industrial project
-                                of Export Oriented Manufacturing facility for
-                                Harsha Engineers
+                                Successfully secured our first <b>Green Field Industrial Project</b>—an Export-Oriented Manufacturing Facility for Harsha Engineers.
                               </p>
                             </div>
                           </div>
@@ -580,13 +573,12 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                src="Sources/images/milestone/2.png"
+                               src="Sources/images/JourneyImages/2003.jpg"
                                 alt="404 - Not Given"
                               />
                             </div>
                             <p className="is-size-6 has-text-black mt-3">
-                              Launched various commercial & residential projects
-                              in Ahmedabad & Gandhinagar as a developer.
+                              Successfully launched a range of commercial and residential projects as developers in <b>Ahmedabad</b> and <b>Gandhinagar</b>.
                             </p>
                           </div>
                         </Space>
@@ -612,14 +604,78 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                src="Sources/images/milestone/3.png"
+                              src="Sources/images/JourneyImages/2007.jpg"
                                 alt="404 - Not Given"
                               />
                             </div>
                             <div>
                               <p className="is-size-6 has-text-black mt-3">
-                                Executed various industrial projects for Jekson
-                                Hydraulics & logistic hub for Safexpress
+                                Executed various industrial projects for <b>Jekson Hydraulics</b>.
+                              </p>
+                            </div>
+                          </div>
+                        </Space>
+                      </div>
+                    </Col>
+                  </Row>
+                </div>
+              </div>
+            </div>
+            <div className="timeline-block timeline-block-right">
+              <div className="marker"></div>
+              <div>
+                <p className="is-size-4 timeline_year">2008</p>
+                <Row>
+                  <Col xxl={12} lg={17} md={24} sm={24} xs={24}>
+                    <div className="space-align-container">
+                      <div className="space-align-block">
+                        <Space
+                          align="center"
+                          direction="horizontal"
+                          className="mile_box"
+                        >
+                          {/* center1 */}
+                          <div>
+                            <div>
+                              <img
+                                src="Sources/images/JourneyImages/2008.jpg"
+                                alt="404 - Not Given"
+                              />
+                            </div>
+                            <p className="is-size-6 has-text-black mt-3">
+                              Completed the <b>Logistic Hub for Safexpress</b>, emphasizing precision and efficiency in industrial project execution.
+                            </p>
+                          </div>
+                        </Space>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
+            </div>
+            <div className="timeline-block timeline-block-left different_width">
+              <div className="marker"></div>
+              <div>
+                <p className="is-size-4 timeline_year">2008</p>
+                <div className="space-align-container">
+                  <Row>
+                    <Col xxl={12} lg={17} md={24} sm={24} xs={24}>
+                      <div className="space-align-block">
+                        <Space
+                          align="center"
+                          direction="horizontal"
+                          className="mile_box"
+                        >
+                          <div>
+                            <div>
+                              <img
+                               src="Sources/images/JourneyImages/2008 (1).jpg"
+                                alt="404 - Not Given"
+                              />
+                            </div>
+                            <div>
+                              <p className="is-size-6 has-text-black mt-3">
+                                Procured the <b>First Concrete Batching Plant</b>.
                               </p>
                             </div>
                           </div>
@@ -647,14 +703,12 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                src="Sources/images/prouctlist/Institutional_projects/completed/Narayana Hrudalaya Hsopital/Narayana Hrudalaya - 1.jpg"
+                                src="Sources/images/JourneyImages/2009.jpg"
                                 alt="404 - Not Given"
                               />
                             </div>
                             <p className="is-size-6 has-text-black mt-3">
-                              Bagged a landmark hospital project Narayana
-                              Hrudalaya in Ahmedabad. Procured 1st Concrete
-                              Batching Place & Pump.
+                              Bagged a landmark hospital project, <b>Narayana Hrudayalaya</b>, in Ahmedabad.
                             </p>
                           </div>
                         </Space>
@@ -680,15 +734,13 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                src="Sources/images/prouctlist/residential/ongoing/sunatmosphere/1.png"
+                               src="Sources/images/JourneyImages/2010.jpg"
                                 alt="404 - Not Given"
                               />
                             </div>
                             <div>
                               <p className="is-size-6 has-text-black mt-3">
-                                Association with leading real estate developer
-                                H.N.Safal. 5 million sqft built for them over
-                                the years for their various commercial projects
+                                A strong association with leading real estate developer HN Safal, having developed <b>5 million sq.ft.</b> for their commercial projects over the years.
                               </p>
                             </div>
                           </div>
@@ -702,7 +754,7 @@ const Whoweare = () => {
             <div className="timeline-block timeline-block-right">
               <div className="marker"></div>
               <div>
-                <p className="is-size-4 timeline_year">2013</p>
+                <p className="is-size-4 timeline_year">2012</p>
                 <Row>
                   <Col xxl={12} lg={17} md={24} sm={24} xs={24}>
                     <div className="space-align-container">
@@ -716,16 +768,13 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                src="Sources/images/milestone/6.png"
+                                style={{ height: "30vh" }}
+                                src="Sources/images/JourneyImages/2012.jpg"
                                 alt="404 - Not Given"
                               />
                             </div>
                             <p className="is-size-6 has-text-black mt-3">
-                              Moved to 3000 sqft office premises. Associated
-                              with True Value for execution of Ahmedabad's first
-                              22 storey commercial complex - West Gate. 2
-                              million sqft built for them over the years.
-                              Procured 1st tower crane.
+                              Procured the <b>First Tower Crane</b>, marking significant growth.
                             </p>
                           </div>
                         </Space>
@@ -738,7 +787,7 @@ const Whoweare = () => {
             <div className="timeline-block timeline-block-left different_width">
               <div className="marker"></div>
               <div>
-                <p className="is-size-4 timeline_year">2015</p>
+                <p className="is-size-4 timeline_year">2013</p>
                 <div className="space-align-container">
                   <Row>
                     <Col xxl={12} lg={17} md={24} sm={24} xs={24}>
@@ -751,15 +800,13 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                src="Sources/images/expertise/tech/1.png"
+                               src="Sources/images/JourneyImages/2013.jpg"
                                 alt="404 - Not Given"
                               />
                             </div>
                             <div>
                               <p className="is-size-6 has-text-black mt-3">
-                                Digital transformation initiative taken for
-                                development of Enterprise Resource Planning
-                                (ERP) tool with inhouse IT team
+                                Collaborated with True Value for the execution of Ahmedabad's first <b>22-storey</b> commercial complex, <b>West Gate</b>, building <b>2 million sq. ft.</b> for them over the years.
                               </p>
                             </div>
                           </div>
@@ -771,6 +818,38 @@ const Whoweare = () => {
               </div>
             </div>
             <div className="timeline-block timeline-block-right">
+              <div className="marker"></div>
+              <div>
+                <p className="is-size-4 timeline_year">2015</p>
+                <Row>
+                  <Col xxl={12} lg={17} md={24} sm={24} xs={24}>
+                    <div className="space-align-container">
+                      <div className="space-align-block">
+                        <Space
+                          align="center"
+                          direction="horizontal"
+                          className="mile_box"
+                        >
+                          {/* center1 */}
+                          <div>
+                            <div>
+                              <img
+                               src="Sources/images/JourneyImages/2015.jpg"
+                                alt="404 - Not Given"
+                              />
+                            </div>
+                            <p className="is-size-6 has-text-black mt-3">
+                              Digital transformation initiative taken for development of <b>Enterprise Resource Planning (ERP)</b> tool with inhouse IT team.
+                            </p>
+                          </div>
+                        </Space>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
+            </div>
+            <div className="timeline-block timeline-block-left">
               <div className="marker"></div>
               <div>
                 <p className="is-size-4 timeline_year">2016</p>
@@ -787,16 +866,13 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                style={{ height: "30vh" }}
-                                src="Sources/images/prouctlist/residential/completed/6.JPG"
+                              src="Sources/images/JourneyImages/2016 (1).jpg"
                                 alt="404 - Not Given"
                               />
                             </div>
                             <p className="is-size-6 has-text-black mt-3">
-                              The organization has transitioned to a private limited company
-                              with a strong association with Sun Builders, having built 3
-                              million square feet, including the high-end Sun Evoq residential
-                              project.
+                              Continued association with Sun Builders, including the prestigious high-end residential complex,
+                              <b>Sun Evoq</b>, with a track record of delivering <b>3 million sq.ft. of construction</b> for them to date.
                             </p>
                           </div>
                         </Space>
@@ -806,10 +882,10 @@ const Whoweare = () => {
                 </Row>
               </div>
             </div>
-            <div className="timeline-block timeline-block-left different_width">
+            <div className="timeline-block timeline-block-right different_width">
               <div className="marker"></div>
               <div>
-                <p className="is-size-4 timeline_year">2017</p>
+                <p className="is-size-4 timeline_year">2016</p>
                 <div className="space-align-container">
                   <Row>
                     <Col xxl={12} lg={17} md={24} sm={24} xs={24}>
@@ -822,15 +898,15 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                src="Sources/images/prouctlist/commercial/completed/55.png"
+                                src="Sources/images/JourneyImages/2016.jpg"
                                 alt="404 - Not Given"
                               />
                             </div>
                             <div>
                               <p className="is-size-6 has-text-black mt-3">
-                                Association with Sharnam group for their
-                                commercial projects. 1.5 million sqft built for
-                                them in several years
+                                Transitioned from a Partnership
+                                firm to a <b>Private Limited Company </b>
+                                for enhanced operational efficiency and credibility.
                               </p>
                             </div>
                           </div>
@@ -841,10 +917,10 @@ const Whoweare = () => {
                 </div>
               </div>
             </div>
-            <div className="timeline-block timeline-block-right">
+            <div className="timeline-block timeline-block-left">
               <div className="marker"></div>
               <div>
-                <p className="is-size-4 timeline_year">2018</p>
+                <p className="is-size-4 timeline_year">2017</p>
                 <Row>
                   <Col xxl={12} lg={17} md={24} sm={24} xs={24}>
                     <div className="space-align-container">
@@ -858,13 +934,15 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                src="Sources/images/milestone/10.png"
+
+                                src="Sources/images/JourneyImages/2017.jpg"
                                 alt="404 - Not Given"
                               />
                             </div>
                             <p className="is-size-6 has-text-black mt-3">
-                              Expanded the corporate segment construction for
-                              clients like Torrent, Arvind & Nexus.
+                              Association with <b>Sharnam Group</b> for their commercial projects.
+                              <b>1.5 million sq.ft.</b> built for them
+                              in several years.
                             </p>
                           </div>
                         </Space>
@@ -874,10 +952,45 @@ const Whoweare = () => {
                 </Row>
               </div>
             </div>
-            <div className="timeline-block timeline-block-left">
+            <div className="timeline-block timeline-block-right different_width">
               <div className="marker"></div>
               <div>
                 <p className="is-size-4 timeline_year">2018</p>
+                <div className="space-align-container">
+                  <Row>
+                    <Col xxl={12} lg={17} md={24} sm={24} xs={24}>
+                      <div className="space-align-block">
+                        <Space
+                          align="center"
+                          direction="horizontal"
+                          className="mile_box"
+                        >
+                          <div>
+                            <div>
+                              <img
+                                src="Sources/images/JourneyImages/2018.jpg"
+                                alt="404 - Not Given"
+                              />
+                            </div>
+                            <div>
+                              <p className="is-size-6 has-text-black mt-3">
+                                Expanded the corporate segment of construction for clients like
+                                <b>Torrent, Arvind & Nexus. </b>
+                                Initiated geographical expansion by starting projects in <b>Dholera</b>.
+                              </p>
+                            </div>
+                          </div>
+                        </Space>
+                      </div>
+                    </Col>
+                  </Row>
+                </div>
+              </div>
+            </div>
+            <div className="timeline-block timeline-block-left">
+              <div className="marker"></div>
+              <div>
+                <p className="is-size-4 timeline_year">2020</p>
                 <Row>
                   <Col xxl={12} lg={17} md={24} sm={24} xs={24}>
                     <div className="space-align-container">
@@ -891,13 +1004,12 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                src="/Sources/images/prouctlist/industrial/completed/Torrent Dholera/Tpda Photos/Main Photos/Torrent Dholera - Main.jpg"
+                                              src="Sources/images/JourneyImages/2020 (1).jpg"
                                 alt="404 - Not Given"
                               />
                             </div>
                             <p className="is-size-6 has-text-black mt-3">
-                              Initiated geographical expansion by starting projects in
-                              Dholera & Surat
+                              Initiated geographical expansion by starting projects in <b>Surat</b>.
                             </p>
                           </div>
                         </Space>
@@ -923,15 +1035,13 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                src="Sources/images/awards/4.png"
+                                             src="Sources/images/JourneyImages/2020.jpg"
                                 alt="404 - Not Given"
                               />
                             </div>
                             <div>
                               <p className="is-size-6 has-text-black mt-3">
-                                Won 3 ICI- Ultratech Awards at State & Regional
-                                level in different categories for outstanding
-                                structures
+                                Won <b>3 ICI- Ultratech Awards</b> at State & Regional levels in different categories for outstanding structures.
                               </p>
                             </div>
                           </div>
@@ -959,15 +1069,77 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-
-                                src="Sources/images/whoarewe/12.jpeg"
+                                             src="Sources/images/JourneyImages/2021.jpg"
                                 alt="404 - Not Given"
                               />
                             </div>
                             <p className="is-size-6 has-text-black mt-3">
-                              Started projects with Reliance Indutries Ltd at
-                              Jamnagar. Added concrete boom placer in the feet
-                              of P&M equipment
+                              Moved to state-of-the-art office premises of 25,000 sq.ft. at <b>Westgate Business Bay</b>, S.G. Highway.
+                            </p>
+                          </div>
+                        </Space>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
+            </div>
+            <div className="timeline-block timeline-block-right different_width">
+              <div className="marker"></div>
+              <div>
+                <p className="is-size-4 timeline_year">2021</p>
+                <div className="space-align-container">
+                  <Row>
+                    <Col xxl={12} lg={17} md={24} sm={24} xs={24}>
+                      <div className="space-align-block">
+                        <Space
+                          align="center"
+                          direction="horizontal"
+                          className="mile_box"
+                        >
+                          <div>
+                            <div>
+                              <img
+                                             src="Sources/images/JourneyImages/2021 (1).jpg"
+                                alt="404 - Not Given"
+                              />
+                            </div>
+                            <div>
+                              <p className="is-size-6 has-text-black mt-3">
+                                Started projects with <b>Reliance Indutries Ltd</b> at Jamnagar.
+                              </p>
+                            </div>
+                          </div>
+                        </Space>
+                      </div>
+                    </Col>
+                  </Row>
+                </div>
+              </div>
+            </div>
+            <div className="timeline-block timeline-block-left">
+              <div className="marker"></div>
+              <div>
+                <p className="is-size-4 timeline_year">2021</p>
+                <Row>
+                  <Col xxl={12} lg={17} md={24} sm={24} xs={24}>
+                    <div className="space-align-container">
+                      <div className="space-align-block">
+                        <Space
+                          align="center"
+                          direction="horizontal"
+                          className="mile_box"
+                        >
+                          {/* center1 */}
+                          <div>
+                            <div>
+                              <img
+                                              src="Sources/images/JourneyImages/2021 (2).jpg"
+                                alt="404 - Not Given"
+                              />
+                            </div>
+                            <p className="is-size-6 has-text-black mt-3">
+                              <b>Added Concrete Boom Placer</b> in the feet of P&M equipment.
                             </p>
                           </div>
                         </Space>
@@ -993,15 +1165,13 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                src="Sources/images/gallery/3.png"
+                                             src="Sources/images/JourneyImages/2022.jpg"
                                 alt="404 - Not Given"
                               />
                             </div>
                             <div>
                               <p className="is-size-6 has-text-black mt-3">
-                                Moved to state-of-the-art office premises of
-                                25,000 sqft at Westgate Business Bay, S. G.
-                                Highway
+                                Bagged several iconic projects like<b> Regalia & Flexone</b> at <b>GIFT city</b>, Gandhinagar.
                               </p>
                             </div>
                           </div>
@@ -1029,13 +1199,12 @@ const Whoweare = () => {
                           <div>
                             <div>
                               <img
-                                src="Sources/images/prouctlist/commercial/ongoing/1-3.png"
+                                              src="Sources/images/JourneyImages/2023.jpg"
                                 alt="404 - Not Given"
                               />
                             </div>
                             <p className="is-size-6 has-text-black mt-3">
-                              Bagged several iconic projects like Regalia &
-                              Flexone at GIFT city, Gandhinagar
+                              Introduced <b>Gujarat's First Self-Climbing Boom Placer</b>, revolutionizing construction with faster and precise concrete placement and setting new benchmarks for efficiency and innovation.
                             </p>
                           </div>
                         </Space>
@@ -1043,6 +1212,39 @@ const Whoweare = () => {
                     </div>
                   </Col>
                 </Row>
+              </div>
+            </div>
+            <div className="timeline-block timeline-block-right different_width">
+              <div className="marker"></div>
+              <div>
+                <p className="is-size-4 timeline_year">2024</p>
+                <div className="space-align-container">
+                  <Row>
+                    <Col xxl={12} lg={17} md={24} sm={24} xs={24}>
+                      <div className="space-align-block">
+                        <Space
+                          align="center"
+                          direction="horizontal"
+                          className="mile_box"
+                        >
+                          <div>
+                            <div>
+                              <img
+                                             src="Sources/images/JourneyImages/2024.jpg"
+                                alt="404 - Not Given"
+                              />
+                            </div>
+                            <div>
+                              <p className="is-size-6 has-text-black mt-3">
+                                Installed <b>Gujarat’s First Safety Screen</b> at Regalia.
+                              </p>
+                            </div>
+                          </div>
+                        </Space>
+                      </div>
+                    </Col>
+                  </Row>
+                </div>
               </div>
             </div>
           </div>

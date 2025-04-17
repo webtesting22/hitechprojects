@@ -70,10 +70,10 @@ const valueparameter = [
 ];
 const carousel = [
   {
-    src: "Sources/images/carousel/1.jpg",
+    src: "Sources/images/carousel/Carousal1.jpg",
   },
   {
-    src: "Sources/images/carousel/2.jpg",
+    src: "Sources/images/carousel/Carousal2.jpg",
   },
   // {
   //   src: "Sources/images/carousel/3.png",
@@ -215,7 +215,6 @@ const Home = () => {
 
 
   useEffect(() => {
-    // This will trigger when the component mounts (e.g., page reloads)
     setIsModalVisible(true);
   }, []);
 
@@ -394,7 +393,6 @@ const Home = () => {
               className="white_back"
             >
               <img src={img1} alt="" className="mb-4" />
-
               <h6>Years of Experience</h6>
               <h6>25+</h6>
             </Col>
