@@ -217,7 +217,7 @@ const industrialcompleted = [
     segment: "Residential",
     client: "Sun Builders",
     location: "Shela, Ahmedabad",
-    projectSize: "1,25,000 Sq. ft.",
+    projectSize: "12,50,000 Sq. ft.",
     projectDes: "2B+GF+14 Floor",
     projectYear: "2024",
     architect: "H M Architech",

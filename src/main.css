@@ -1980,3 +1980,16 @@ textarea.form_input::placeholder {
     flex-shrink: unset;
   }
 }
+.BeforeStyling span{
+  position: relative;
+}
+
+.BeforeStyling span::before{
+  content: ".";
+  /* height: 20px;
+  width: 20px; */
+  /* background-color: red; */
+  display: inline-block;
+  position: absolute;
+  right: -3px;
+}
