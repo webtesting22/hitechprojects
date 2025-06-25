@@ -322,7 +322,7 @@ const industrialcompleted = [
     client: "Sun Builders",
     location: "Ahmedabad",
     projectSize: "2B+GF+22 Floor",
-    projectDes: "22 Floors, 70 Meters",
+    projectDes: "2 Basements Ground Floor+22 Floor",
     projectYear: "2020",
     architect: "Placekinesis Associates",
     consultant: "Setu Infrastructure",

@@ -1,0 +1,46 @@
+.navbarshadow {
+    width: 100%;
+    /* background-color: red; */
+}
+
+.navbarshadow .navigation {
+    max-width: 70% !important;
+    box-shadow: 0 0 2px 2px #6d6c6c71;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.MobileOnlyShow {
+    display: none;
+}
+
+@media(max-width:900px) {
+    .MobileOnlyShow {
+        /* display: block; */
+        display: flex;
+    }
+
+    .navbarshadow .navigation {
+        max-width: 95% !important;
+        box-shadow: 0 0 2px 2px #6d6c6c71;
+        border-radius: 10px;
+        display: none !important;
+    }
+
+    .navbar-brand {
+        display: flex;
+        justify-content: space-between;
+        padding: 0rem 1rem;
+        align-items: center;
+    }
+
+    .ant-drawer-content-wrapper {
+        width: 330px !important;
+    }
+
+    .ant-collapse {
+        background-color: transparent !important;
+        border: none !important;
+    }
+
+}

@@ -49,6 +49,7 @@ const clientlist = [
   { src: "Sources/images/our_client/40.png" },
   { src: "Sources/images/our_client/41.png" },
   { src: "Sources/images/our_client/42.png" },
+  
 ];
 const consultantslist = [
   { src: "Sources/images/consultants/2.png" },

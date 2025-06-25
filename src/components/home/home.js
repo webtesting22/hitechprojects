@@ -1,5 +1,5 @@
 import React, { useEffect, useState, Component } from "react";
-import { Button, Col, Row, Spac,Modal,Space } from "antd";
+import { Button, Col, Row, Spac, Modal, Space } from "antd";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import { ImageList } from "@mui/material";
@@ -15,7 +15,6 @@ import { AiOutlineInteraction } from "react-icons/ai";
 import { MdConstruction } from "react-icons/md";
 import { AiOutlinePropertySafety } from "react-icons/ai";
 import { url } from "../../constants/navhome";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Meta from "antd/lib/card/Meta";
@@ -25,7 +24,7 @@ import img3 from "./images/workforce.png";
 import img4 from "./images/construction.png";
 import img5 from "./images/completed-task.png";
 import img6 from "./images/building.png";
-import hitechModalImage from "./UpdatedPoster.jpeg"
+import hitechModalImage from "./images/HightechOpeningPoster.jpg"
 import "./home.css";
 import { Carousel } from "react-responsive-carousel";
 import Header from "../header/header";
@@ -70,11 +69,11 @@ const valueparameter = [
 ];
 const carousel = [
   {
-    src: "Sources/images/carousel/Carousal1.jpg",
+    src: "Sources/images/carousel/Copy Hitech Webiste Page (1368 x 520 px).svg",
   },
-  {
-    src: "Sources/images/carousel/Carousal2.jpg",
-  },
+  // {
+  //   src: "Sources/images/carousel/Carousal2.jpg",
+  // },
   // {
   //   src: "Sources/images/carousel/3.png",
   // },
@@ -228,18 +227,18 @@ const Home = () => {
 
   return (
     <>
-    <Modal
-         title={null}  
+      <Modal
+        title={null}
         visible={isModalVisible}
         onOk={handleOk}
         onCancel={handleCancel}
         footer={null}
       >
-      {/* <br/> */}
-        <h2 style={{fontWeight:"600",textAlign:"center",fontSize:"30px",color:"#0d2e61"}}>Join Hitech!</h2>
-        <br/>
-        <img src={hitechModalImage}/>
-        <br/><br/>
+        {/* <br/> */}
+        <h2 style={{ fontWeight: "600", textAlign: "center", fontSize: "30px", color: "#0d2e61" }}>Join Hitech!</h2>
+        <br />
+        <img src={hitechModalImage} />
+        <br /><br />
         <Link to="/careers"><button className="ApplyNowBtn">Apply Now</button></Link>
       </Modal>
       <section className="banner_carousel">

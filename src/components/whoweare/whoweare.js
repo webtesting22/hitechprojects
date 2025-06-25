@@ -1288,7 +1288,7 @@ const Whoweare = () => {
                             </div>
                             <div className="BeforeStyling">
                               <p className="is-size-6 has-text-black mt-3">
-                                Our Three project Anubhav School, Aranyam and The bellagio, has been honoured with the 16th <b>Vishwakarma award by CIDC at New <span>Delhi</span></b>
+                              Our projects — Anubhav School, Aranyam, and The Bellagio — have been honoured with the <b>16th Vishwakarma Award by CIDC</b>. This recognition is a testament to our team's dedication to excellence.
                               </p>
                             </div>
                           </div>

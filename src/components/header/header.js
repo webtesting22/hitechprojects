@@ -7,7 +7,7 @@ import { IoMdContact } from "react-icons/io";
 import TextArea from "antd/lib/input/TextArea";
 import Clients from "../clients/clients";
 import img1 from "./hitech_logo.png";
-
+import "./nav.css"
 const customStyles = {
   content: {
     top: "50%",
@@ -93,14 +93,77 @@ const headeritemthree = [
     headlink: url.technology,
   },
 ];
-const headeritemfour = [
+
+const headeritemFive = [
   {
-    headname: "Our Clients",
-    headlink: url.ourclients,
+    headname: "Clients",
+    headlink: "/ourclients",
   },
   {
     headname: "Architect And Consultants",
-    headlink: url.architech,
+    headlink: "/architech",
+  }
+]
+const headeritemfour = [
+  {
+    headname: "Board and Committee",
+    headlink: "",
+  },
+  {
+    headname: "Financial Reports",
+    headlink: "",
+  },
+  {
+    headname: "Share Holding Pattern",
+    headlink: "",
+  },
+  {
+    headname: "Updates & Announcements",
+    headlink: "",
+  },
+  {
+    headname: "Corporate Governance",
+    headlink: "",
+  },
+  {
+    headname: "Annual Secretarial Compliance Report",
+    headlink: "",
+  },
+  {
+    headname: "Investor Grievance",
+    headlink: "",
+  },
+  {
+    headname: "Policies",
+    headlink: "",
+  },
+  {
+    headname: "Material Contract and Material Document",
+    headlink: "",
+  },
+  {
+    headname: "IPO Documents",
+    headlink: "",
+  },
+  {
+    headname: "MOA & AOA",
+    headlink: "",
+  },
+  {
+    headname: "DRHP",
+    headlink: "",
+  },
+  {
+    headname: "RHP",
+    headlink: "",
+  },
+  {
+    headname: "Prospectus",
+    headlink: "",
+  },
+  {
+    headname: "Group Companies",
+    headlink: "",
   },
 ];
 
@@ -171,7 +234,7 @@ const Header = () => {
       setWidth(window.innerWidth);
     });
   }, []);
-  const onFinish = (formData) => {};
+  const onFinish = (formData) => { };
 
   const [isActives, setActive] = useState(false);
 
@@ -371,10 +434,8 @@ const Header = () => {
         role="navigation"
         aria-label="main navigation"
         style={{
-          width: width < 1024 ? (width < 768 ? "100%" : "70%") : "50%",
-          marginLeft: width < 1024 ? (width < 768 ? "0%" : "15%") : "25%",
-          borderRadius: "10px",
-          boxShadow: "0 0 2px 2px #6d6c6c71",
+          // width: width < 1024 ? (width < 768 ? "100%" : "70%") : "50%",
+          // marginLeft: width < 1024 ? (width < 768 ? "0%" : "15%") : "25%",
           marginTop: "20px",
         }}
       >
@@ -429,9 +490,10 @@ const Header = () => {
               style={{
                 width: width >= 1024 ? "50%" : "90%",
                 display: "flex",
-                justifyContent: "center",
+                justifyContent: width > 1024 ? "center" : "unset",
                 fontSize: width < 525 && "12px",
                 marginLeft: width > 1024 ? "50%" : "6%",
+                overflow: width > 1024 ? "unset" : "auto"
               }}
             >
               <div className="navbar-item has-dropdown is-hoverable">
@@ -480,6 +542,7 @@ const Header = () => {
                     })}
                 </div>
               </div>
+
               {/* <div className="header_wrapper">
                 <Link
                   className="navbar-item header_item hoverheader_item"
@@ -544,13 +607,13 @@ const Header = () => {
                 <Link
                   onClick={() => {
                     onAboutChange(!isAboutOpen);
-                  }}                                   
+                  }}
                   className="navbar-link header_item"
                   style={{
                     display: small && "inline-block",
                   }}
                 >
-                  About Us
+                  About&nbsp;Us
                 </Link>
                 <div
                   className="navbar-dropdown"
@@ -613,7 +676,7 @@ const Header = () => {
                   }}
                 >
                   {isDropDown &&
-                    headeritemfour.map((item, key) => {
+                    headeritemFive.map((item, key) => {
                       return (
                         <Link
                           className="navbar-item"
@@ -633,6 +696,52 @@ const Header = () => {
                     })}
                 </div>
               </div>
+              {/* <div className="navbar-item has-dropdown is-hoverable">
+                <Link
+                  onClick={() => {
+                    onClientChange(!isClientOpen);
+                  }}
+                  className="navbar-link header_item"
+                  style={{
+                    display: small && "inline-block",
+                  }}
+                >
+                  Investors
+                </Link>
+                <div
+                  className="navbar-dropdown"
+                  style={{
+                    display: small
+                      ? isClientOpen
+                        ? "table-caption"
+                        : "none"
+                      : undefined,
+                    maxWidth: small && isProjectOpen && "108px",
+                    boxSizing: small && isProjectOpen && "border-box",
+                    overflow: small ? "hidden" : undefined,
+                  }}
+                >
+                  {isDropDown &&
+                    headeritemfour.map((item, key) => {
+                      return (
+                        <Link
+                          className="navbar-item"
+                          to={item.headlink}
+                          key={key}
+                          onClick={() => {
+                            setIsActive(!isActive);
+                            setisDropDown(false);
+                            setTimeout(() => {
+                              setisDropDown(true);
+                            }, 100);
+                          }}
+                        >
+                          {item.headname}
+                        </Link>
+                      );
+                    })}
+                </div>
+              </div> */}
               {/* <div className="header_wrapper">
                 <Link
                   className="navbar-item header_item hoverheader_item"

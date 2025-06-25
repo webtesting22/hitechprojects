@@ -4,6 +4,26 @@ import Header from "../header/header";
 
 const awardscard = [
   {
+    src: "Sources/images/awards/BellagioProject.png",
+    title: "CIDC Vishwakarma Awards 2025",
+    des: "",
+  },
+  {
+    src: "Sources/images/awards/AnubhavSchollProject.png",
+    title: "CIDC Vishwakarma Awards 2025",
+    des: "",
+  },
+  {
+    src: "Sources/images/awards/AraynyamProject.png",
+    title: "CIDC Vishwakarma Awards 2025",
+    des: "",
+  },
+  {
+    src: "Sources/images/awards/LiftingInHighRise.png",
+    title: "Lifting in High Rise Building Constructions",
+    des: "",
+  },
+  {
     src: "Sources/images/awards/13.jpg",
     title: "ISO Certificate 9001-2015",
     des: "Successful completion of annual periodic audits",
@@ -103,7 +123,7 @@ const Awards = () => {
         src="Sources/images/awards/awards.JPG"
         alt="404 -Not Given"
         className="about_img"
-        //style={{ marginLeft: window.innerWidth > 1355 ? "5%" : "" }}
+      //style={{ marginLeft: window.innerWidth > 1355 ? "5%" : "" }}
       />
 
       <div className="about-us-bg">
@@ -144,7 +164,7 @@ const Awards = () => {
                         <div className="has-text-centered service_icon">
                           <div>
                             <Image
-                             preview={{
+                              preview={{
                                 getContainer: '#root', // This ensures the image preview is rendered within the root element
                               }}
                               src={item.src}

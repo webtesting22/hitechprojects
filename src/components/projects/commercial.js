@@ -143,7 +143,7 @@ const commerciallist = [
     ],
     content: "...",
     client: "Shivalik Group",
-    location: "GIFT City",
+    location: "Vaishnodevi Circle, Ahmedabad",
     projectSize: "12,59,000 Sq. ft.",
     projectDes: "3B+GF+29 Floor",
     projectYear: "2025-Current",
@@ -183,22 +183,22 @@ const commerciallist = [
     consultant: "SNV Engineers",
     scope: "Excavation work, RCC Frame works, Masonary & Plaster works.",
   },
-  {
-    src: "",
-    title: "Sharnam Navkar",
-    imageGallery: [
-      "",
-    ],
-    content: "...",
-    client: "Sharnam Group",
-    location: "Ahmedabad",
-    projectSize: "7,16,687 Sq. ft.",
-    projectDes: "3B+GF+07/05 Floor",
-    projectYear: "2025 - Current",
-    architect: "99 Studio",
-    consultant: "Shreeji Structure",
-    scope: "RCC Frame works, Masonary, Plaster works, Waterproofing, All finishing works etc.",
-  },
+  // {
+  //   src: "",
+  //   title: "Sharnam Navkar",
+  //   imageGallery: [
+  //     "",
+  //   ],
+  //   content: "...",
+  //   client: "Sharnam Group",
+  //   location: "Ahmedabad",
+  //   projectSize: "7,16,687 Sq. ft.",
+  //   projectDes: "3B+GF+07/05 Floor",
+  //   projectYear: "2025 - Current",
+  //   architect: "99 Studio",
+  //   consultant: "Shreeji Structure",
+  //   scope: "RCC Frame works, Masonary, Plaster works, Waterproofing, All finishing works etc.",
+  // },
 ];
 const commercialcompleted = [
   {

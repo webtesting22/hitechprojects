@@ -7,13 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Header from "../header/header";
 import "./expertise.css";
 
-// const machinerytwo = [
-//   // { src: "Sources/images/expertise/formwork/9.jpg" },
-//   // { src: "Sources/images/expertise/Machinerytwo/2.png" },
-//   // { src: "Sources/images/expertise/Machinerytwo/3.png" },
-//   // { src: "Sources/images/expertise/Machinerytwo/4.png" },
-//   // { src: "Sources/images/expertise/Machinerytwo/5.png" },
-// ];
+
 export const galleryImages = [
   {
     rows: 1,
@@ -95,7 +89,7 @@ const Formwork = () => {
         src="Sources/images/bg/Residential (13).png"
         alt="404 -Not Given"
         className="about_img"
-        //style={{ marginLeft: window.innerWidth > 1355 ? "5%" : "" }}
+      //style={{ marginLeft: window.innerWidth > 1355 ? "5%" : "" }}
       />
       <Header />
       <section className="mobile_margin">
@@ -125,34 +119,11 @@ const Formwork = () => {
             </p>
           </div>
         </div>
-        {/* <div className="container-fluid mt-3">
-          <div>
-            <ImageList cols={cols} className="Py-4 img">
-              {galleryImages.map((item, key) => {
-                let style = item.style || {};
-                return (
-                  <ImageListItem
-                    rows={item.rows}
-                    cols={item.cols}
-                    key={key}
-                    className="gallery_image"
-                  >
-                    <img
-                      src={item.src}
-                      alt={item.alt || "404 - Not Found"}
-                      style={{ ...style }}
-                    />
-                    <p className="overlay">{item.title}</p>
-                  </ImageListItem>
-                );
-              })}
-            </ImageList>
-          </div>
-        </div> */}
+        
         <div className="section_padding"></div>
       </section>
 
-      <section className="section-4">
+      <section className="section-4" id="FormworkImagesAdjust">
         <div className="container">
           <Row style={{ display: "flex", justifyContent: "center" }}>
             <Col
@@ -165,7 +136,7 @@ const Formwork = () => {
             >
               <figure className="figure m-3">
                 <img
-                  src="Sources/images/expertise/formwork/Handshet Alpha.png"
+                  src="Sources/images/expertise/formwork/Picture1 copy.png"
                   alt=""
                 />
                 <div className="service_line">
@@ -191,7 +162,7 @@ const Formwork = () => {
             >
               <figure className="figure m-3">
                 <img
-                  src="Sources/images/expertise/formwork/Ring Lock.png"
+                  src="Sources/images/expertise/formwork/Picture2.jpg"
                   alt=""
                 />
                 <div className="service_line">
@@ -199,7 +170,7 @@ const Formwork = () => {
                     style={{ color: "#03446a" }}
                     className="has-text-centered"
                   >
-                    <span>Ring Lock</span>
+                    <span>ECO SPEEDY</span>
                   </h3>
                   <a href="#"></a>
                 </div>
@@ -215,7 +186,7 @@ const Formwork = () => {
             >
               <figure className="figure m-3">
                 <img
-                  src="Sources/images/expertise/formwork/Eco- Speedy.png"
+                  src="Sources/images/expertise/formwork/Picture3.png"
                   alt=""
                 />
                 <div className="service_line">
@@ -224,8 +195,7 @@ const Formwork = () => {
                     className="has-text-centered"
                   >
                     <span>
-                      Eco <br />
-                      Speedy
+                      ALUMINIUM <br />FORMWORK
                     </span>
                   </h3>
                   <a href="#"></a>
@@ -243,7 +213,7 @@ const Formwork = () => {
             >
               <figure className="figure m-3">
                 <img
-                  src="Sources/images/expertise/formwork/Alpha dek 2.png"
+                  src="Sources/images/expertise/formwork/Picture4.jpg"
                   alt=""
                   style={{ height: "100%" }}
                 />
@@ -252,7 +222,7 @@ const Formwork = () => {
                     style={{ color: "#03446a" }}
                     className="has-text-centered"
                   >
-                    <span>Alpha deck</span>
+                    <span>RINGLOCK</span>
                   </h3>
                   <a href="#"></a>
                 </div>
@@ -269,7 +239,7 @@ const Formwork = () => {
             >
               <figure className="figure m-3">
                 <img
-                  src="Sources/images/expertise/formwork/Material Lifter Final.jpg"
+                  src="Sources/images/expertise/formwork/Picture5.jpg"
                   alt=""
                 />
                 <div className="service_line">
@@ -278,7 +248,7 @@ const Formwork = () => {
                     className="has-text-centered"
                   >
                     <span>
-                      Material <br /> Lifter
+                      MULTI FLEX
                     </span>
                   </h3>
                   <a href="#"></a>
@@ -295,7 +265,7 @@ const Formwork = () => {
             >
               <figure className="figure m-3">
                 <img
-                  src="Sources/images/expertise/formwork/Climbing Platform.jpg"
+                  src="Sources/images/expertise/formwork/Picture6.png"
                   alt=""
                   style={{ height: "100%" }}
                 />
@@ -305,7 +275,7 @@ const Formwork = () => {
                     className="has-text-centered"
                   >
                     <span>
-                      Climbing <br /> Platform
+                      ALPHA DECK
                     </span>
                   </h3>
                   <a href="#"></a>
@@ -323,7 +293,7 @@ const Formwork = () => {
             >
               <figure className="figure m-3">
                 <img
-                  src="Sources/images/expertise/formwork/Multi flex.jpg"
+                  src="Sources/images/expertise/formwork/Picture7.jpg"
                   alt=""
                   style={{ height: "100%" }}
                 />
@@ -332,7 +302,7 @@ const Formwork = () => {
                     style={{ color: "#03446a" }}
                     className="has-text-centered"
                   >
-                    <span>Multi flex</span>
+                    <span>SAFETY<br />SCREEN</span>
                   </h3>
                   <a href="#"></a>
                 </div>
@@ -349,7 +319,7 @@ const Formwork = () => {
             >
               <figure className="figure m-3">
                 <img
-                  src="Sources/images/expertise/formwork/Standard Belex.png"
+                  src="Sources/images/expertise/formwork/Picture8.png"
                   alt=""
                   style={{ height: "100%" }}
                 />
@@ -359,7 +329,7 @@ const Formwork = () => {
                     className="has-text-centered"
                   >
                     <span>
-                      Standard <br /> Belex
+                      MATERIAL<br />LIFTER
                     </span>
                   </h3>
                   <a href="#"></a>
@@ -376,7 +346,7 @@ const Formwork = () => {
             >
               <figure className="figure m-3">
                 <img
-                  src="Sources/images/expertise/formwork/Alsina.jpeg"
+                  src="Sources/images/expertise/formwork/Picture9.png"
                   alt=""
                   style={{ height: "100%" }}
                 />
@@ -385,7 +355,7 @@ const Formwork = () => {
                     style={{ color: "#03446a" }}
                     className="has-text-centered"
                   >
-                    <span>Alsina</span>
+                    <span>CLIMBING<br />PLATFORM</span>
                   </h3>
                   <a href="#"></a>
                 </div>

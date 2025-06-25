@@ -107,7 +107,7 @@ const Management = () => {
         src="Sources/images/management/management.JPG"
         alt="404 -Not Given"
         className="about_img"
-        // style={{ marginLeft: window.innerWidth > 1355 ? "5%" : "" }}
+      // style={{ marginLeft: window.innerWidth > 1355 ? "5%" : "" }}
       />
 
       <div className="about-us-bg">
@@ -205,7 +205,7 @@ const Management = () => {
                 >
                   <div>
                     <img
-                      src="Sources/images/management/team 1-1.jpg"
+                      src="Sources/images/management/Teamnew.png"
                       alt="404 - Not Given"
                     />
                   </div>
