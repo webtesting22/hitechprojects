@@ -206,7 +206,7 @@ const industrialcompleted = [
     projectDes: "21 Floors, 70 Meters",
     projectYear: "2024",
     architect: "H M Architects",
-    consultant: "Setu Infrastructure",
+    consultant: "Setu Infrastructures",
     scope:
       "Civil Construction work of RCC Frame, Block & Plaster work.",
   },

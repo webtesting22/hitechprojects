@@ -691,7 +691,7 @@ const Industrial = () => {
                                 {item.projectSize}
                               </p>
                             </div>
-                          {/*  <div className="pt-3">
+                            {/*  <div className="pt-3">
                               <p className="is-size-6">
                                 <span className="has-text-weight-semibold">Project Description:&nbsp;</span>
                                 {item.projectDes}

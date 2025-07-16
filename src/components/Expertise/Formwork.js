@@ -119,7 +119,7 @@ const Formwork = () => {
             </p>
           </div>
         </div>
-        
+
         <div className="section_padding"></div>
       </section>
 
@@ -136,7 +136,7 @@ const Formwork = () => {
             >
               <figure className="figure m-3">
                 <img
-                  src="Sources/images/expertise/formwork/Picture1 copy.png"
+                  src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Formwork1.jpg"
                   alt=""
                 />
                 <div className="service_line">
@@ -186,7 +186,7 @@ const Formwork = () => {
             >
               <figure className="figure m-3">
                 <img
-                  src="Sources/images/expertise/formwork/Picture3.png"
+                  src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Formwork3.jpg"
                   alt=""
                 />
                 <div className="service_line">
@@ -265,7 +265,7 @@ const Formwork = () => {
             >
               <figure className="figure m-3">
                 <img
-                  src="Sources/images/expertise/formwork/Picture6.png"
+                  src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/Formwork6.jpg"
                   alt=""
                   style={{ height: "100%" }}
                 />

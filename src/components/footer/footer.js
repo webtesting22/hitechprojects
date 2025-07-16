@@ -296,7 +296,7 @@ const Footer = () => {
                     target="_blank"
                     className="has-text-white contact_content"
                   >
-                    <p className="my-auto">Hitech Projects Pvt. Ltd.</p>
+                    <p className="my-auto">Hitech Projects Limited.</p>
                     <p className="mt-2">A-1401, Block-A, </p>
                     <p>West Gate Business Bay,</p>
                     <p>Besides Signature - 1, S.G. Highway,</p>

@@ -60,7 +60,7 @@ const Contact = () => {
                               className="has-text-white contact_content"
                             >
                               <p className="my-auto">
-                                Hitech Projects Pvt. Ltd.
+                                Hitech Projects Limited.
                               </p>
                               <p>A-1401, Block-A, </p>
                               <p>West Gate Business Bay,</p>
