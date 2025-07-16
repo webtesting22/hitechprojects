@@ -696,7 +696,7 @@ const Header = () => {
                     })}
                 </div>
               </div>
-              <div className="navbar-item has-dropdown is-hoverable">
+              {/* <div className="navbar-item has-dropdown is-hoverable">
                 <Link
                   onClick={() => {
                     onClientChange(!isClientOpen);
@@ -741,7 +741,7 @@ const Header = () => {
                       );
                     })}
                 </div>
-              </div>
+              </div> */}
               {/* <div className="header_wrapper">
                 <Link
                   className="navbar-item header_item hoverheader_item"

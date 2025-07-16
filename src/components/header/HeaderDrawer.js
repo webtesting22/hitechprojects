@@ -139,8 +139,8 @@ const HeaderDrawer = () => {
           {renderCollapsePanel("Expertise", headeritemthree)}
           {renderCollapsePanel("About Us", headeritemone)}
           {renderCollapsePanel("Clients", headeritemfour)}
-
-          {renderCollapsePanel("Investors", headeritemFive)}
+          
+          {/* {renderCollapsePanel("Investors", headeritemFive)} */}
         </Collapse>
       </Drawer>
     </div>
